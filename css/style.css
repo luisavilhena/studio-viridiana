@@ -22,10 +22,19 @@
 .loading .loading_second-line_design {
   display: flex;
 }
+.loading .loading_first-line .letter,
+.loading .loading_second-line .letter,
+.loading .loading_first-line_studio .letter,
+.loading .loading_first-line_viridiana .letter,
+.loading .loading_second-line_interiors .letter,
+.loading .loading_second-line_e .letter,
+.loading .loading_second-line_design .letter {
+  margin-right: -1px;
+  margin-left: -1px;
+}
 .loading .loading_first-line .loading_first-line_studio,
 .loading .loading_first-line .loading_first-line_viridiana {
   font-size: 58px;
-  margin-right: 2px;
 }
 .loading .loading_first-line .loading_first-line_studio {
   margin-right: 15px;
@@ -34,7 +43,6 @@
 .loading .loading_second-line .loading_second-line_e,
 .loading .loading_second-line .loading_second-line_design {
   font-size: 35px;
-  margin-right: 1px;
 }
 .loading .loading_second-line .loading_second-line_interiors,
 .loading .loading_second-line .loading_second-line_e {
@@ -47,217 +55,268 @@
   0% {
     color: #a25ace;
   }
-  70% {
-    color: #a25ace;
-  }
   100% {
-    color: white;
+    color: #a25ace;
   }
 }
 .loading .loading_viridiana_a2,
 .loading .loading_studio_s,
 .loading .loading_interiors_i,
 .loading .loading_design_n {
-  animation: animation2 2s linear;
+  animation: animation2 3s linear;
 }
 @keyframes animation2 {
   0% {
     color: transparent;
+    transition: color 0s;
   }
   50% {
     color: transparent;
+    transition: color 0s;
   }
   51% {
     color: #a25ace;
+    transition: color 0s;
   }
-  98% {
+  100% {
     color: #a25ace;
+    transition: color 0s;
   }
 }
 .loading .loading_studio_d,
 .loading .loading_interiors_i2 {
-  animation: animation3 2.5s linear;
+  animation: animation3 3.5s linear;
 }
 @keyframes animation3 {
   0% {
     color: transparent;
+    transition: color 0s;
   }
   70% {
     color: transparent;
+    transition: color 0s;
   }
   72% {
     color: #a25ace;
+    transition: color 0s;
   }
-  98% {
+  100% {
     color: #a25ace;
+    transition: color 0s;
   }
 }
 .loading .loading_viridiana_r,
 .loading .loading_interiors_o {
-  animation: animation4 3s linear;
+  animation: animation4 4s linear;
 }
 @keyframes animation4 {
   0% {
     color: transparent;
+    transition: color 0s;
   }
   70% {
     color: transparent;
+    transition: color 0s;
   }
   72% {
     color: #a25ace;
+    transition: color 0s;
   }
-  98% {
+  100% {
     color: #a25ace;
+    transition: color 0s;
   }
 }
 .loading .loading_interiors_r,
 .loading .loading_design_d,
 .loading .loading_studio_t {
-  animation: animation5 4s linear;
+  animation: animation5 4.3s linear;
 }
 @keyframes animation5 {
   0% {
     color: transparent;
+    transition: color 0s;
   }
   70% {
     color: transparent;
+    transition: color 0s;
   }
   72% {
     color: #a25ace;
+    transition: color 0s;
   }
-  98% {
+  100% {
     color: #a25ace;
+    transition: color 0s;
   }
 }
 .loading .loading_viridiana_i,
 .loading .loading_interiors_n,
 .loading .loading_design_s,
 .loading .loading_interiors_t {
-  animation: animation6 5s linear;
+  animation: animation6 4.8s linear;
 }
 @keyframes animation6 {
   0% {
     color: transparent;
+    transition: color 0s;
   }
   70% {
     color: transparent;
+    transition: color 0s;
   }
   72% {
     color: #a25ace;
+    transition: color 0s;
   }
-  98% {
+  100% {
     color: #a25ace;
+    transition: color 0s;
   }
 }
 .loading .loading_studio_i,
 .loading .loading_design_g,
 .loading .loading_interiors_n,
 .loading .loading_viridiana_i3 {
-  animation: animation7 6s linear;
+  animation: animation7 5s linear;
 }
 @keyframes animation7 {
   0% {
     color: transparent;
+    transition: color 0s;
   }
   70% {
     color: transparent;
+    transition: color 0s;
   }
   72% {
     color: #a25ace;
+    transition: color 0s;
   }
-  98% {
+  100% {
     color: #a25ace;
+    transition: color 0s;
   }
 }
 .loading .loading_viridiana_d,
 .loading .loading_interiors_r2,
 .loading .loading_viridiana_a,
 .loading .loading_design_i {
-  animation: animation8 7s linear;
+  animation: animation8 5.3s linear;
 }
 @keyframes animation8 {
   0% {
     color: transparent;
+    transition: color 0s;
   }
   70% {
     color: transparent;
+    transition: color 0s;
   }
   72% {
     color: #a25ace;
+    transition: color 0s;
   }
-  98% {
+  100% {
     color: #a25ace;
+    transition: color 0s;
   }
 }
 .loading .loading_viridiana_i2,
 .loading .loading_interiors_s,
 .loading .loading_interiors_n {
-  animation: animation8 8s linear;
+  animation: animation8 5.9s linear;
 }
 @keyframes animation8 {
   0% {
     color: transparent;
+    transition: color 0s;
   }
   70% {
     color: transparent;
+    transition: color 0s;
   }
   72% {
     color: #a25ace;
+    transition: color 0s;
   }
-  98% {
+  100% {
     color: #a25ace;
+    transition: color 0s;
   }
 }
 .loading .loading_viridiana_n,
 .loading .loading_interiors_i2,
 .loading .loading_interiors_e,
 .loading .loading_studio_o {
-  animation: animation9 9s linear;
+  animation: animation9 6.4s linear;
 }
 @keyframes animation9 {
   0% {
     color: transparent;
+    transition: color 0s;
   }
   70% {
     color: transparent;
+    transition: color 0s;
   }
   72% {
     color: #a25ace;
+  }
+  100% {
+    color: #a25ace;
+    transition: color 0s;
   }
 }
 .loading .loading_studio_u,
 .loading .loading_design_e {
-  animation: animation10 10s linear;
+  animation: animation10 7s linear;
 }
 @keyframes animation10 {
   0% {
     color: transparent;
+    transition: color 0s;
   }
   70% {
     color: transparent;
+    transition: color 0s;
   }
   72% {
     color: #a25ace;
   }
+  100% {
+    color: #a25ace;
+    transition: color 0s;
+  }
 }
 .loading .loading_e {
-  animation: animation8 10.5s linear;
+  animation: animation8 7.5s linear;
 }
 @keyframes animation8 {
   0% {
     color: transparent;
+    transition: color 0s;
   }
   70% {
     color: transparent;
+    transition: color 0s;
   }
   72% {
     color: #a25ace;
+    transition: color 0s;
+  }
+  100% {
+    color: #a25ace;
+    transition: color 0s;
   }
 }
 .home-template {
   background-color: #0b1d1c;
   height: 100vh;
   width: 100%;
+}
+#project-list {
+  min-height: 100vh;
 }
 #project-list .project-list {
   display: flex;
@@ -617,7 +676,7 @@ ul#main-menu > li {
   padding: 10px 20px 10px 20px;
 }
 ul#main-menu > li:hover a {
-  font-weight: bold;
+  color: #a25ace !important;
 }
 #mobile-menu-trigger {
   display: none;
