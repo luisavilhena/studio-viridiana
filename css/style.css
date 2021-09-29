@@ -302,7 +302,7 @@
 #project-single .project-single__header .project-single__header__btn {
   display: flex;
   flex-direction: column;
-  position: relative;
+  position: absolute;
 }
 #project-single .project-single__header .project-single__header__btn .button {
   cursor: pointer;
@@ -370,6 +370,7 @@
 .image-columns .image-columns__item div {
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   width: 450px;
   height: 524px;
   border: 1px solid #B8B4B4;
@@ -1098,16 +1099,24 @@ header .header__content .header-content__name h1 {
 }
 footer {
   border-top: 1px solid #B8B4B4;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 footer .footer__content {
-  display: flex;
-  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
   padding-right: 15px;
   padding-left: 15px;
+  width: 100%;
 }
-footer .footer__content svg {
-  width: 70px;
-  height: 70px;
+footer .footer__content .footer__content__icons {
+  display: flex;
+  justify-content: center;
+}
+footer .footer__content .footer__content__icons svg {
+  width: 20px;
+  height: 20px;
 }
 .carousel {
   margin: 0 auto 60px auto;

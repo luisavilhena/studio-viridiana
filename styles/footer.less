@@ -2,14 +2,22 @@
 
 footer {
 	border-top: 1px solid @gray;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 	.footer__content {
-		display: flex;
-		justify-content: center;
+		margin-top: 5px;
+		margin-bottom: 5px;
 		padding-right: 15px;
 		padding-left: 15px;
-		svg {
-			width: 70px;
-			height: 70px;
+		width: 100%;
+		.footer__content__icons {
+			display: flex;
+			justify-content: center;
+			svg {
+				width: 20px;
+				height: 20px;
+			}
 		}
 	}
 	
