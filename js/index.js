@@ -4,7 +4,7 @@
 const menuButtonClose = document.querySelector('#mobile-menu-trigger')
 const mainHeader = document.querySelector('#main-header')
 
-menuButtonClose.addEventListener('click', menuButtonOpen)
+// menuButtonClose.addEventListener('click', menuButtonOpen)
 
 function menuButtonOpen() {
 	mainHeader.classList.toggle("menu-open")
