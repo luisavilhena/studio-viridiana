@@ -1,0 +1,85 @@
+//media sizes
+@max-mobile: 600px;
+@screen-xxl: 1800px;
+@screen-xl: 1799px;
+@screen-lg: 1499px;
+@screen-md: 1250px; 
+@screen-sm: 580px;
+@screen-xxs: 400px;
+
+@width-column: 450px;
+
+
+//color
+@yellow: #E2DF46;
+@green: #0b1d1c;
+@purple: #a25ace;
+@light-pink: #f8efeb;
+@gray: #B8B4B4;
+
+//content
+.structure-container {
+	width: 100%;
+	.structure-container__content {
+		padding-top: 100px;
+		padding-bottom: 80px;
+		padding-right: 15px;
+		padding-left: 15px;
+		max-width: 1418px;
+		margin: 0 auto;
+	}
+}
+.structure-color-light-pink {
+	background-color: @light-pink;
+	color: black;
+	border-color: @gray;
+}
+.structure-color-green {
+	background-color: @green;
+	color: white;
+	border-color: @gray;
+}
+
+.structure-block {
+	display: flex;
+	justify-content: center;
+	.structure-block__center {
+		width: @width-column;
+	}
+}
+
+//FONT
+@font-face {
+  font-family: CircularStd;
+  src: url('../resources/font/CircularStd-Black.otf') format('truetype');
+  font-weight: 300; 
+}
+@font-face {
+  font-family: CircularStd;
+  src: url('../resources/font/CircularStd-Bold.otf') format('truetype');
+  font-weight: 600; 
+}
+
+@font-face {
+  font-family: CircularStd;
+  src: url('../resources/font/CircularStd-Medium.otf') format('truetype');
+  font-weight: 400; 
+}
+@font-face {
+  font-family: CircularStd;
+  src: url('../resources/font/CircularStd-BookItalic.otf') format('opentype');
+  font-style: italic;
+}
+
+
+//Columns
+.structure-justify-start {
+	justify-content: flex-start !important;
+}
+.structure-text-left {
+	text-align: left !important;
+}
+body {
+	// max-width: 1400px;
+	// margin: 0 auto;
+}

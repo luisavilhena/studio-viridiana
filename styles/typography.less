@@ -1,0 +1,89 @@
+@import './structure.less';
+
+
+// h1, h2, h3, h4 {
+// 	font-family: 'Futura', sans-serif;
+// }
+// p, a {
+// 	font-family: 'Arial', sans-serif;
+// }
+
+h1 {
+	font-size: 25px;
+}
+h2 {
+	font-size: 18px;
+}
+h3 {
+	font-size: 16px;
+}
+h4 {
+	font-size: 65px;
+}
+
+
+p {
+	font-size: 16px;
+	line-height: 18px;
+	margin-bottom: 15px;
+}
+a {
+	color: black;
+	&:hover {
+	}
+}
+strong {
+	font-size: 50px;
+	line-height: 51px;
+}
+
+blockquote, q, {
+	margin:0px 8% 30px 8%;
+	font-style: italic;
+	p:last-of-type {
+		margin-bottom: 15px; 
+	}
+}
+//estilo especial para texto corrido em uma coluna só
+.template-tc {
+	> p, > h2, > blockquote {
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 900px;
+	}
+}
+
+@media screen and (max-width: @screen-sm) {
+	h1 {
+		font-size: 30px;
+		line-height: 25px;
+		min-height: auto;
+	}
+	h2 {
+		font-size: 20px;
+		line-height: 21px;
+	}
+	h3 {
+		font-size: 16px;
+		margin-bottom: 3px;
+		line-height: 19px;
+	}
+	p {
+		font-size: 14px;
+		line-height: 16px;
+	}
+	strong {
+	font-size: 20px;
+	line-height: 21px;
+}
+	figure, .wp-block-image {
+		margin-bottom: 30px;
+		margin-top: 30px;
+		figcaption {
+			font-size: 12px;
+			a {
+				font-size: 12px;
+			}
+		}
+	}
+}

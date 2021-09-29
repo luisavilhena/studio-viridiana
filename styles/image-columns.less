@@ -1,0 +1,19 @@
+.image-columns {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 30px;
+	.image-columns__item {
+		margin-left: 5px;
+		margin-right: 5px;
+		margin-bottom: 10px;
+		div {
+			background-size: cover;
+			background-repeat: no-repeat;
+			width: @width-column;
+			height: 524px;
+			border: 1px solid @gray;
+		}
+	}
+}

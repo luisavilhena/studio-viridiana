@@ -1,0 +1,273 @@
+@import './structure.less';
+
+.loading {
+	position: fixed;
+	top:0;
+	background-color: @green;
+	height: 100vh;
+	width: 100%;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	z-index: 100;
+	align-items: center;
+	text-transform: uppercase;
+	.loading_first-line,
+	.loading_second-line,
+	.loading_first-line_studio,
+	.loading_first-line_viridiana,
+	.loading_second-line_interiors,
+	.loading_second-line_e,
+	.loading_second-line_design {
+		display: flex;
+	}
+	.loading_first-line {
+		.loading_first-line_studio,
+		.loading_first-line_viridiana {
+			font-size: 50px;
+		}
+		.loading_first-line_studio {
+			margin-right: 10px;
+		}
+	}
+	.loading_second-line {
+		.loading_second-line_interiors,
+		.loading_second-line_e,
+		.loading_second-line_design {
+			font-size: 50px;
+		}
+		.loading_second-line_interiors,
+		.loading_second-line_e, {
+			margin-right: 10px;
+		}
+	}
+	.loading_viridiana_v {
+		animation: animation1 2s linear;
+
+		@keyframes animation1 {
+		  0% {
+		    color: @purple;
+		  }
+		  70% {
+		    color: @purple;
+		  }
+		  100% {
+		    color: white;
+		  }
+		}
+	}
+	.loading_viridiana_a2,
+	.loading_studio_s,
+	.loading_interiors_i,
+	.loading_design_n {
+		animation: animation2 3s linear;
+
+		@keyframes animation2 {
+		  0% {
+		    color: transparent;
+		  }
+		  50% {
+		    color: transparent;
+		  }
+		  51% {
+		  	color: @purple;
+		  }
+		  98% {
+		  	color: @purple;
+		  }
+		}
+	}
+	.loading_studio_d,
+	.loading_interiors_i2 {
+		animation: animation3 4s linear;
+
+		@keyframes animation3 {
+		  0% {
+		    color: transparent;
+		  }
+		  70% {
+		    color: transparent;
+		  }
+		  72% {
+		  	color: @purple;
+		  }
+		  98% {
+		  	color: @purple;
+		  }
+		}
+	}
+	.loading_viridiana_r,
+	.loading_interiors_o {
+		animation: animation4 5s linear;
+
+		@keyframes animation4 {
+		  0% {
+		    color: transparent;
+		  }
+		  70% {
+		    color: transparent;
+		  }
+		  72% {
+		  	color: @purple;
+		  }
+		  98% {
+		  	color: @purple;
+		  }
+		}
+	}
+	.loading_interiors_r,
+	.loading_design_d,
+	.loading_studio_t {
+		animation: animation5 6s linear;
+
+		@keyframes animation5 {
+		  0% {
+		    color: transparent;
+		  }
+		  70% {
+		    color: transparent;
+		  }
+		  72% {
+		  	color: @purple;
+		  }
+		  98% {
+		  	color: @purple;
+		  }
+		}
+	}
+	.loading_viridiana_i,
+	.loading_interiors_n,
+	.loading_design_s,
+	.loading_interiors_t {
+		animation: animation6 7s linear;
+
+		@keyframes animation6 {
+		  0% {
+		    color: transparent;
+		  }
+		  70% {
+		    color: transparent;
+		  }
+		  72% {
+		  	color: @purple;
+		  }
+		  98% {
+		  	color: @purple;
+		  }
+		}
+	}
+	.loading_studio_i,
+	.loading_design_g,
+	.loading_interiors_n,
+	.loading_viridiana_i3{
+		animation: animation7 8s linear;
+
+		@keyframes animation7 {
+		  0% {
+		    color: transparent;
+		  }
+		  70% {
+		    color: transparent;
+		  }
+		  72% {
+		  	color: @purple;
+		  }
+		  98% {
+		  	color: @purple;
+		  }
+		}
+	}
+	.loading_viridiana_d,
+	.loading_interiors_r2,
+	.loading_viridiana_a,
+	.loading_design_i, {
+		animation: animation8 9s linear;
+
+		@keyframes animation8 {
+		  0% {
+		    color: transparent;
+		  }
+		  70% {
+		    color: transparent;
+		  }
+		  72% {
+		  	color: @purple;
+		  }
+		  98% {
+		  	color: @purple;
+		  }
+		}
+	}
+	.loading_viridiana_i2,
+	.loading_interiors_s,
+	.loading_interiors_n, {
+		animation: animation8 10s linear;
+
+		@keyframes animation8 {
+		  0% {
+		    color: transparent;
+		  }
+		  70% {
+		    color: transparent;
+		  }
+		  72% {
+		  	color: @purple;
+		  }
+		  98% {
+		  	color: @purple;
+		  }
+		}
+	}
+	.loading_viridiana_n,
+	.loading_interiors_i2,
+	.loading_interiors_e,
+	.loading_studio_o, {
+		animation: animation9 11s linear;
+
+		@keyframes animation9 {
+		  0% {
+		    color: transparent;
+		  }
+		  70% {
+		    color: transparent;
+		  }
+		  72% {
+		    color: @purple;
+		  }
+		}
+		
+	}
+	.loading_studio_u,
+	.loading_design_e {
+		animation: animation10 12s linear;
+
+		@keyframes animation10 {
+		  0% {
+		    color: transparent;
+		  }
+		  70% {
+		    color: transparent;
+		  }
+		  72% {
+		    color: @purple;
+		  }
+		}
+	}
+	.loading_e {
+		animation: animation8 13s linear;
+
+		@keyframes animation8 {
+		  0% {
+		    color: transparent;
+		  }
+		  70% {
+		    color: transparent;
+		  }
+		  72% {
+		  	color: @purple;
+		  }
+		}
+	}
+
+}
