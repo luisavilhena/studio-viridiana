@@ -17,7 +17,7 @@ function one_image() {
  
 			<div class="one-image">
 				<div class="one-image__item">
-					<div style="background-image: url('<?php echo wp_get_attachment_image_src($block['img'],'horizontal-a')[0]; ?>');">
+					<div style="background-image: url('<?php echo wp_get_attachment_image_src($block['img'],'ap_image_desktop_full_no_crop')[0]; ?>');">
 					</div>
 				</div>
 			</div>

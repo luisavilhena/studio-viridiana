@@ -93,7 +93,7 @@ function mytheme_add_custom_image_sizes() {
     add_image_size( 'vertical-a', 95, 117, true );
     add_image_size( 'vertical-b', 524, 462, true);
     // Add "horizontal" image
-    add_image_size( 'horizontal-a', 800, 600, false );
+    add_image_size( 'horizontal-a', 2000, 1500, true );
     add_image_size( 'horizontal-b', 220, 152, true );
     // Add "home" image
     add_image_size( 'home', 260, 160, true );
