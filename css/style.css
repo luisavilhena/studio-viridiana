@@ -268,6 +268,7 @@
   margin-bottom: 10px;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 #project-list .project-list .project-list__item img {
   width: 450px;
@@ -401,7 +402,8 @@
   border-color: #B8B4B4;
   border-width: 1px;
   border-style: solid;
-  font-family: 'CircularStd', sans-serif;
+  font-family: 'CircularStd';
+  font-weight: 300;
   padding-top: 5px;
   padding-bottom: 5px;
   border-bottom-color: transparent;
@@ -409,6 +411,8 @@
 .text-box .text-box__item h3 {
   padding-left: 10px;
   text-transform: uppercase;
+  font-family: 'CircularStd';
+  font-weight: 300 !important;
 }
 .text-box .text-box__item .text-box__item__more .text-box__item__more-button {
   position: absolute;
@@ -606,7 +610,7 @@ ul#main-menu li a {
   text-transform: uppercase;
 }
 ul#main-menu > li {
-  padding: 10px 20px 0px 20px;
+  padding: 10px 20px 10px 20px;
 }
 ul#main-menu > li:hover a {
   font-weight: bold;
@@ -882,6 +886,11 @@ q p:last-of-type {
 }
 @font-face {
   font-family: CircularStd;
+  src: url('../resources/font/CircularStd-Medium-500.ttf') format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: CircularStd;
   src: url('../resources/font/CircularStd-Medium.otf') format('truetype');
   font-weight: 400;
 }
@@ -889,6 +898,10 @@ q p:last-of-type {
   font-family: CircularStd;
   src: url('../resources/font/CircularStd-BookItalic.otf') format('opentype');
   font-style: italic;
+}
+@font-face {
+  font-family: Minion;
+  src: url('../resources/font/MinionPro-Regular.otf') format('truetype');
 }
 .structure-justify-start {
   justify-content: flex-start !important;
@@ -999,7 +1012,6 @@ header {
   width: 100%;
   z-index: 2;
   border-bottom: 1px solid #B8B4B4;
-  padding-bottom: 10px;
 }
 header .header__content {
   margin-top: 20px;
@@ -1008,6 +1020,9 @@ header .header__content {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+header .header__content .header-content__name {
+  margin-bottom: 10px;
 }
 header .header__content .header-content__name h1 {
   font-family: 'CircularStd', sans-serif;
@@ -1023,8 +1038,12 @@ header .header__content .header-content__name h1 {
     top: 0;
   }
 }
-#logo-anchor img {
-  width: 70px;
+#logo-anchor {
+  margin-bottom: 3px;
+}
+#logo-anchor svg {
+  width: 50px;
+  height: 50px;
 }
 @media screen and (max-width: 580px) {
   #logo-anchor {
@@ -1082,6 +1101,10 @@ footer .footer__content {
   justify-content: center;
   padding-right: 15px;
   padding-left: 15px;
+}
+footer .footer__content svg {
+  width: 70px;
+  height: 70px;
 }
 .carousel {
   margin: 0 auto 60px auto;

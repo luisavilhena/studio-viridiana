@@ -33,6 +33,8 @@ $(document).ready(function(){
 	$('footer').css('background-color', backgroundColor)
 	$('header').css('color', color)
 	$('footer').css('color', color)
+	$('footer svg').css('fill', color)
+	$('header svg').css('fill', color)
 
 	$('#main-menu li a').css('color', color)
 })

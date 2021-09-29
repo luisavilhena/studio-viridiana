@@ -40,9 +40,7 @@
       <a
         id="logo-anchor"
         href="<?php echo get_home_url(); ?>">
-          <img class="home-casa-do-estudante--img"
-              src="<?php echo get_template_directory_uri() ?>/resources/imgS/V_inicial.png"
-          />
+        <?php require('resources/imgs/V1.svg'); ?>
       </a>
 
       <button
