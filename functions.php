@@ -1,15 +1,15 @@
 <?php
 
-	function xi_script_enqueue(){
+	function studio_viridiana(){
 		wp_enqueue_style('customstyle', get_template_directory_uri() . '/css/style.css', array(), '1.0.0', 'all');
-		wp_enqueue_script('customjs',  get_template_directory_uri() . '/js/index.js', array(), '1.0.1', true );
+		wp_enqueue_script('customjs',  get_template_directory_uri() . '/js/index.js', array(), '1.0.0', true );
     wp_enqueue_script('slickjs',  get_template_directory_uri() . '/slick/slick.min.js', array(), '1.8.0', true);
     wp_enqueue_style('slickcss', get_template_directory_uri() . '/slick/slick.css', array(), '1.8.0', 'all');
     wp_enqueue_style('slicktheme', get_template_directory_uri() . '/slick/slick-theme.css', array(), '1.8.0', 'all');
 	}
 
 
-add_action('wp_enqueue_scripts', 'xi_script_enqueue');
+add_action('wp_enqueue_scripts', 'studio_viridiana');
 
 
 
