@@ -18,6 +18,7 @@ $(document).ready(function(){
 	$('.loading').delay(10000).fadeOut('slow')
 })
 
+
 //TEXT BOX CLICk
 $(document).ready(function(){
 	$('.text-box__item__more').on("click", function(e){
