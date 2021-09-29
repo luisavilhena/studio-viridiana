@@ -351,7 +351,8 @@
   font-size: 16px;
   margin-bottom: 10px;
 }
-.rich-text b {
+.rich-text b,
+.rich-text strong {
   font-weight: bold;
 }
 .image-columns {
@@ -406,7 +407,7 @@
   border-width: 1px;
   border-style: solid;
   font-family: 'CircularStd';
-  font-weight: 300;
+  font-weight: 400;
   padding-top: 5px;
   padding-bottom: 5px;
   border-bottom-color: transparent;
@@ -415,7 +416,6 @@
   padding-left: 10px;
   text-transform: uppercase;
   font-family: 'CircularStd';
-  font-weight: 300 !important;
 }
 .text-box .text-box__item .text-box__item__more .text-box__item__more-button {
   position: absolute;
@@ -793,8 +793,7 @@ a {
   color: black;
 }
 strong {
-  font-size: 50px;
-  line-height: 51px;
+  font-weight: bold;
 }
 blockquote,
 q {
@@ -880,7 +879,7 @@ q p:last-of-type {
 @font-face {
   font-family: CircularStd;
   src: url('../resources/font/CircularStd-Black.otf') format('truetype');
-  font-weight: 300;
+  font-weight: 500;
 }
 @font-face {
   font-family: CircularStd;
