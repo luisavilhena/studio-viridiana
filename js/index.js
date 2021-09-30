@@ -13,10 +13,10 @@ function menuButtonOpen() {
 
 
 
-//LOADING
-// $(document).ready(function(){
-// 	$('.loading').delay(8000).fadeOut('slow')
-// })
+LOADING
+$(document).ready(function(){
+	$('.loading').delay(12000).fadeOut('slow')
+})
 
 
 //TEXT BOX CLICk
