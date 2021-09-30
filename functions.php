@@ -29,6 +29,25 @@ function crb_attach_theme_options() {
         ) );
 }
 
+add_action( 'carbon_fields_register_fields', 'crb_attach_about' );
+function crb_attach_about() {
+    Container::make( 'theme_options', __( 'About', 'crb' ) )
+        ->add_fields( array(
+            Field::make( 'image', 'image_1', 'First image' ),
+            Field::make( 'text', 'fixed_title', 'Fixed title' ),
+            Field::make( 'text', 'fixed_subtile_1', 'Block one - Fixed subtitle' ),
+            Field::make( 'rich_text', 'fixed_description_1', 'Block one - Fixed description' ),
+            Field::make( 'text', 'fixed_subtile_2', 'Block two - Fixed subtitle' ),
+            Field::make( 'rich_text', 'fixed_description_2', 'Block two - Fixed description' ),
+            Field::make( 'text', 'fixed_subtile_3', 'Block three - Fixed subtitle' ),
+            Field::make( 'rich_text', 'fixed_description_3', 'Block three - Fixed description' ),
+            Field::make( 'text', 'spotifty', 'Spotify' ),
+            Field::make( 'text', 'youtube', 'Youtube' ),
+        ) );
+}
+
+
+
 add_action( 'after_setup_theme', 'crb_load' );
 function crb_load() {
 	//define o caminho para o carbon-fields

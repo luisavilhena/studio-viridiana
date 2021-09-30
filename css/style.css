@@ -29,8 +29,8 @@
 .loading .loading_second-line_interiors .letter,
 .loading .loading_second-line_e .letter,
 .loading .loading_second-line_design .letter {
-  margin-right: -1px;
-  margin-left: -1px;
+  margin-right: 1px;
+  margin-left: 1px;
 }
 .loading .loading_first-line .loading_first-line_studio,
 .loading .loading_first-line .loading_first-line_viridiana {
@@ -63,7 +63,7 @@
 .loading .loading_studio_s,
 .loading .loading_interiors_i,
 .loading .loading_design_n {
-  animation: animation2 3s linear;
+  animation: animation2 2s linear;
 }
 @keyframes animation2 {
   0% {
@@ -85,7 +85,7 @@
 }
 .loading .loading_studio_d,
 .loading .loading_interiors_i2 {
-  animation: animation3 3.5s linear;
+  animation: animation3 4s linear;
 }
 @keyframes animation3 {
   0% {
@@ -96,7 +96,7 @@
     color: transparent;
     transition: color 0s;
   }
-  72% {
+  71% {
     color: #a25ace;
     transition: color 0s;
   }
@@ -107,18 +107,18 @@
 }
 .loading .loading_viridiana_r,
 .loading .loading_interiors_o {
-  animation: animation4 4s linear;
+  animation: animation4 6s linear;
 }
 @keyframes animation4 {
   0% {
     color: transparent;
     transition: color 0s;
   }
-  70% {
+  75% {
     color: transparent;
     transition: color 0s;
   }
-  72% {
+  76% {
     color: #a25ace;
     transition: color 0s;
   }
@@ -130,18 +130,18 @@
 .loading .loading_interiors_r,
 .loading .loading_design_d,
 .loading .loading_studio_t {
-  animation: animation5 4.3s linear;
+  animation: animation5 7s linear;
 }
 @keyframes animation5 {
   0% {
     color: transparent;
     transition: color 0s;
   }
-  70% {
+  86% {
     color: transparent;
     transition: color 0s;
   }
-  72% {
+  87% {
     color: #a25ace;
     transition: color 0s;
   }
@@ -154,18 +154,18 @@
 .loading .loading_interiors_n,
 .loading .loading_design_s,
 .loading .loading_interiors_t {
-  animation: animation6 4.8s linear;
+  animation: animation6 8s linear;
 }
 @keyframes animation6 {
   0% {
     color: transparent;
     transition: color 0s;
   }
-  70% {
+  86% {
     color: transparent;
     transition: color 0s;
   }
-  72% {
+  87% {
     color: #a25ace;
     transition: color 0s;
   }
@@ -178,18 +178,18 @@
 .loading .loading_design_g,
 .loading .loading_interiors_n,
 .loading .loading_viridiana_i3 {
-  animation: animation7 5s linear;
+  animation: animation7 9s linear;
 }
 @keyframes animation7 {
   0% {
     color: transparent;
     transition: color 0s;
   }
-  70% {
+  86% {
     color: transparent;
     transition: color 0s;
   }
-  72% {
+  87% {
     color: #a25ace;
     transition: color 0s;
   }
@@ -202,18 +202,18 @@
 .loading .loading_interiors_r2,
 .loading .loading_viridiana_a,
 .loading .loading_design_i {
-  animation: animation8 5.3s linear;
+  animation: animation8 10s linear;
 }
 @keyframes animation8 {
   0% {
     color: transparent;
     transition: color 0s;
   }
-  70% {
+  88% {
     color: transparent;
     transition: color 0s;
   }
-  72% {
+  89% {
     color: #a25ace;
     transition: color 0s;
   }
@@ -225,18 +225,18 @@
 .loading .loading_viridiana_i2,
 .loading .loading_interiors_s,
 .loading .loading_interiors_n {
-  animation: animation8 5.9s linear;
+  animation: animation8 11s linear;
 }
 @keyframes animation8 {
   0% {
     color: transparent;
     transition: color 0s;
   }
-  70% {
+  86% {
     color: transparent;
     transition: color 0s;
   }
-  72% {
+  95% {
     color: #a25ace;
     transition: color 0s;
   }
@@ -249,19 +249,20 @@
 .loading .loading_interiors_i2,
 .loading .loading_interiors_e,
 .loading .loading_studio_o {
-  animation: animation9 6.4s linear;
+  animation: animation9 12s linear;
 }
 @keyframes animation9 {
   0% {
     color: transparent;
     transition: color 0s;
   }
-  70% {
+  86% {
     color: transparent;
     transition: color 0s;
   }
-  72% {
+  95% {
     color: #a25ace;
+    transition: color 0s;
   }
   100% {
     color: #a25ace;
@@ -270,19 +271,20 @@
 }
 .loading .loading_studio_u,
 .loading .loading_design_e {
-  animation: animation10 7s linear;
+  animation: animation10 13s linear;
 }
 @keyframes animation10 {
   0% {
     color: transparent;
     transition: color 0s;
   }
-  70% {
+  86% {
     color: transparent;
     transition: color 0s;
   }
-  72% {
+  95% {
     color: #a25ace;
+    transition: color 0s;
   }
   100% {
     color: #a25ace;
@@ -290,18 +292,18 @@
   }
 }
 .loading .loading_e {
-  animation: animation8 7.5s linear;
+  animation: animation8 15s linear;
 }
 @keyframes animation8 {
   0% {
     color: transparent;
     transition: color 0s;
   }
-  70% {
+  86% {
     color: transparent;
     transition: color 0s;
   }
-  72% {
+  87% {
     color: #a25ace;
     transition: color 0s;
   }
@@ -413,6 +415,9 @@
 .rich-text b,
 .rich-text strong {
   font-weight: bold;
+}
+.rich-text ul li {
+  margin-bottom: 7px;
 }
 .image-columns {
   display: flex;
@@ -528,6 +533,56 @@
 }
 .text-box .text-box__item:last-of-type {
   border-bottom-color: #B8B4B4;
+}
+#about {
+  position: relative;
+  min-height: 100vh;
+  font-family: "CircularStd";
+}
+#about .about__content .about__content__fixed {
+  width: 450px;
+  position: fixed;
+  right: 15px;
+  top: 100px;
+}
+#about .about__content .about__content__fixed .about__content__fixed-title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+#about .about__content .about__content__fixed .about__content__fixed-box {
+  border: 1px solid #B8B4B4;
+  margin-bottom: 20px;
+}
+#about .about__content .about__content__fixed .about__content__fixed-box .about__content__fixed-box__subtitle {
+  border-bottom: 1px solid #B8B4B4;
+  text-transform: uppercase;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+#about .about__content .about__content__fixed .about__content__fixed-box .about__content__fixed-box__description {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+#about .about__content .about__content__fixed .about__content__fixed-box:first-of-type:hover {
+  color: #2D0A14;
+  background-color: #c9bfbc;
+  transition: color 0.3s;
+  transition: background-color 0.3s;
+}
+#about .about__content .about__content__fixed .about__content__fixed-box:nth-of-type(2n):hover {
+  color: #a25ace;
+  background-color: #0b1d1c;
+  transition: color 0.3s;
+  transition: background-color 0.3s;
+}
+#about .about__content .about__content__fixed .about__content__fixed-box:nth-of-type(3n):hover {
+  color: #6673FF;
+  background-color: #003049;
+  transition: color 0.3s;
+  transition: background-color 0.3s;
 }
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126

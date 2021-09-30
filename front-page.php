@@ -24,7 +24,7 @@ get_header(); ?>
 			<div class="letter loading_viridiana_i3">i</div>
 			<div class="letter loading_viridiana_a">a</div>
 			<div class="letter loading_viridiana_n">n</div>
-			<div class="letter loading_viridiana_a">a</div>
+			<div class="letter loading_viridiana_a2">a</div>
 		</div>
 	</div>
 	<div class="loading_second-line">

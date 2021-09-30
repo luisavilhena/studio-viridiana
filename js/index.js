@@ -14,9 +14,9 @@ function menuButtonOpen() {
 
 
 //LOADING
-$(document).ready(function(){
-	$('.loading').delay(8000).fadeOut('slow')
-})
+// $(document).ready(function(){
+// 	$('.loading').delay(8000).fadeOut('slow')
+// })
 
 
 //TEXT BOX CLICk
