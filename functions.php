@@ -33,7 +33,7 @@ add_action( 'carbon_fields_register_fields', 'crb_attach_about' );
 function crb_attach_about() {
     Container::make( 'theme_options', __( 'About', 'crb' ) )
         ->add_fields( array(
-            Field::make( 'image', 'image_1', 'First image' ),
+            Field::make( 'image', 'photo', 'First image' ),
             Field::make( 'text', 'fixed_title', 'Fixed title' ),
             Field::make( 'text', 'fixed_subtile_1', 'Block one - Fixed subtitle' ),
             Field::make( 'rich_text', 'fixed_description_1', 'Block one - Fixed description' ),
@@ -41,8 +41,17 @@ function crb_attach_about() {
             Field::make( 'rich_text', 'fixed_description_2', 'Block two - Fixed description' ),
             Field::make( 'text', 'fixed_subtile_3', 'Block three - Fixed subtitle' ),
             Field::make( 'rich_text', 'fixed_description_3', 'Block three - Fixed description' ),
-            Field::make( 'text', 'spotifty', 'Spotify' ),
-            Field::make( 'text', 'youtube', 'Youtube' ),
+            Field::make( 'text', 'fixed_footer_title_1', 'Block one - Fixed footer title' ),
+            Field::make( 'rich_text', 'fixed_footer_description_1', 'Block one - Fixed footer description' ),
+            Field::make( 'text', 'fixed_footer_link_1', 'Block one - Fixed footer link' ),
+            Field::make( 'text', 'fixed_footer_title_2', 'Block two - Fixed footer title' ),
+            Field::make( 'rich_text', 'fixed_footer_description_2', 'Block two - Fixed footer description' ),
+            Field::make( 'text', 'fixed_footer_link_2', 'Block two - Fixed footer link' ),
+        ) )
+        ->add_fields( array(
+            Field::make( 'image', 'photo_2', 'Second image' ),
+            Field::make( 'rich_text', 'scroll_description_1', 'Block one - Scroll description' ),
+            Field::make( 'rich_text', 'scroll_description_2', 'Block two - Scroll description' ),
         ) );
 }
 
@@ -118,13 +127,3 @@ function mytheme_add_custom_image_sizes() {
     add_image_size( 'home', 260, 160, true );
 }
 add_action('after_setup_theme', 'mytheme_add_custom_image_sizes' );
-
-
-
-
-
-
-
-
-
-

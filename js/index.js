@@ -40,6 +40,42 @@ $(document).ready(function(){
 	$('#main-menu li a').css('color', color)
 })
 
+//ABOUT SCROLL
+$(document).ready(function(){
+		// 	var sc = $(window).scrollTop();
+		// console.log(sc)
+	$(function() {
+	  $('.arrow').click(function(e) {
+	  	const heightElement = window.pageYOffset
+	  	// const heightWindow = $(window).height()
+	  	// console.log(heightElement)
+	      $('html, body').animate({ scrollTop: $('html').offset().top  + heightElement + 800}, 1000);
+	      // console.log() 
+	      // console.log(heightElement,  $('html').offset().top,  $('html').offset().top + heightElement) 
+	  });
+	});
+})
+// $(document).ready(function(){
+
+
+// 	$(window).on('scroll', function(event) {
+// 		const heightElement2 = window.pageYOffset
+// 		console.log(heightElement2)
+// 				// console.log(heightElement)
+// 		// if ($(window).width() > 1600) {
+// 		// 	if ($(window).height() > 1500) {
+// 		// 		$('.arrow').css('display', "none")
+// 		// 	}
+// 		// }
+// 		// if ($(window).width() < 1600) {
+// 			if (heightElement2 > 1700) {
+// 				$('.arrow').css('display', "none")
+// 			}
+// 		// }
+// 	})
+// });
+
+
 
 
 

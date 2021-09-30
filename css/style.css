@@ -539,50 +539,114 @@
   min-height: 100vh;
   font-family: "CircularStd";
 }
-#about .about__content .about__content__fixed {
+#about .about__content .about__content__fixed .about__content__fixed-right {
+  background-color: #f8efeb;
   width: 450px;
   position: fixed;
-  right: 15px;
+  right: calc((100vw - 1445px + 2 * 15px) / 2);
   top: 100px;
 }
-#about .about__content .about__content__fixed .about__content__fixed-title {
+#about .about__content .about__content__fixed .about__content__fixed-right .about__content__fixed-right-title {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-#about .about__content .about__content__fixed .about__content__fixed-box {
+#about .about__content .about__content__fixed .about__content__fixed-right .about__content__fixed-right-box {
   border: 1px solid #B8B4B4;
   margin-bottom: 20px;
 }
-#about .about__content .about__content__fixed .about__content__fixed-box .about__content__fixed-box__subtitle {
+#about .about__content .about__content__fixed .about__content__fixed-right .about__content__fixed-right-box .about__content__fixed-right-box__subtitle {
   border-bottom: 1px solid #B8B4B4;
   text-transform: uppercase;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 10px;
 }
-#about .about__content .about__content__fixed .about__content__fixed-box .about__content__fixed-box__description {
+#about .about__content .about__content__fixed .about__content__fixed-right .about__content__fixed-right-box .about__content__fixed-right-box__description {
   padding-top: 10px;
   padding-bottom: 5px;
   padding-left: 10px;
 }
-#about .about__content .about__content__fixed .about__content__fixed-box:first-of-type:hover {
+#about .about__content .about__content__fixed .about__content__fixed-right .about__content__fixed-right-box:first-of-type:hover {
   color: #2D0A14;
   background-color: #c9bfbc;
   transition: color 0.3s;
   transition: background-color 0.3s;
 }
-#about .about__content .about__content__fixed .about__content__fixed-box:nth-of-type(2n):hover {
+#about .about__content .about__content__fixed .about__content__fixed-right .about__content__fixed-right-box:nth-of-type(2n):hover {
   color: #a25ace;
   background-color: #0b1d1c;
   transition: color 0.3s;
   transition: background-color 0.3s;
 }
-#about .about__content .about__content__fixed .about__content__fixed-box:nth-of-type(3n):hover {
+#about .about__content .about__content__fixed .about__content__fixed-right .about__content__fixed-right-box:nth-of-type(3n):hover {
   color: #6673FF;
   background-color: #003049;
   transition: color 0.3s;
   transition: background-color 0.3s;
+}
+#about .about__content .about__content__fixed .about__content__fixed-footer {
+  width: 100%;
+  background-color: #f8efeb;
+  position: fixed;
+  bottom: 33px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  right: calc((100vw - 1460px + 2 * 15px) / 2);
+  left: calc((100vw - 1460px + 2 * 15px) / 2);
+  max-width: 1418px;
+  padding: 0 15px;
+}
+#about .about__content .about__content__fixed .about__content__fixed-footer .about__content__fixed-footer__link {
+  font-size: 18px;
+  text-decoration: none;
+}
+#about .about__content .about__content__fixed .about__content__fixed-footer .about__content__fixed-footer__link h2 {
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+#about .about__content .about__content__fixed .about__content__fixed-footer .arrow {
+  display: flex;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+#about .about__content .about__content__fixed .about__content__fixed-footer .arrow span {
+  background-color: #B8B4B4;
+  width: 1px;
+  height: 30px;
+  margin-left: 20px;
+}
+#about .about__content .about__content__fixed .about__content__fixed-footer .arrow .arrow-1 {
+  transform: rotate(-45deg);
+}
+#about .about__content .about__content__fixed .about__content__fixed-footer .arrow .arrow-2 {
+  transform: rotate(45deg);
+}
+#about .about__content .about__content__scroll .about__content__scroll-image {
+  width: 450px;
+  height: 524px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #B8B4B4;
+}
+#about .about__content .about__content__scroll .about__content__scroll-flex {
+  width: 942px;
+  display: flex;
+  justify-content: space-between;
+}
+#about .about__content .about__content__scroll .about__content__scroll-flex > div {
+  width: 450px;
+}
+#part-1 {
+  height: 800px;
+}
+#part-1 .about__content__scroll-image {
+  margin-left: 246px;
+}
+#part-2 {
+  height: 800px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -1132,9 +1196,11 @@ header {
   border-bottom: 1px solid #B8B4B4;
 }
 header .header__content {
-  margin-top: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
+  max-width: 1418px;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
