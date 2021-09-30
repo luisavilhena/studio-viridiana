@@ -13,9 +13,9 @@ function menuButtonOpen() {
 
 
 
-LOADING
+///LOADING
 $(document).ready(function(){
-	$('.loading').delay(12000).fadeOut('slow')
+	$('.loading').delay(15000).fadeOut('slow')
 })
 
 
