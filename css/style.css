@@ -336,7 +336,7 @@
 }
 #project-list .project-list .project-list__item img {
   width: 450px;
-  border: 1px solid #B8B4B4;
+  border: 1px solid black;
 }
 #project-list .project-list .project-list__item .project-list__item__title {
   text-transform: uppercase;
@@ -399,14 +399,14 @@
 }
 #project-single .project-single__header .project-single__header__img img {
   width: 450px;
-  border: 1px solid #B8B4B4;
+  border: 1px solid black;
 }
 .rich-text {
   font-family: 'CirculaStd', sans-serif;
 }
 .rich-text h2 {
   font-size: 22px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .rich-text p {
   font-size: 16px;
@@ -414,10 +414,13 @@
 }
 .rich-text b,
 .rich-text strong {
-  font-weight: bold;
+  font-weight: 600;
 }
 .rich-text ul li {
   margin-bottom: 7px;
+}
+.rich-text br {
+  margin-bottom: 10px;
 }
 .image-columns {
   display: flex;
@@ -589,31 +592,36 @@
   width: 100%;
   background-color: #f8efeb;
   position: fixed;
-  bottom: 33px;
-  padding-top: 10px;
+  bottom: 25px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   right: calc((100vw - 1460px + 2 * 15px) / 2);
   left: calc((100vw - 1460px + 2 * 15px) / 2);
-  max-width: 1418px;
-  padding: 0 15px;
+  max-width: 1390px;
+  padding: 10px 15px 5px 15px;
 }
 #about .about__content .about__content__fixed .about__content__fixed-footer .about__content__fixed-footer__link {
-  font-size: 18px;
   text-decoration: none;
 }
-#about .about__content .about__content__fixed .about__content__fixed-footer .about__content__fixed-footer__link h2 {
+#about .about__content .about__content__fixed .about__content__fixed-footer .about__content__fixed-footer__link p {
+  font-size: 11px;
+}
+#about .about__content .about__content__fixed .about__content__fixed-footer .about__content__fixed-footer__link h4 {
+  font-size: 14px;
   text-decoration: underline;
   text-transform: uppercase;
 }
 #about .about__content .about__content__fixed .about__content__fixed-footer .arrow {
+  position: fixed;
+  right: 47.5%;
   display: flex;
   cursor: pointer;
   width: 50px;
   height: 50px;
 }
 #about .about__content .about__content__fixed .about__content__fixed-footer .arrow span {
-  background-color: #B8B4B4;
+  background-color: black;
   width: 1px;
   height: 30px;
   margin-left: 20px;
@@ -629,24 +637,64 @@
   height: 524px;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid #B8B4B4;
+  background-position: center;
+  border: 1px solid black;
 }
 #about .about__content .about__content__scroll .about__content__scroll-flex {
   width: 942px;
   display: flex;
-  justify-content: space-between;
+}
+#about .about__content .about__content__scroll .about__content__scroll-flex > div:first-of-type {
+  margin-right: 25px;
 }
 #about .about__content .about__content__scroll .about__content__scroll-flex > div {
   width: 450px;
 }
+#about .about__content .about__content__scroll .about__content__scroll-photo-list div {
+  width: 450px;
+  height: 152px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+#about .about__content .about__content__scroll .about__content__scroll__description {
+  font-family: "CircularStd";
+  margin-bottom: 30px;
+}
+#about .about__content .about__content__scroll .about__content__scroll-box {
+  border: 1px solid #B8B4B4;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+}
+#about .about__content .about__content__scroll .about__content__scroll-box h3 {
+  border-bottom: 1px solid #B8B4B4;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+#about .about__content .about__content__scroll .about__content__scroll-box > * {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+#about .about__content .about__content__scroll .about__content__scroll-box:hover {
+  background-color: #e3b697;
+  color: #7c4835;
+}
 #part-1 {
-  height: 800px;
+  height: 650px;
 }
 #part-1 .about__content__scroll-image {
   margin-left: 246px;
 }
 #part-2 {
-  height: 800px;
+  height: 650px;
+}
+#part-3 {
+  padding-bottom: 40px;
+}
+#part-3 h2:first-of-type {
+  margin-bottom: 0px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -779,7 +827,7 @@ table {
 ul#main-menu {
   display: flex;
   align-items: flex-end;
-  justify-content: flex-end;
+  justify-content: center;
   flex-direction: row;
   font-style: normal;
 }
@@ -795,7 +843,7 @@ ul#main-menu > li {
   padding: 10px 20px 10px 20px;
 }
 ul#main-menu > li:hover a {
-  color: #a25ace !important;
+  font-weight: 600;
 }
 #mobile-menu-trigger {
   display: none;
@@ -951,6 +999,16 @@ figure figcaption a,
     margin-top: -100px;
   }
 }
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+ul,
+li {
+  font-family: 'CircularStd', sans-serif;
+}
 h1 {
   font-size: 25px;
 }
@@ -1057,17 +1115,12 @@ q p:last-of-type {
 }
 @font-face {
   font-family: CircularStd;
-  src: url('../resources/font/CircularStd-Black.otf') format('truetype');
-  font-weight: 500;
-}
-@font-face {
-  font-family: CircularStd;
   src: url('../resources/font/CircularStd-Bold.otf') format('truetype');
   font-weight: 600;
 }
 @font-face {
   font-family: CircularStd;
-  src: url('../resources/font/CircularStd-Medium-500.ttf') format('truetype');
+  src: url('../resources/font/CircularStd-Black.otf') format('truetype');
   font-weight: 500;
 }
 @font-face {
@@ -1077,12 +1130,8 @@ q p:last-of-type {
 }
 @font-face {
   font-family: CircularStd;
-  src: url('../resources/font/CircularStd-BookItalic.otf') format('opentype');
+  src: url('../resources/font/CircularStd-BlackItalic.otf') format('opentype');
   font-style: italic;
-}
-@font-face {
-  font-family: Minion;
-  src: url('../resources/font/MinionPro-Regular.otf') format('truetype');
 }
 .structure-justify-start {
   justify-content: flex-start !important;
@@ -1194,6 +1243,10 @@ header {
   z-index: 2;
   top: 0;
   border-bottom: 1px solid #B8B4B4;
+  margin: 0 auto;
+}
+header nav {
+  width: 100%;
 }
 header .header__content {
   max-width: 1418px;
@@ -1206,7 +1259,9 @@ header .header__content {
   align-items: flex-end;
 }
 header .header__content .header-content__name {
+  position: fixed;
   margin-bottom: 10px;
+  right: calc((100vw - 1445px + 2 * 15px) / 2);
 }
 header .header__content .header-content__name h1 {
   font-family: 'CircularStd', sans-serif;
@@ -1223,6 +1278,8 @@ header .header__content .header-content__name h1 {
   }
 }
 #logo-anchor {
+  position: fixed;
+  left: calc((100vw - 1445px + 2 * 15px) / 2);
   margin-bottom: 3px;
 }
 #logo-anchor svg {

@@ -49,7 +49,7 @@ $(document).ready(function(){
 	  	const heightElement = window.pageYOffset
 	  	// const heightWindow = $(window).height()
 	  	// console.log(heightElement)
-	      $('html, body').animate({ scrollTop: $('html').offset().top  + heightElement + 800}, 1000);
+	      $('html, body').animate({ scrollTop: $('html').offset().top  + heightElement + 600}, 1000);
 	      // console.log() 
 	      // console.log(heightElement,  $('html').offset().top,  $('html').offset().top + heightElement) 
 	  });

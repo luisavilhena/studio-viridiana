@@ -55,29 +55,34 @@
 				width: 100%;
 				background-color:  @light-pink;
 				position: fixed;
-				bottom: 33px;
-				padding-top: 10px;
+				bottom: 25px;
+				margin: 0 auto;
 				display: flex;
 				justify-content: space-between;
 				right: calc((100vw - 1460px + 2 * 15px) / 2);
 				left: calc((100vw - 1460px + 2 * 15px) / 2);
-				max-width: 1418px;
-				padding: 0 15px;
+				max-width: 1390px;
+				padding: 10px 15px 5px 15px;
 				.about__content__fixed-footer__link {
-					font-size: 18px;
 					text-decoration: none;
-					h2 {
+					p {
+						font-size: 11px;
+					}
+					h4 {
+						font-size: 14px;
 						text-decoration: underline;
 						text-transform: uppercase;
 					}
 				}
 				.arrow {
+					position: fixed;
+					right: 47.5%;
 					display: flex;
 					cursor: pointer;
 					width: 50px;
 					height: 50px;
 					span {
-						background-color: @gray;
+						background-color: black;
 						width: 1px;
 						height: 30px;
 						margin-left: 20px;
@@ -97,27 +102,73 @@
 				height: 524px;
 				background-repeat: no-repeat;
 				background-size: cover;
-				border: 1px solid @gray;
+				background-position: center;
+				border: 1px solid black;
 			}
 			.about__content__scroll-flex {
 				width: 942px;
 				display: flex;
-				justify-content: space-between;
+				> div:first-of-type {
+					margin-right: 25px;
+				}
 				> div {
 					width: @width-column;
+				}
+			}
+			.about__content__scroll-photo-list {
+				div {
+					width: @width-column;
+					height: 152px;
+					background-repeat: no-repeat;
+					background-size: cover;
+					background-position: center;
+					border: 1px solid black;
+					margin-bottom: 20px;
+				}
+			}
+			.about__content__scroll__description{
+				font-family: "CircularStd";
+				margin-bottom: 30px;
+			}
+			.about__content__scroll-box {
+				border: 1px solid @gray;
+				margin-bottom:20px;
+				// padding-top: 10px;
+				padding-bottom: 5px;
+				// padding-left: 10px;
+				h3 {
+					border-bottom: 1px solid @gray;
+					text-transform: uppercase;
+					// padding-top: 5px;
+					padding-bottom: 10px;
+					// padding-left: 10px;
+				}
+				> * {
+					padding-top: 10px;
+					padding-left: 10px;
+				}
+				&:hover {
+					background-color: #e3b697;
+					color: #7c4835;
 				}
 			}
 		}
 	}
 }
 #part-1  {
-	height: 800px;
+	height: 650px;
 	.about__content__scroll-image {
 		margin-left: 246px;
 	}
 }
 #part-2  {
-	height: 800px;
+	height: 650px;
 	.about__content__scroll-image {
 	}
+}
+#part-3 {
+	padding-bottom: 40px;
+	h2:first-of-type {
+			margin-bottom: 0px;
+		}
 }
