@@ -543,7 +543,7 @@
   font-family: "CircularStd";
 }
 #about .about__content .about__content__fixed .about__content__fixed-right {
-  background-color: #f8efeb;
+  background-color: #fffef7;
   width: 450px;
   position: fixed;
   right: calc((100vw - 1445px + 2 * 15px) / 2);
@@ -590,7 +590,7 @@
 }
 #about .about__content .about__content__fixed .about__content__fixed-footer {
   width: 100%;
-  background-color: #f8efeb;
+  background-color: #fffef7;
   position: fixed;
   bottom: 33px;
   margin: 0 auto;
@@ -1098,7 +1098,7 @@ q p:last-of-type {
   margin: 0 auto;
 }
 .structure-color-light-pink {
-  background-color: #f8efeb;
+  background-color: #fffef7;
   color: black;
   border-color: #B8B4B4;
 }
