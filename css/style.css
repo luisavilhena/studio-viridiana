@@ -599,7 +599,7 @@
   right: calc((100vw - 1460px + 2 * 15px) / 2);
   left: calc((100vw - 1460px + 2 * 15px) / 2);
   max-width: 1390px;
-  padding: 10px 15px 5px 15px;
+  padding: 10px 15px 8px 15px;
 }
 #about .about__content .about__content__fixed .about__content__fixed-footer .about__content__fixed-footer__link {
   text-decoration: none;
