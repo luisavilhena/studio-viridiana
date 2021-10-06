@@ -1,24 +1,106 @@
 form.wpcf7-form  {
-	font-family: 'Arial', sans-serif;
+	// padding-left: 25%;
+	// padding-top: 80px;
+	max-width: @width-column;
+	margin: 0 auto;
 	p {
-		margin-bottom: 20px;
+		margin-bottom: 0px;
+	}
+	p:last-of-type{
+		border: none;
+	}
+	label {
+		height: 32px;
 	}
 	input, textarea {
+		border: none;
+		background-color: @light-pink;
+		color: black;
+		padding: 5px 10px;
+		font-size: 15px;
+		font-family: 'CircularStd', sans-serif;
+		box-sizing: border-box;
+		font-weight: 300;
+		border: 1px solid @gray;
+		border-bottom: none;
 		width: 100%;
-		padding: 5px;
-		border: 1px solid black;
-		margin-top: 5px;
+		border-radius: 0;
 	}
-
+	input::placeholder {
+		color: black;
+		// padding-left: 10%;
+	}
+	textarea::placeholder {
+		color: black;
+		// padding-left: 10%;
+	}
+	textarea {
+		// height: 17.5vh;
+	}
 	input[type="submit"] {
 		width: auto;
-    padding: 5px;
-    padding: 10px 15px;
+		margin-top: -3px;
+    padding: 5px 10px;
     background-color: transparent;
-    font-size: 16px;
+    font-size: 15px;
+    width: 100%;
+    font-weight: 300;
+    text-align: left;
+    border: 1px solid @gray;
 	}
-	input[type="submit"]:hover {
-		color: rgb(247, 186, 50);
-		border:rgb(247, 186, 50);
+	input:-webkit-autofill, 
+	input:-webkit-autofill:hover, 
+	input:-webkit-autofill:focus, 
+	input:-webkit-autofill:active {
+	    -webkit-transition-delay: 99999s;
+	    background-color: @light-pink;
+	}
+	.submit-arrow {
+		position: relative;
+		.arrow {
+			position: absolute;
+			top: 7px;
+			right: 10px;
+			display: flex;
+			flex-direction: column;
+			cursor: pointer;
+			// width: 50px;
+			// height: 50px;
+			span {
+				background-color: black;
+				height: 1px;
+				width: 15px;
+				// margin-left: 20px;
+			}
+			.arrow-1 {
+				transform: rotate(45deg);
+				margin-bottom: 10px;
+			}
+			.arrow-2 {
+				transform: rotate(-45deg)
+			}
+		}
+	}
+}
+.wpcf7 .ajax-loader {
+	display: none;
+}
+@media screen and (max-width: @screen-sm) {
+	form.wpcf7-form  {
+		margin-right: -1%;
+		margin-top: 28vh;
+		// position: absolute;
+		// bottom: 0;
+		p.title {
+			padding-left: 1%;
+
+		}
+		input, textarea {
+			padding-left: 1%;
+			width: 98.3%;
+		}
+		input[type="submit"] {
+			padding-left: 1%;
+		}
 	}
 }

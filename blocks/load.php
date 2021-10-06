@@ -3,6 +3,7 @@
 	require('image-columns.php');
 	require('one-image.php');
 	require('text-box.php');
+		require('social-media.php');
 
 
 	require('title_img.php');
