@@ -4,17 +4,22 @@
 	justify-content: center;
 	flex-wrap: wrap;
 	margin-top: 30px;
-	.image-columns__item {
+	> .image-columns__item {
 		margin-left: 5px;
 		margin-right: 5px;
 		margin-bottom: 10px;
-		div {
+		> .image-columns__item__img {
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
 			width: @width-column;
 			height: 524px;
 			border: 1px solid @gray;
+		}
+		> .image-columns__item__description {
+			margin-top: 30px;
+			width: @width-column;
+
 		}
 	}
 }

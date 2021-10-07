@@ -429,18 +429,22 @@
   flex-wrap: wrap;
   margin-top: 30px;
 }
-.image-columns .image-columns__item {
+.image-columns > .image-columns__item {
   margin-left: 5px;
   margin-right: 5px;
   margin-bottom: 10px;
 }
-.image-columns .image-columns__item div {
+.image-columns > .image-columns__item > .image-columns__item__img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   width: 450px;
   height: 524px;
   border: 1px solid #615e5e;
+}
+.image-columns > .image-columns__item > .image-columns__item__description {
+  margin-top: 30px;
+  width: 450px;
 }
 .one-image {
   display: flex;
@@ -467,7 +471,7 @@
   margin-top: 45px;
   margin-bottom: 45px;
 }
-.text-box .text-box__item {
+.text-box > .text-box__item {
   position: relative;
   width: 450px;
   box-sizing: border-box;
@@ -480,12 +484,12 @@
   padding-bottom: 5px;
   border-bottom-color: transparent;
 }
-.text-box .text-box__item h3 {
+.text-box > .text-box__item > h3 {
   padding-left: 10px;
   text-transform: uppercase;
   font-family: 'CircularStd';
 }
-.text-box .text-box__item .text-box__item__more .text-box__item__more-button {
+.text-box > .text-box__item .text-box__item__more > .text-box__item__more-button {
   position: absolute;
   box-sizing: border-box;
   border-left-width: 1px;
@@ -497,45 +501,48 @@
   height: 28px;
   width: 30px;
 }
-.text-box .text-box__item .text-box__item__more .text-box__item__more-button div {
+.text-box > .text-box__item .text-box__item__more > .text-box__item__more-button > div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 12px;
 }
-.text-box .text-box__item .text-box__item__more .text-box__item__more-button div span {
+.text-box > .text-box__item .text-box__item__more > .text-box__item__more-button > div span {
   background-color: #615e5e;
   width: 16px;
   height: 1px;
 }
-.text-box .text-box__item .text-box__item__more .text-box__item__more-button div span:nth-of-type(2n) {
+.text-box > .text-box__item .text-box__item__more > .text-box__item__more-button > div span:nth-of-type(2n) {
   transform: rotate(90deg);
   transition: transform 0.3s;
 }
-.text-box .text-box__item .text-box__item__more-text {
+.text-box > .text-box__item .text-box__item__more-text {
   display: none;
   margin-top: 15px;
   padding-left: 10px;
 }
-.text-box .text-box__item .active.text-box__item__more ~ .text-box__item__more-text {
+.text-box > .text-box__item .active.text-box__item__more ~ .text-box__item__more-text {
   display: block;
 }
-.text-box .text-box__item .active.text-box__item__more {
+.text-box > .text-box__item .active.text-box__item__more {
   width: 100%;
   height: 6px;
   display: block;
   border-bottom: 1px #615e5e solid;
 }
-.text-box .text-box__item .active.text-box__item__more .text-box__item__more-button {
+.text-box > .text-box__item .active.text-box__item__more .text-box__item__more-button {
   border-bottom-width: 1px;
 }
-.text-box .text-box__item .active.text-box__item__more .text-box__item__more-button div span:nth-of-type(2n) {
+.text-box > .text-box__item .active.text-box__item__more .text-box__item__more-button div span:nth-of-type(2n) {
   transform: rotate(0deg);
   transition: transform 0.3s;
 }
 .text-box .text-box__item:last-of-type {
   border-bottom-color: #615e5e;
+}
+.image-columns .text-box {
+  margin-top: 30px;
 }
 #about {
   position: relative;
@@ -721,6 +728,184 @@
 }
 .social-media .social-media__social a span {
   text-decoration: underline;
+}
+.months_num_in_row_2 .datepick-one-month {
+  background-color: #fffef7;
+  border: 1px solid black;
+}
+.datepick-inline .calendar-links {
+  background-color: #fffef7;
+  border-bottom: none;
+  width: 95% !important;
+}
+.control-label {
+  display: none;
+}
+.wpbc_structure_calendar > div:nth-of-type(2n) {
+  display: none;
+}
+.wpbc_structure_form .btn {
+  margin: 30px 0;
+}
+.wpbc_structure_form .form-group {
+  margin: 35px 0px !important;
+}
+.wpbc_structure_form .form-group:not(:first-of-type) {
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+}
+.wpbc_structure_form .form-group:last-of-type {
+  display: flex;
+  justify-content: space-around;
+}
+.wpbc_structure_form .form-group:last-of-type .btn {
+  margin-bottom: 20px;
+  border-radius: 0px;
+  background-color: #fffef7;
+  border: 1px solid black;
+  color: black;
+  font-family: "CircularStd";
+}
+.wpbc_structure_form .form-group:nth-of-type(4n) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.wpbc_structure_form .control-label {
+  display: none;
+}
+.wpbc_structure_form .wpbc_times_selector > div {
+  flex: 0 0 97px !important;
+  margin: 7px 12px 0 0 !important;
+  background-color: #fffef7;
+  border-radius: 0px;
+  box-shadow: none;
+  color: black;
+  font-family: "CircularStd";
+  border: solid 1px black;
+}
+.wpbc_structure_form .wpbc_times_selector > div.wpbc_time_selected {
+  background-color: #c9bfbc;
+  border-radius: 0px;
+  box-shadow: none;
+  color: black;
+  font-family: "CircularStd";
+}
+.booking_form #name1 {
+  border-top: 1px solid black !important;
+}
+.booking_form input[type="text"] {
+  width: 94% !important;
+  border: 1px solid black !important;
+  border-radius: 0px !important;
+  background-color: #fffef7 !important;
+  color: black !important;
+  font-family: "CircularStd";
+  border-top: none !important;
+}
+input::placeholder {
+  color: black;
+  font-size: 14px;
+}
+.datepick-inline {
+  box-shadow: none !important;
+  border: none !important;
+  background: transparent !important;
+}
+.datepick-inline .calendar-links .datepick-next a,
+.datepick-inline .calendar-links .datepick-prev a {
+  color: black !important;
+}
+.datepick-title-row {
+  display: none;
+}
+.months_num_in_row_2 .datepick-one-month {
+  width: 48% !important;
+  margin-right: 8px !important;
+  margin-bottom: 8px !important;
+}
+.datepick-inline .calendar-links {
+  background: none !important;
+  background-color: transparent !important;
+  border-bottom: none !important;
+}
+div.datepick-inline .datepick-title-row th {
+  color: black !important;
+}
+.datepick-inline .datepick-multi {
+  border: none;
+  display: flex !important;
+  justify-content: space-between !important;
+  flex-wrap: wrap;
+}
+.datepick-inline .datepick-header {
+  color: black !important;
+  text-shadow: none !important;
+}
+.wpbc_timeslot_day_bg_as_available .datepick-inline .date_available {
+  color: black !important;
+  text-shadow: none !important;
+}
+.block_hints .block_free,
+.block_hints .block_time,
+.block_hints .block_check_in_out div.check-in-div,
+.block_hints .block_check_in_out div.check-out-div,
+.datepick-inline .date_available,
+.datepick-inline .timespartly.check_in_time div.check-in-div,
+.datepick-inline .timespartly.check_out_time div.check-out-div {
+  background: none !important;
+  color: black !important;
+}
+.block_hints .block_free,
+.block_hints .block_time,
+.block_hints .block_booked,
+.block_hints .block_pending,
+.block_hints .block_check_in_out,
+.datepick-inline .datepick-days-cell {
+  border: none !important;
+}
+div.datepick-inline .datepick-title-row th {
+  border: none !important;
+}
+.block_hints .block_free,
+.block_hints .block_time,
+.block_hints .block_booked,
+.block_hints .block_pending,
+.block_hints .block_check_in_out,
+.datepick-inline .datepick-days-cell {
+  font-family: "CircularStd";
+}
+.block_hints .block_free a,
+.block_hints .block_time,
+.datepick-inline .date_available a {
+  text-shadow: none !important;
+  color: black !important;
+}
+.block_hints .date2approve.block_check_in_out,
+.block_hints .block_pending,
+.datepick-inline .date2approve,
+.block_hints .block_pending a,
+.datepick-inline .date2approve a {
+  text-shadow: none !important;
+}
+.block_hints .date2approve.block_check_in_out,
+.block_hints .block_pending,
+.datepick-inline .date2approve,
+.block_hints .block_pending a,
+.datepick-inline .date2approve a {
+  background-color: #c9bfbc !important;
+}
+.datepick-inline .date2approve {
+  color: black !important;
+}
+.datepick-inline .datepick-one-month .datepick .datepick-current-day {
+  background-color: #c9bfbc !important;
+}
+.submiting_content.wpdev-help-message.alert.alert-warning.alert-success {
+  margin: 0 auto !important;
+}
+.datepick-inline .calendar-links .datepick-prev {
+  left: 2% !important;
 }
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -1271,6 +1456,7 @@ header {
   top: 0;
   border-bottom: 1px solid #615e5e;
   margin: 0 auto;
+  z-index: 9999;
 }
 header nav {
   width: 100%;
@@ -1366,6 +1552,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  z-index: 9999;
 }
 footer .footer__content {
   margin-top: 5px;

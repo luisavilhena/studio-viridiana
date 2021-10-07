@@ -11,7 +11,11 @@ function menuButtonOpen() {
 }
 
 
-
+$(document).ready(function(){
+	$('#name1').attr("placeholder", "NAME")
+	$('#email1').attr("placeholder", "E-MAIL")
+	$('.captachinput').attr("placeholder", "RECAPCTHA")
+})
 
 ///LOADING
 $(document).ready(function(){

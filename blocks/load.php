@@ -3,7 +3,8 @@
 	require('image-columns.php');
 	require('one-image.php');
 	require('text-box.php');
-		require('social-media.php');
+	require('social-media.php');
+	require('columns-image-text-box.php');
 
 
 	require('title_img.php');

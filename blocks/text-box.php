@@ -13,8 +13,6 @@ function text_box() {
 					'structure-color-light-pink' => light,
 					'structure-color-green' => dark,
 				) ),
-			Field::make( 'color', 'background', 'Background' )
-			    ->set_palette( array( '#0b1d1c', '#f8efeb')),
 			Field::make('complex', 'topic', 'Topic')
 			  ->add_fields(array(
 			    Field::make('text', 'text', 'Text'),
