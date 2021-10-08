@@ -1,4 +1,5 @@
 .loading {
+  z-index: 9999;
   font-family: "CircularStd";
   position: fixed;
   top: 0;
@@ -9,7 +10,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  z-index: 100;
   align-items: center;
   text-transform: uppercase;
 }
@@ -32,6 +32,9 @@
   margin-right: 1px;
   margin-left: 1px;
 }
+.loading .loading_first-line {
+  letter-spacing: 4px;
+}
 .loading .loading_first-line .loading_first-line_studio,
 .loading .loading_first-line .loading_first-line_viridiana {
   font-size: 58px;
@@ -49,7 +52,7 @@
   margin-right: 15px;
 }
 .loading .loading_viridiana_v {
-  animation: animation1 1s linear;
+  animation: animation1 0.5s linear;
 }
 @keyframes animation1 {
   0% {
@@ -63,7 +66,7 @@
 .loading .loading_studio_s,
 .loading .loading_interiors_i,
 .loading .loading_design_n {
-  animation: animation2 2s linear;
+  animation: animation2 1s linear;
 }
 @keyframes animation2 {
   0% {
@@ -85,7 +88,7 @@
 }
 .loading .loading_studio_d,
 .loading .loading_interiors_i2 {
-  animation: animation3 4s linear;
+  animation: animation3 1.5s linear;
 }
 @keyframes animation3 {
   0% {
@@ -107,7 +110,7 @@
 }
 .loading .loading_viridiana_r,
 .loading .loading_interiors_o {
-  animation: animation4 6s linear;
+  animation: animation4 2s linear;
 }
 @keyframes animation4 {
   0% {
@@ -130,7 +133,7 @@
 .loading .loading_interiors_r,
 .loading .loading_design_d,
 .loading .loading_studio_t {
-  animation: animation5 7s linear;
+  animation: animation5 2.5s linear;
 }
 @keyframes animation5 {
   0% {
@@ -154,7 +157,7 @@
 .loading .loading_interiors_n,
 .loading .loading_design_s,
 .loading .loading_interiors_t {
-  animation: animation6 8s linear;
+  animation: animation6 3s linear;
 }
 @keyframes animation6 {
   0% {
@@ -178,7 +181,7 @@
 .loading .loading_design_g,
 .loading .loading_interiors_n,
 .loading .loading_viridiana_i3 {
-  animation: animation7 9s linear;
+  animation: animation7 3.5s linear;
 }
 @keyframes animation7 {
   0% {
@@ -202,7 +205,7 @@
 .loading .loading_interiors_r2,
 .loading .loading_viridiana_a,
 .loading .loading_design_i {
-  animation: animation8 10s linear;
+  animation: animation8 4s linear;
 }
 @keyframes animation8 {
   0% {
@@ -225,7 +228,7 @@
 .loading .loading_viridiana_i2,
 .loading .loading_interiors_s,
 .loading .loading_interiors_n {
-  animation: animation8 11s linear;
+  animation: animation8 4.5s linear;
 }
 @keyframes animation8 {
   0% {
@@ -249,7 +252,7 @@
 .loading .loading_interiors_i2,
 .loading .loading_interiors_e,
 .loading .loading_studio_o {
-  animation: animation9 12s linear;
+  animation: animation9 5s linear;
 }
 @keyframes animation9 {
   0% {
@@ -260,7 +263,7 @@
     color: transparent;
     transition: color 0s;
   }
-  95% {
+  87% {
     color: #a25ace;
     transition: color 0s;
   }
@@ -271,7 +274,7 @@
 }
 .loading .loading_studio_u,
 .loading .loading_design_e {
-  animation: animation10 13s linear;
+  animation: animation10 5.5s linear;
 }
 @keyframes animation10 {
   0% {
@@ -282,7 +285,7 @@
     color: transparent;
     transition: color 0s;
   }
-  95% {
+  87% {
     color: #a25ace;
     transition: color 0s;
   }
@@ -292,7 +295,7 @@
   }
 }
 .loading .loading_e {
-  animation: animation8 15s linear;
+  animation: animation8 6.2s linear;
 }
 @keyframes animation8 {
   0% {
@@ -341,7 +344,7 @@
 #project-list .project-list .project-list__item .project-list__item__title {
   text-transform: uppercase;
   position: absolute;
-  top: 20px;
+  top: 50px;
   font-size: 18px;
   color: transparent;
   font-family: 'CircularStd';
@@ -401,14 +404,51 @@
   width: 450px;
   border: 1px solid black;
 }
+#project-single .post-password-form {
+  width: 450px;
+  margin: 20px auto;
+}
+#project-single .post-password-form input[type="submit"] {
+  border: 1px solid black;
+  border-radius: 0;
+  background-color: #fffef7;
+  padding: 10px;
+  text-align: left;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+#project-single .post-password-form p:nth-of-type(2n) {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#project-single .post-password-form p:nth-of-type(2n) label {
+  color: transparent !important;
+}
+#project-single .post-password-form p:nth-of-type(2n) input[type="password"] {
+  width: 95.3%;
+  background-color: #fffef7;
+  padding: 10px;
+  border: black 1px solid;
+  border-bottom: none;
+}
 .rich-text {
   font-family: 'CirculaStd', sans-serif;
+  margin-right: 10px;
 }
 .rich-text h2 {
   font-size: 22px;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
+.rich-text h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.rich-text > span,
 .rich-text p {
+  line-height: 17px;
   font-size: 16px;
   margin-bottom: 10px;
 }
@@ -416,11 +456,22 @@
 .rich-text strong {
   font-weight: 600;
 }
+.rich-text a {
+  color: black;
+  text-decoration: underline;
+}
 .rich-text ul li {
   margin-bottom: 7px;
 }
 .rich-text br {
   margin-bottom: 10px;
+}
+.rich-text img {
+  width: 100%;
+  height: auto;
+}
+.rich-text .captcha_img {
+  width: auto;
 }
 .image-columns {
   display: flex;
@@ -440,11 +491,15 @@
   background-position: center;
   width: 450px;
   height: 524px;
-  border: 1px solid #615e5e;
+  border: 1px solid black;
+  cursor: pointer;
 }
 .image-columns > .image-columns__item > .image-columns__item__description {
   margin-top: 30px;
   width: 450px;
+}
+.image-columns--special-item > .image-columns__item > .image-columns__item__img {
+  cursor: default;
 }
 .one-image {
   display: flex;
@@ -456,12 +511,13 @@
   margin-bottom: 10px;
 }
 .one-image .one-image__item div {
+  cursor: pointer;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   width: 910px;
   height: 700px;
-  border: 1px solid #615e5e;
+  border: 1px solid black;
 }
 .text-box {
   display: flex;
@@ -527,7 +583,7 @@
 }
 .text-box > .text-box__item .active.text-box__item__more {
   width: 100%;
-  height: 6px;
+  height: 4px;
   display: block;
   border-bottom: 1px #615e5e solid;
 }
@@ -560,6 +616,9 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 30px;
+}
+#about .about__content .about__content__fixed .about__content__fixed-right .about__content__fixed-right-title h3 {
+  font-size: 18px;
 }
 #about .about__content .about__content__fixed .about__content__fixed-right .about__content__fixed-right-box {
   border: 1px solid #615e5e;
@@ -622,10 +681,10 @@
 }
 #about .about__content .about__content__fixed .about__content__fixed-footer .arrow {
   position: fixed;
-  right: 47.5%;
+  right: 48.5%;
   display: flex;
   cursor: pointer;
-  width: 50px;
+  width: 52px;
   height: 50px;
 }
 #about .about__content .about__content__fixed .about__content__fixed-footer .arrow span {
@@ -660,7 +719,7 @@
 }
 #about .about__content .about__content__scroll .about__content__scroll-photo-list div {
   width: 450px;
-  height: 152px;
+  height: 222px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -694,6 +753,7 @@
 }
 #part-1 .about__content__scroll-image {
   margin-left: 246px;
+  margin-top: 16px;
 }
 #part-2 {
   height: 650px;
@@ -701,7 +761,7 @@
 #part-3 {
   padding-bottom: 40px;
 }
-#part-3 h2:first-of-type {
+#part-3 h3:first-of-type {
   margin-bottom: 0px;
 }
 .social-media {
@@ -907,6 +967,12 @@ div.datepick-inline .datepick-title-row th {
 .datepick-inline .calendar-links .datepick-prev {
   left: 2% !important;
 }
+.featherlight .featherlight-content {
+  background-color: #fffef7 !important;
+}
+.featherlight .featherlight-image {
+  border: 1px solid black;
+}
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -1042,19 +1108,30 @@ ul#main-menu {
   flex-direction: row;
   font-style: normal;
 }
-ul#main-menu li {
+ul#main-menu > li {
   display: flex;
+  padding: 10px 0px 10px 30px;
 }
-ul#main-menu li a {
+ul#main-menu > li a {
+  position: relative;
   text-decoration: none;
   font-family: 'CircularStd', sans-serif;
   text-transform: uppercase;
 }
-ul#main-menu > li {
-  padding: 10px 20px 10px 20px;
+ul#main-menu > li:hover a:after {
+  content: " ";
+  width: 100%;
+  height: 2px;
+  display: block;
+  position: absolute;
+  top: 25px;
+  background-color: #615e5e;
 }
-ul#main-menu > li:hover a {
-  font-weight: 600;
+ul#main-menu > li:first-of-type {
+  padding-left: 0px;
+}
+ul#main-menu > li:last-of-type {
+  padding-right: 0px;
 }
 #mobile-menu-trigger {
   display: none;
@@ -1224,13 +1301,13 @@ h1 {
   font-size: 25px;
 }
 h2 {
-  font-size: 18px;
+  font-size: 22px;
 }
 h3 {
-  font-size: 16px;
+  font-size: 18px;
 }
 h4 {
-  font-size: 65px;
+  font-size: 16px;
 }
 p {
   font-size: 16px;
@@ -1251,13 +1328,6 @@ q {
 blockquote p:last-of-type,
 q p:last-of-type {
   margin-bottom: 15px;
-}
-.template-tc > p,
-.template-tc > h2,
-.template-tc > blockquote {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 900px;
 }
 @media screen and (max-width: 580px) {
   h1 {
@@ -1332,13 +1402,13 @@ q p:last-of-type {
 }
 @font-face {
   font-family: CircularStd;
-  src: url('../resources/font/CircularStd-Black.otf') format('truetype');
-  font-weight: 500;
+  src: url('../resources/font/CircularStd-Book.otf') format('truetype');
+  font-weight: 400;
 }
 @font-face {
   font-family: CircularStd;
   src: url('../resources/font/CircularStd-Medium.otf') format('truetype');
-  font-weight: 400;
+  font-weight: 500;
 }
 @font-face {
   font-family: CircularStd;
@@ -1456,7 +1526,7 @@ header {
   top: 0;
   border-bottom: 1px solid #615e5e;
   margin: 0 auto;
-  z-index: 9999;
+  z-index: 999;
 }
 header nav {
   width: 100%;
@@ -1472,6 +1542,7 @@ header .header__content {
   align-items: flex-end;
 }
 header .header__content .header-content__name {
+  text-decoration: none;
   position: fixed;
   margin-bottom: 10px;
   right: calc((100vw - 1445px + 2 * 15px) / 2);
@@ -1479,6 +1550,7 @@ header .header__content .header-content__name {
 header .header__content .header-content__name h1 {
   font-family: 'CircularStd', sans-serif;
   letter-spacing: 2px;
+  font-weight: 400;
 }
 @media screen and (max-width: 580px) {
   header {
@@ -1552,7 +1624,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: 9999;
+  z-index: 99;
 }
 footer .footer__content {
   margin-top: 5px;
@@ -1564,6 +1636,7 @@ footer .footer__content {
 footer .footer__content .footer__content__icons {
   display: flex;
   justify-content: center;
+  margin-right: 29px;
 }
 footer .footer__content .footer__content__icons svg {
   width: 20px;

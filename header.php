@@ -23,6 +23,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+
 
 	<?php wp_head(); ?>
 	
@@ -81,9 +83,11 @@
           href="<?php echo get_home_url(); ?>?s=">
         </a>
       </nav>
-      <div class="header-content__name">
+      <a
+        class="header-content__name"
+        href="<?php echo get_home_url(); ?>">
         <h1>STUDIO VIRIDIANA</h1>
-      </div>
+      </a>
     </div>
 	  
 	</header>

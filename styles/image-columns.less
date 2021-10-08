@@ -14,12 +14,20 @@
 			background-position: center;
 			width: @width-column;
 			height: 524px;
-			border: 1px solid @gray;
+			border: 1px solid black;
+			cursor: pointer;
 		}
 		> .image-columns__item__description {
 			margin-top: 30px;
 			width: @width-column;
 
+		}
+	}
+}
+.image-columns--special-item {
+	> .image-columns__item {
+		> .image-columns__item__img {
+			cursor: default;
 		}
 	}
 }

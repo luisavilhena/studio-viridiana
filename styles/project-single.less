@@ -45,5 +45,32 @@
 			}
 		}
 	}
-
+	.post-password-form {
+		width: @width-column;
+		margin: 20px auto;
+		input[type="submit"] {
+			border: 1px solid black;
+			border-radius: 0;
+			background-color: @light-pink;
+			padding: 10px;
+			text-align: left;
+			text-transform: uppercase;
+			cursor: pointer;
+		}
+		p:nth-of-type(2n) {
+			display: flex;
+			justify-content: space-between;
+			flex-direction: column;
+			label {
+				color: transparent !important;
+			}
+			input[type="password"]{
+				width: 95.3%;
+				background-color: @light-pink;
+		    padding: 10px;
+		    border: black 1px solid;
+		    border-bottom: none;
+			}
+		}
+	}
 }

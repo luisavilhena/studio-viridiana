@@ -29,7 +29,7 @@ function columns_image_text_box() {
  
 			// ob_start();
 			?>
-			<div class="image-columns">
+			<div class="image-columns  image-columns--special-item">
 				<?php foreach ($block['columns'] as $columns) : ?>
 				<div class="image-columns__item">
 					<div class="image-columns__item__img" style="background-image: url('<?php echo wp_get_attachment_image_src($columns['img'],'ap_image_desktop_full_no_crop')[0]; ?>');">

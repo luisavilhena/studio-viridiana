@@ -8,29 +8,29 @@ get_header(); ?>
 	<div class="about__content structure-container__content">
 		<div class="about__content__fixed">
 			<div class="about__content__fixed-right">
-				<h2 class="about__content__fixed-right-title">
+				<h3 class="about__content__fixed-right-title">
 					<?php echo carbon_get_theme_option('fixed_title'); ?>
-				</h2>
+				</h3>
 				<div class="about__content__fixed-right-box">
-					<h3 class="about__content__fixed-right-box__subtitle">
+					<h4 class="about__content__fixed-right-box__subtitle">
 						<?php echo carbon_get_theme_option('fixed_subtile_1'); ?>
-					</h3>
+					</h4>
 					<div class="about__content__fixed-right-box__description rich-text">
 						<?php echo carbon_get_theme_option('fixed_description_1'); ?>
 					</div>
 				</div>
 				<div class="about__content__fixed-right-box">
-					<h3 class="about__content__fixed-right-box__subtitle">
+					<h4 class="about__content__fixed-right-box__subtitle">
 						<?php echo carbon_get_theme_option('fixed_subtile_2'); ?>
-					</h3>
+					</h4>
 					<div class="about__content__fixed-right-box__description rich-text">
 						<?php echo carbon_get_theme_option('fixed_description_2'); ?>
 					</div>
 				</div>
 				<div class="about__content__fixed-right-box">
-					<h3 class="about__content__fixed-right-box__subtitle">
+					<h4 class="about__content__fixed-right-box__subtitle">
 						<?php echo carbon_get_theme_option('fixed_subtile_3'); ?>
-					</h3>
+					</h4>
 					<div class="about__content__fixed-right-box__description rich-text">
 						<?php echo carbon_get_theme_option('fixed_description_3'); ?>
 					</div>

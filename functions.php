@@ -3,9 +3,9 @@
 	function studio_viridiana(){
 		wp_enqueue_style('customstyle', get_template_directory_uri() . '/css/style.css', array(), '1.0.0', 'all');
 		wp_enqueue_script('customjs',  get_template_directory_uri() . '/js/index.js', array(), NULL, false );
-    wp_enqueue_script('slickjs',  get_template_directory_uri() . '/slick/slick.min.js', array(), '1.8.0', true);
-    wp_enqueue_style('slickcss', get_template_directory_uri() . '/slick/slick.css', array(), '1.8.0', 'all');
-    wp_enqueue_style('slicktheme', get_template_directory_uri() . '/slick/slick-theme.css', array(), '1.8.0', 'all');
+        wp_enqueue_script('slickjs',  get_template_directory_uri() . '/slick/slick.min.js', array(), '1.8.0', true);
+        wp_enqueue_style('slickcss', get_template_directory_uri() . '/slick/slick.css', array(), '1.8.0', 'all');
+        wp_enqueue_style('slicktheme', get_template_directory_uri() . '/slick/slick-theme.css', array(), '1.8.0', 'all');
 	}
 
 
@@ -24,6 +24,7 @@ function crb_attach_theme_options() {
             Field::make( 'text', 'instagram', 'Instagram' ),
             Field::make( 'text', 'phone', 'Phone' ),
             Field::make( 'text', 'description', 'Descrição' ),
+            Field::make( 'text', 'link', 'Link de Shop' ),
         ) );
 }
 

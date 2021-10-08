@@ -1,6 +1,7 @@
 @import './structure.less';
 
 .loading {
+	z-index: 9999;
 	font-family: "CircularStd";
 	position: fixed;
 	top:0;
@@ -11,7 +12,6 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	z-index: 100;
 	align-items: center;
 	text-transform: uppercase;
 	.loading_first-line,
@@ -28,6 +28,7 @@
 		}
 	}
 	.loading_first-line {
+		letter-spacing: 4px;
 		.loading_first-line_studio,
 		.loading_first-line_viridiana {
 			font-size: 58px;
@@ -48,7 +49,7 @@
 		}
 	}
 	.loading_viridiana_v {
-		animation: animation1 1s linear;
+		animation: animation1 0.5s linear;
 
 		@keyframes animation1 {
 		  0% {
@@ -66,7 +67,7 @@
 	.loading_studio_s,
 	.loading_interiors_i,
 	.loading_design_n {
-		animation: animation2 2s linear;
+		animation: animation2 1s linear;
 
 		@keyframes animation2 {
 		  0% {
@@ -89,7 +90,7 @@
 	}
 	.loading_studio_d,
 	.loading_interiors_i2 {
-		animation: animation3 4s linear;
+		animation: animation3 1.5s linear;
 
 		@keyframes animation3 {
 		  0% {
@@ -112,7 +113,7 @@
 	}
 	.loading_viridiana_r,
 	.loading_interiors_o {
-		animation: animation4 6s linear;
+		animation: animation4 2s linear;
 
 		@keyframes animation4 {
 		  0% {
@@ -136,7 +137,7 @@
 	.loading_interiors_r,
 	.loading_design_d,
 	.loading_studio_t {
-		animation: animation5 7s linear;
+		animation: animation5 2.5s linear;
 
 		@keyframes animation5 {
 		  0% {
@@ -161,7 +162,7 @@
 	.loading_interiors_n,
 	.loading_design_s,
 	.loading_interiors_t {
-		animation: animation6 8s linear;
+		animation: animation6 3s linear;
 
 		@keyframes animation6 {
 			0% {
@@ -186,7 +187,7 @@
 	.loading_design_g,
 	.loading_interiors_n,
 	.loading_viridiana_i3{
-		animation: animation7 9s linear;
+		animation: animation7 3.5s linear;
 
 		@keyframes animation7 {
 			0% {
@@ -212,7 +213,7 @@
 	.loading_interiors_r2,
 	.loading_viridiana_a,
 	.loading_design_i, {
-		animation: animation8 10s linear;
+		animation: animation8 4s linear;
 
 		@keyframes animation8 {
 			0% {
@@ -236,7 +237,7 @@
 	.loading_viridiana_i2,
 	.loading_interiors_s,
 	.loading_interiors_n, {
-		animation: animation8 11s linear;
+		animation: animation8 4.5s linear;
 
 		@keyframes animation8 {
 			0% {
@@ -261,7 +262,7 @@
 	.loading_interiors_i2,
 	.loading_interiors_e,
 	.loading_studio_o, {
-		animation: animation9 12s linear;
+		animation: animation9 5s linear;
 
 		@keyframes animation9 {
 			0% {
@@ -272,7 +273,7 @@
 				color: transparent;
 				transition: color 0s;
 			}
-			95% {
+			87% {
 				color: @purple;
 				transition: color 0s;
 			}
@@ -284,7 +285,7 @@
 	}
 	.loading_studio_u,
 	.loading_design_e {
-		animation: animation10 13s linear;
+		animation: animation10 5.5s linear;
 
 		@keyframes animation10 {
 			0% {
@@ -295,7 +296,7 @@
 				color: transparent;
 				transition: color 0s;
 			}
-			95% {
+			87% {
 				color: @purple;
 				transition: color 0s;
 			}
@@ -306,7 +307,7 @@
 		}
 	}
 	.loading_e {
-		animation: animation8 15s linear;
+		animation: animation8 6.2s linear;
 
 		@keyframes animation8 {
 			0% {

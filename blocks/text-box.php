@@ -28,7 +28,7 @@ function text_box() {
 			// ob_start();
 			?>
  
-			<div class="text-box <?php echo $block['select']?>" style="background-color: <?php echo $block['background']?>">
+			<div class="text-box <?php echo $block['select']?>">
 				<?php foreach ($block['topic'] as $topic) : ?>
 				<div class="text-box__item">
 					<h3><?php echo $topic['text']; ?></h3>

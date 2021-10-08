@@ -15,11 +15,12 @@ $(document).ready(function(){
 	$('#name1').attr("placeholder", "NAME")
 	$('#email1').attr("placeholder", "E-MAIL")
 	$('.captachinput').attr("placeholder", "RECAPCTHA")
+	$('input[type="password"]').attr("placeholder", "PASSWORD")
 })
 
-///LOADING
+//LOADING
 $(document).ready(function(){
-	$('.loading').delay(15000).fadeOut('slow')
+	$('.loading').delay(7000).fadeOut('slow')
 })
 
 
@@ -40,6 +41,7 @@ $(document).ready(function(){
 	$('footer').css('color', color)
 	$('footer svg').css('fill', color)
 	$('header svg').css('fill', color)
+	$('header h1').css('color', color)
 
 	$('#main-menu li a').css('color', color)
 })
