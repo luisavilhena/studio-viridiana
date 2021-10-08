@@ -681,7 +681,9 @@
 }
 #about .about__content .about__content__fixed .about__content__fixed-footer .arrow {
   position: fixed;
-  right: 48.5%;
+  left: 50%;
+  margin-left: -5px;
+  transform: translate(-50%, 0%);
   display: flex;
   cursor: pointer;
   width: 52px;
@@ -735,13 +737,13 @@
   margin-bottom: 20px;
   padding-bottom: 5px;
 }
-#about .about__content .about__content__scroll .about__content__scroll-box h3 {
+#about .about__content .about__content__scroll .about__content__scroll-box h4 {
   border-bottom: 1px solid #615e5e;
   text-transform: uppercase;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 #about .about__content .about__content__scroll .about__content__scroll-box > * {
-  padding-top: 10px;
+  padding-top: 5px;
   padding-left: 10px;
 }
 #about .about__content .about__content__scroll .about__content__scroll-box:hover {
@@ -1636,9 +1638,11 @@ footer .footer__content {
 footer .footer__content .footer__content__icons {
   display: flex;
   justify-content: center;
+}
+footer .footer__content .footer__content__icons a {
   margin-right: 29px;
 }
-footer .footer__content .footer__content__icons svg {
+footer .footer__content .footer__content__icons a svg {
   width: 20px;
   height: 20px;
 }

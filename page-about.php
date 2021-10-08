@@ -105,7 +105,7 @@ get_header(); ?>
 						<?php echo carbon_get_theme_option('scroll_description_3'); ?>
 					</div>
 					<div class="about__content__scroll-box rich-text">
-						<h3><?php echo carbon_get_theme_option('scroll_box_title_3'); ?></h3>
+						<h4><?php echo carbon_get_theme_option('scroll_box_title_3'); ?></h4>
 						<?php echo carbon_get_theme_option('scroll_box_description_3'); ?>
 					</div>
 				</div>
