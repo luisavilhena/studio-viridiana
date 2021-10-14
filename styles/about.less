@@ -20,7 +20,7 @@
 				}
 				.about__content__fixed-right-box {
 					border: 1px solid @gray;
-					margin-bottom: 20px;
+					margin-bottom: 30px;
 					.about__content__fixed-right-box__subtitle {
 						border-bottom: 1px solid @gray;
 						text-transform: uppercase;
@@ -74,6 +74,7 @@
 					}
 					h4 {
 						font-size: 14px;
+						margin-bottom: 4px;
 						text-decoration: underline;
 						text-transform: uppercase;
 					}
@@ -127,12 +128,12 @@
 			.about__content__scroll-photo-list {
 				div {
 					width: @width-column;
-					height: 216px;
+					height: 224px;
 					background-repeat: no-repeat;
 					background-size: cover;
 					background-position: center;
 					border: 1px solid @gray;
-					margin-bottom: 20px;
+					margin-bottom: 30px;
 				}
 			}
 			.about__content__scroll__description{
@@ -191,6 +192,11 @@
 					width: @width-column-lg;
 					right: calc((100vw - 1800px + 2 * 15px) / 2);
 				}
+				.about__content__fixed-footer {
+					max-width:  @screen-xl;
+					right: calc((100vw - 1900px + 2 * 15px) / 2);
+					left: calc((100vw - 1900px + 2 * 15px) / 2);
+				}
 			}
 			.about__content__scroll {
 				.about__content__scroll-image {
@@ -208,6 +214,7 @@
 				}
 				.about__content__scroll-photo-list {
 					div {
+						height: 215px;
 						width: @width-column-lg;
 					}
 				}

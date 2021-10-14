@@ -31,7 +31,7 @@ function text_box() {
 			<div class="text-box <?php echo $block['select']?>">
 				<?php foreach ($block['topic'] as $topic) : ?>
 				<div class="text-box__item">
-					<h3><?php echo $topic['text']; ?></h3>
+					<h4><?php echo $topic['text']; ?></h4>
 					<?php foreach ($topic['more'] as $more) : ?>
 					<div class="text-box__item__more">
 						<div class="text-box__item__more-button">
