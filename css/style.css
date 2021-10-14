@@ -1586,7 +1586,7 @@ q p:last-of-type {
   max-width: 1460px;
   margin: 0 auto;
 }
-.structure-container .structure-container__content p:last-of-type {
+.structure-container .structure-container__content .structure-block p:last-of-type {
   margin-bottom: 0px;
 }
 @media screen and (min-width: 1460px) {
