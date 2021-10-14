@@ -1,14 +1,19 @@
 //js functions
 
 //menu
-const menuButtonClose = document.querySelector('#mobile-menu-trigger')
-const mainHeader = document.querySelector('#main-header')
+// const menuButtonClose = document.querySelector('#mobile-menu-trigger')
+// const mainHeader = document.querySelector('#main-header')
 
-// menuButtonClose.addEventListener('click', menuButtonOpen)
+// // menuButtonClose.addEventListener('click', menuButtonOpen)
 
-function menuButtonOpen() {
-	mainHeader.classList.toggle("menu-open")
-}
+// function menuButtonOpen() {
+// 	mainHeader.classList.toggle("menu-open")
+// }
+$(document).ready(function(){
+	$('#mobile-menu-trigger').on("click", function(e){
+		$('#main-header').toggleClass('menu-open')
+	})
+})
 
 
 $(document).ready(function(){
@@ -26,6 +31,11 @@ $(document).ready(function(){
 
 //TEXT BOX CLICk
 $(document).ready(function(){
+	$('.text-box__item h3').on("click", function(e){
+		$(this).toggleClass("active")
+	})
+})
+$(document).ready(function(){
 	$('.text-box__item__more').on("click", function(e){
 		$(this).toggleClass("active")
 	})
@@ -36,6 +46,8 @@ $(document).ready(function(){
 	const backgroundColor = $('main').css('background-color')
 	const color = $('main').css('color')
 	$('header').css('background-color', backgroundColor)
+	$('ul#main-menu').css('background-color', backgroundColor)
+	$('#mobile-menu-trigger div span').css('background-color', color)
 	$('footer').css('background-color', backgroundColor)
 	$('header').css('color', color)
 	$('footer').css('color', color)
@@ -61,25 +73,35 @@ $(document).ready(function(){
 	  });
 	});
 })
-// $(document).ready(function(){
+
+//MENU
+$(document).ready(function(){
+	$(window).on('scroll', function(event) {
+			const heightElement2 = window.pageYOffset
+			console.log(heightElement2)
+					// console.log(heightElement)
+			// if ($(window).width() > 1600) {
+			// 	if ($(window).height() > 1500) {
+			// 		$('.arrow').css('display', "none")
+			// 	}
+			// }
+			// if ($(window).width() < 1600) {
+				if (heightElement2 > 150) {
+					$('header').addClass('header-animation-small')
+					$('header').removeClass('header-animation-bigger')
+				} else {
+					$('header').removeClass('header-animation-small')
+					$('header').addClass('header-animation-bigger')
+				} 
+			// }
+		})
+})
 
 
-// 	$(window).on('scroll', function(event) {
-// 		const heightElement2 = window.pageYOffset
-// 		console.log(heightElement2)
-// 				// console.log(heightElement)
-// 		// if ($(window).width() > 1600) {
-// 		// 	if ($(window).height() > 1500) {
-// 		// 		$('.arrow').css('display', "none")
-// 		// 	}
-// 		// }
-// 		// if ($(window).width() < 1600) {
-// 			if (heightElement2 > 1700) {
-// 				$('.arrow').css('display', "none")
-// 			}
-// 		// }
-// 	})
-// });
+$(document).ready(function(){
+	$('#calendar_booking1 .datepick-header span').text('oct');
+	console.log(	$('.datepick-header span').text('oct'))
+});
 
 
 

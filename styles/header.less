@@ -16,7 +16,7 @@ header {
 	}
 
 	.header__content {
-		max-width: 1418px;
+		max-width: @screen-lg;
 		padding-top: 20px;
 		padding-left: 15px;
 		padding-right: 15px;
@@ -34,32 +34,198 @@ header {
 				font-family: 'CircularStd', sans-serif;
 				letter-spacing: 2px;
 				font-weight: 400;
+				font-size: 18px;
 			}
 		}
 	}
-
-
-	@media screen and (max-width: @screen-sm)  {
-		padding: 0px;
-		width: 100%;
-		position: fixed;
-		height: 65px;
-		background-color: white;
-		top: 0;
-	}
 }
+
 #logo-anchor {
 	position: fixed;
 	left: calc((100vw - 1445px + 2 * 15px) / 2);
 	margin-bottom: 3px;
 	svg {
-		width: 50px;
-		height: 50px;
+		width: 36px;
+		height: 36px;
 	}
 	@media screen and (max-width: @screen-sm)  {
 		top: 9px;
 		img {
 			width: 45px;
+		}
+	}
+}
+
+// .header-animation-small {
+// 	.header__content  {
+// 		padding-top: 10px;
+// 		animation: headeranimation 1s linear;
+
+// 		@keyframes headeranimation {
+// 		  0% {
+// 		  	padding-top: 20px
+// 		  }
+// 		  50% {
+// 		    font-size: 10px;
+// 		  }
+// 		}
+// 	}
+// 	li {
+// 		a {
+// 			animation: menuanimation 1s linear;
+// 			font-size: 14px;
+
+// 			@keyframes menuanimation {
+// 			  0% {
+// 			  	font-size: 16px;
+// 			  }
+// 			  50% {
+// 			    font-size: 14px;
+// 			  }
+// 			}
+// 		}
+// 	}
+// 	#logo-anchor {
+// 		svg {
+// 		animation: anchoranimation 1s linear;
+// 		width: 35px;
+// 		height: 35px;
+// 			@keyframes anchoranimation {
+// 			  0% {
+// 			  	width: 50px;
+// 			  	height: 50px;
+// 			  }
+// 			  50% {
+// 			  	width: 35px;
+// 			  	height: 35px;
+// 			  }
+// 			}
+// 		}
+// 	}
+// 	.header-content__name {
+// 		h1 {
+// 			animation: nameanimation 1s linear;
+// 			font-size: 20px;
+
+// 			@keyframes nameanimation {
+// 			  0% {
+// 			  	font-size: 25px;
+// 			  }
+// 			  50% {
+// 			    font-size: 20px;
+// 			  }
+// 			}
+// 		}
+// 	}
+// }
+// .header-animation-bigger {
+// 	.header__content  {
+// 		padding-top: 20px;
+// 		animation: headeranimation2 1s linear;
+
+// 		@keyframes headeranimation2 {
+// 		  0% {
+// 		  	padding-top: 10px
+// 		  }
+// 		  50% {
+// 		    font-size: 20px;
+// 		  }
+// 		}
+// 	}
+
+// 	li {
+// 		a {
+// 			animation: menuanimation2 1s linear;
+// 			font-size: 16px;
+
+// 			@keyframes menuanimation2 {
+// 			  0% {
+// 			  	font-size: 14px;
+// 			  }
+// 			  50% {
+// 			    font-size: 16px;
+// 			  }
+// 			}
+// 		}
+// 	}
+// 	#logo-anchor {
+// 		svg {
+// 		animation: anchoranimation2 1s linear;
+// 		width: 50px;
+// 		height: 50px;
+// 			@keyframes anchoranimation2 {
+// 			  0% {
+// 			  	width: 35px;
+// 			  	height: 35px;
+// 			  }
+// 			  50% {
+// 			  	width: 50px;
+// 			  	height: 50px;
+// 			  }
+// 			}
+// 		}
+// 	}
+// 	.header-content__name {
+// 		h1 {
+// 			animation: nameanimation2 1s linear;
+// 			font-size: 25px;
+
+// 			@keyframes nameanimation2 {
+// 			  0% {
+// 			  	font-size: 20px;
+// 			  }
+// 			  50% {
+// 			    font-size: 25px;
+// 			  }
+// 			}
+// 		}
+// 	}
+// }
+
+@media screen and (min-width: @screen-lg) {
+	header {
+		.header__content {
+			max-width: @screen-xl;
+			.header-content__name {
+				right: calc((100vw - 1900px + 2 * 15px) / 2);
+			}
+		}
+	}
+	#logo-anchor {
+		left: calc((100vw - 1900px + 2 * 15px) / 2);
+	}
+}
+@media screen and (max-width: @screen-sm) {
+	header {
+		nav {
+			display: none;
+		}
+		.header__content {
+			max-width: @screen-lg;
+			padding-top: 10px;
+			padding-left: 5px;
+			padding-right: 5px;
+			#logo-anchor {
+				position: inherit;
+			}
+
+			.header-content__name {
+				text-decoration: none;
+				position: inherit;
+				display: none;
+				h1 {
+					white-space: nowrap;
+				}
+			}
+		}
+	}
+	header.menu-open {
+		nav {
+			display: block;
+			position: absolute;
+			right: -20px;
+			left: 0px;
+			top: 57px;
 		}
 	}
 }

@@ -1,6 +1,6 @@
 .months_num_in_row_2 .datepick-one-month  {
 	background-color: @light-pink;
-	border: 1px solid black;
+	border: 1px solid @gray;
 }
 .datepick-inline .calendar-links {
 	background-color: @light-pink;
@@ -32,9 +32,9 @@
 		.btn {
 			margin-bottom: 20px;
 			border-radius: 0px;
-			background-color: @light-pink;
-			border: 1px solid black;
-			color: black;
+			background-color: black;
+			border: 1px solid @gray;
+			color: white;
 			font-family: "CircularStd";
 		}
 	}
@@ -49,7 +49,7 @@
 	.wpbc_times_selector {
 		> div {
 			flex: 0 0 97px !important;
-			margin: 7px 12px 0 0 !important;
+			margin: 7px 5px 0 0 !important;
 			background-color: @light-pink;
 			border-radius: 0px;
 			box-shadow: none;
@@ -58,8 +58,9 @@
 			border: solid 1px black;
 		}
 		> div.wpbc_time_selected {
-			background-color: @light-purple;
+			background-color: black;
 			border-radius: 0px;
+			color: white !important;
 			box-shadow: none;
 			color: black;
 			font-family: "CircularStd";
@@ -148,7 +149,8 @@ div.datepick-inline .datepick-title-row th {
 	text-shadow: none !important;
 }
 .block_hints .date2approve.block_check_in_out, .block_hints .block_pending, .datepick-inline .date2approve, .block_hints .block_pending a, .datepick-inline .date2approve a {
-	background-color: @light-purple !important;
+	background-color: black !important;
+	color: white !important;
 }
 .datepick-inline .date2approve {
 	color: black !important;
@@ -158,11 +160,20 @@ div.datepick-inline .datepick-title-row th {
 // 	margin-left: 10px !important;
 // }
 .datepick-inline .datepick-one-month .datepick .datepick-current-day {
-	background-color: @light-purple !important;
+	background-color: black !important;
+	color: white !important;
 }
 .submiting_content.wpdev-help-message.alert.alert-warning.alert-success {
 	margin: 0 auto !important;
 }
 .datepick-inline .calendar-links .datepick-prev {
 	left: 2% !important;
+}
+.datepick-inline .datepick-one-month .datepick .datepick-current-day a {
+	color: white !important;
+}
+@media screen and (max-width: @screen-sm) {
+	.months_num_in_row_2 .datepick-one-month {
+		width: 47% !important;
+	}
 }

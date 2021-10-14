@@ -34,7 +34,7 @@ function columns_image_text_box() {
 				<div class="image-columns__item">
 					<div class="image-columns__item__img" style="background-image: url('<?php echo wp_get_attachment_image_src($columns['img'],'ap_image_desktop_full_no_crop')[0]; ?>');">
 					</div>
-					<div class="image-columns__item__description rich_text"><?php echo $columns['rich_text']; ?></div>
+					<div class="image-columns__item__description rich-text"><?php echo $columns['rich_text']; ?></div>
 
 					<div class="text-box <?php echo $block['select']?>" style="background-color: <?php echo $block['background']?>">
 						<?php foreach ($columns['topic'] as $topic) : ?>

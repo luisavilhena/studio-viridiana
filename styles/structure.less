@@ -1,13 +1,16 @@
 //media sizes
 @max-mobile: 600px;
-@screen-xxl: 1800px;
-@screen-xl: 1799px;
-@screen-lg: 1499px;
+@screen-xxl: 1900px;
 @screen-md: 1250px; 
-@screen-sm: 580px;
 @screen-xxs: 400px;
 
-@width-column: 450px;
+@width-column: 436px;
+@width-column-lg: 590px;
+@width-column-sm: 370px;
+
+@screen-xl: 1900px;
+@screen-lg: 1460px;
+@screen-sm: 600px;
 
 
 //color
@@ -27,23 +30,41 @@
 	width: 100%;
 	min-height: 100vh;
 	.structure-container__content {
-		padding-top: 100px;
+		padding-top: 60px;
 		padding-bottom: 80px;
 		padding-right: 15px;
 		padding-left: 15px;
-		max-width: 1418px;
+		max-width: @screen-lg;
 		margin: 0 auto;
+	}
+	@media screen and (min-width: @screen-lg) {
+		.structure-container__content {
+			max-width: @screen-xl;
+		}
+	}
+	@media screen and (max-width: @screen-sm) {
+		.structure-container__content {
+			padding-left: 5px;
+			padding-right: 5px;
+			// max-width: @screen-sm;
+		}
 	}
 }
 .structure-color-light-pink {
 	background-color: @light-pink;
 	color: black;
 	border-color: @gray;
+	a {
+		color: black;
+	}
 }
 .structure-color-green {
 	background-color: @green;
 	color: white;
 	border-color: @gray;
+	a {
+		color: white;
+	}
 }
 
 .structure-block {
@@ -51,6 +72,17 @@
 	justify-content: center;
 	.structure-block__center {
 		width: @width-column;
+	}
+	@media screen and (min-width: @screen-lg) {
+		.structure-block__center {
+			margin: 0 auto;
+			width: @width-column-lg;
+		}
+	}
+	@media screen and (max-width: @screen-sm) {
+		.structure-block__center {
+			width: @width-column-sm;
+		}
 	}
 }
 

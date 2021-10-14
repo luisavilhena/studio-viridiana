@@ -74,3 +74,32 @@
 		}
 	}
 }
+
+@media screen and (min-width: @screen-lg) {
+	#project-single {
+		.project-single__header {
+			.project-single__header__img {
+				img {
+					width: @width-column-lg;
+				}
+			}
+		}
+		.post-password-form {
+			width: @width-column-lg;
+		}
+	}
+}
+@media screen and (max-width: @screen-sm) {
+	#project-single {
+		.project-single__header {
+			.project-single__header__img {
+				img {
+					width: @width-column-sm;
+				}
+			}
+		}
+		.post-password-form {
+			width: @width-column-sm;
+		}
+	}
+}

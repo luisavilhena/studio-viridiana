@@ -12,20 +12,20 @@ h1 {
 	font-size: 25px;
 }
 h2 {
-	font-size: 22px;
+	font-size: 16px;
 }
 h3 {
-	font-size: 18px;
+	font-size: 14px;
 }
 h4 {
-	font-size: 16px;
+	font-size: 14px;
 }
 
 
 p {
-	font-size: 16px;
-	line-height: 18px;
-	margin-bottom: 15px;
+	font-size: 14px;
+	line-height: 16px;
+	margin-bottom: 25px;
 }
 a {
 	color: black;
@@ -34,6 +34,11 @@ a {
 }
 strong {
 	font-weight: bold;
+}
+ul {
+	li {
+		font-size: 14px;
+	}
 }
 
 blockquote, q, {
@@ -45,36 +50,44 @@ blockquote, q, {
 }
 
 @media screen and (max-width: @screen-sm) {
-	h1 {
-		font-size: 30px;
-		line-height: 25px;
-		min-height: auto;
-	}
-	h2 {
-		font-size: 20px;
-		line-height: 21px;
-	}
-	h3 {
-		font-size: 16px;
-		margin-bottom: 3px;
-		line-height: 19px;
-	}
-	p {
-		font-size: 14px;
-		line-height: 16px;
-	}
-	strong {
-	font-size: 20px;
-	line-height: 21px;
-}
-	figure, .wp-block-image {
-		margin-bottom: 30px;
-		margin-top: 30px;
-		figcaption {
-			font-size: 12px;
-			a {
-				font-size: 12px;
+	.rich-text {
+		ul {
+			li {
+				margin-bottom: 30px;
 			}
 		}
 	}
+
+// 	h1 {
+// 		font-size: 30px;
+// 		line-height: 25px;
+// 		min-height: auto;
+// 	}
+// 	h2 {
+// 		font-size: 20px;
+// 		line-height: 21px;
+// 	}
+// 	h3 {
+// 		font-size: 16px;
+// 		margin-bottom: 3px;
+// 		line-height: 19px;
+// 	}
+// 	p {
+// 		font-size: 14px;
+// 		line-height: 16px;
+// 	}
+// 	strong {
+// 	font-size: 20px;
+// 	line-height: 21px;
+// }
+// 	figure, .wp-block-image {
+// 		margin-bottom: 30px;
+// 		margin-top: 30px;
+// 		figcaption {
+// 			font-size: 12px;
+// 			a {
+// 				font-size: 12px;
+// 			}
+// 		}
+// 	}
 }

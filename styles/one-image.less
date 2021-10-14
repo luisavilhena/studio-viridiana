@@ -2,17 +2,42 @@
 	display: flex;
 	justify-content: center;
 	.one-image__item {
-		margin-left: 5px;
-		margin-right: 5px;
-		margin-bottom: 10px;
+		margin-left: 15px;
+		margin-right: 15px;
+		margin-bottom: 30px;
 		div {
 			cursor: pointer;
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
-			width: @width-column + @width-column + 10px;
+			width: @width-column + @width-column + 30px;
 			height: 700px;
 			border: 1px solid black;
+		}
+	}
+}
+
+@media screen and (min-width: @screen-lg) {
+	.one-image {
+		.one-image__item {
+			margin-left: 15px;
+			margin-right: 15px;
+			margin-bottom: 30px;
+			div {
+				width: @width-column-lg + @width-column-lg + 30px;
+			}
+		}
+	}
+}
+@media screen and (max-width: @screen-sm) {
+	.one-image {
+		.one-image__item {
+			margin-left: 5px;
+			margin-right: 5px;
+			margin-bottom: 30px;
+			div {
+				width: @width-column-sm;
+			}
 		}
 	}
 }

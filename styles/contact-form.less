@@ -85,22 +85,15 @@ form.wpcf7-form  {
 .wpcf7 .ajax-loader {
 	display: none;
 }
+
+@media screen and (min-width: @screen-lg) {
+	form.wpcf7-form  {
+		max-width: @width-column-lg;
+	}
+}
 @media screen and (max-width: @screen-sm) {
 	form.wpcf7-form  {
-		margin-right: -1%;
-		margin-top: 28vh;
-		// position: absolute;
-		// bottom: 0;
-		p.title {
-			padding-left: 1%;
-
-		}
-		input, textarea {
-			padding-left: 1%;
-			width: 98.3%;
-		}
-		input[type="submit"] {
-			padding-left: 1%;
-		}
+		margin-bottom: 30px;
+		max-width: @width-column-sm;
 	}
 }
