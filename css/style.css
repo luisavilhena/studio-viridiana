@@ -931,6 +931,18 @@
     height: 215px;
     width: 590px;
   }
+  #part-1 {
+    height: 825px;
+  }
+  #part-2 {
+    height: 825px;
+  }
+  #part-3 {
+    padding-bottom: 40px;
+  }
+  #part-3 h3:first-of-type {
+    margin-bottom: 0px;
+  }
 }
 @media screen and (max-width: 600px) {
   #about .about__content .about__content__fixed .about__content__fixed-right {
