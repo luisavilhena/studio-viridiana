@@ -799,7 +799,6 @@
 #about .about__content .about__content__fixed .about__content__fixed-footer .about__content__fixed-footer__link {
   text-decoration: none;
   font-size: 11px;
-  margin-right: 100px;
 }
 #about .about__content .about__content__fixed .about__content__fixed-footer .about__content__fixed-footer__link p {
   font-size: 11px;
@@ -910,6 +909,9 @@
     max-width: 1900px;
     right: calc((100vw - 1900px + 2 * 15px) / 2);
     left: calc((100vw - 1900px + 2 * 15px) / 2);
+  }
+  #about .about__content .about__content__fixed .about__content__fixed-footer .about__content__fixed-footer__link {
+    margin-right: 100px;
   }
   #about .about__content .about__content__scroll .about__content__scroll-image {
     width: 590px;
