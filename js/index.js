@@ -31,7 +31,7 @@ $(document).ready(function(){
 
 //TEXT BOX CLICk
 $(document).ready(function(){
-	$('.text-box__item h3').on("click", function(e){
+	$('.text-box__item h4').on("click", function(e){
 		$(this).toggleClass("active")
 	})
 })
