@@ -551,6 +551,9 @@
   cursor: default;
 }
 @media screen and (min-width: 1460px) {
+  .image-columns > .image-columns__item {
+    margin-right: 15px;
+  }
   .image-columns > .image-columns__item > .image-columns__item__img {
     width: 590px;
     height: 670px;
