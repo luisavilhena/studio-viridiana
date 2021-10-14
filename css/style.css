@@ -905,6 +905,9 @@
     width: 590px;
     right: calc((100vw - 1800px + 2 * 15px) / 2);
   }
+  #about .about__content .about__content__fixed .about__content__fixed-right .about__content__fixed-right-box__description {
+    padding-top: 20px;
+  }
   #about .about__content .about__content__fixed .about__content__fixed-footer {
     max-width: 1900px;
     right: calc((100vw - 1900px + 2 * 15px) / 2);
