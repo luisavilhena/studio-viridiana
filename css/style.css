@@ -544,6 +544,9 @@
   margin-top: 30px;
   width: 436px;
 }
+.image-columns--special-item > .image-columns__item {
+  margin-right: 7px;
+}
 .image-columns--special-item > .image-columns__item > .image-columns__item__img {
   cursor: default;
 }
