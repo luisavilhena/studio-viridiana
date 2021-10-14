@@ -799,6 +799,7 @@
 #about .about__content .about__content__fixed .about__content__fixed-footer .about__content__fixed-footer__link {
   text-decoration: none;
   font-size: 11px;
+  margin-right: 100px;
 }
 #about .about__content .about__content__fixed .about__content__fixed-footer .about__content__fixed-footer__link p {
   font-size: 11px;
