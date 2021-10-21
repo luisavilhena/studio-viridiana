@@ -938,7 +938,7 @@
 #part-2 {
   height: 650px;
 }
-#part-2 .about__content__scroll-image {
+#part-2 .about__content__scroll .about__content__scroll-image {
   height: auto;
 }
 #part-3 {
