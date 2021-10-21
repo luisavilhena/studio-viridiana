@@ -6,6 +6,7 @@
 
 @width-column: 30%;
 @width-column-lg: 31%;
+@width-column-md: 45%;
 @width-column-sm: 100%;
 
 @screen-xl: 1900px;
@@ -92,6 +93,11 @@
 		.structure-block__center {
 			margin: 0px auto 20px auto;
 			width: @width-column-lg;
+		}
+	}
+	@media screen and (max-width: @screen-md) {
+		.structure-block__center {
+			width: @width-column-md;
 		}
 	}
 	@media screen and (max-width: @screen-sm) {

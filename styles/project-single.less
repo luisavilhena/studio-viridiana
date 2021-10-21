@@ -35,6 +35,7 @@
 			}
 		}
 		.project-single__header__img {
+			border: 1px solid black;
 			display: flex;
 			justify-content: center;
 			margin-bottom: 20px;
@@ -42,7 +43,7 @@
 			background-position: center;
 			width: @width-column;
 			height: 524px;
-			margin: 0 auto;
+			margin: 0 auto 20px auto;
 			// img {
 			// 	width: @width-column;
 			// 	border: 1px solid black;
@@ -60,6 +61,10 @@
 			text-align: left;
 			text-transform: uppercase;
 			cursor: pointer;
+			font-size: 9px;
+		}
+		input::placeholder {
+			font-size: 9px;
 		}
 		p:nth-of-type(2n) {
 			display: flex;
@@ -69,7 +74,9 @@
 				color: transparent !important;
 			}
 			input[type="password"]{
-				width: 95.3%;
+				font-size: 9px;
+				width: 100%;
+				box-sizing: border-box;
 				background-color: @light-pink;
 		    padding: 10px;
 		    border: black 1px solid;
@@ -83,13 +90,39 @@
 	#project-single {
 		.project-single__header {
 			.project-single__header__img {
+				width: @width-column-lg;
+
 				img {
-					width: @width-column-lg;
 				}
 			}
 		}
 		.post-password-form {
 			width: @width-column-lg;
+			p:nth-of-type(2n) { 
+				input[type="password"]{
+					// width: 95.6%;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: @screen-md) {
+	#project-single {
+		.project-single__header {
+			.project-single__header__img {
+				width: @width-column-md;
+
+				img {
+				}
+			}
+		}
+		.post-password-form {
+			width: @width-column-lg;
+			p:nth-of-type(2n) { 
+				input[type="password"]{
+					// width: 95.6%;
+				}
+			}
 		}
 	}
 }
@@ -97,13 +130,18 @@
 	#project-single {
 		.project-single__header {
 			.project-single__header__img {
+				width: @width-column-sm;
 				img {
-					width: @width-column-sm;
 				}
 			}
 		}
 		.post-password-form {
 			width: @width-column-sm;
+			p:nth-of-type(2n) { 
+				input[type="password"]{
+					// width: 94.5%;
+				}
+			}
 		}
 	}
 }

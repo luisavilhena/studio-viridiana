@@ -415,6 +415,7 @@
   width: 2px;
 }
 #project-single .project-single__header .project-single__header__img {
+  border: 1px solid black;
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
@@ -422,7 +423,7 @@
   background-position: center;
   width: 30%;
   height: 524px;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
 }
 #project-single .post-password-form {
   width: 30%;
@@ -436,6 +437,10 @@
   text-align: left;
   text-transform: uppercase;
   cursor: pointer;
+  font-size: 9px;
+}
+#project-single .post-password-form input::placeholder {
+  font-size: 9px;
 }
 #project-single .post-password-form p:nth-of-type(2n) {
   display: flex;
@@ -446,22 +451,32 @@
   color: transparent !important;
 }
 #project-single .post-password-form p:nth-of-type(2n) input[type="password"] {
-  width: 95.3%;
+  font-size: 9px;
+  width: 100%;
+  box-sizing: border-box;
   background-color: #fffef7;
   padding: 10px;
   border: black 1px solid;
   border-bottom: none;
 }
 @media screen and (min-width: 1460px) {
-  #project-single .project-single__header .project-single__header__img img {
+  #project-single .project-single__header .project-single__header__img {
     width: 31%;
   }
   #project-single .post-password-form {
     width: 31%;
   }
 }
+@media screen and (max-width: 1000px) {
+  #project-single .project-single__header .project-single__header__img {
+    width: 45%;
+  }
+  #project-single .post-password-form {
+    width: 31%;
+  }
+}
 @media screen and (max-width: 600px) {
-  #project-single .project-single__header .project-single__header__img img {
+  #project-single .project-single__header .project-single__header__img {
     width: 100%;
   }
   #project-single .post-password-form {
@@ -572,15 +587,8 @@
   }
 }
 @media screen and (max-width: 1000px) {
-  .image-columns.image-columns--special-item {
-    flex-direction: column;
-    align-items: center;
-  }
-  .image-columns.image-columns--special-item > .image-columns__item {
-    width: 50%;
-  }
-  .image-columns.image-columns--special-item > .image-columns__item .text-box {
-    margin-bottom: 0px;
+  .image-columns > .image-columns__item {
+    width: 45%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -590,12 +598,13 @@
   .image-columns > .image-columns__item {
     margin-right: 0px;
     margin-left: 0px;
+    margin-bottom: 10px;
     width: 100%;
   }
   .image-columns > .image-columns__item > .image-columns__item__img {
     margin: 10px auto 20px auto;
     width: 100%;
-    height: 200px;
+    height: 350px;
   }
   .image-columns > .image-columns__item > .image-columns__item__description {
     margin: 0 auto;
@@ -636,9 +645,11 @@
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 30px;
+    width: 100%;
   }
   .one-image .one-image__item div {
     width: 100%;
+    height: 400px;
   }
 }
 .text-box {
@@ -744,6 +755,11 @@
 @media screen and (min-width: 1460px) {
   .text-box > .text-box__item {
     width: 31%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .text-box > .text-box__item {
+    width: 45%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1731,6 +1747,11 @@ q p:last-of-type {
     width: 31%;
   }
 }
+@media screen and (max-width: 1000px) {
+  .structure-block .structure-block__center {
+    width: 45%;
+  }
+}
 @media screen and (max-width: 600px) {
   .structure-block .structure-block__center {
     width: 100%;
@@ -1873,7 +1894,6 @@ header nav {
   margin-left: 17%;
 }
 header .header__content {
-  max-width: 1460px;
   padding-top: 20px;
   padding-left: 25px;
   padding-bottom: 8px;
@@ -1905,8 +1925,8 @@ header .header__content .header-content__name h1 {
   }
 }
 @media screen and (min-width: 1460px) {
-  header .header__content {
-    max-width: 1900px;
+  header nav {
+    margin-left: 5%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1914,7 +1934,6 @@ header .header__content .header-content__name h1 {
     display: none;
   }
   header .header__content {
-    max-width: 1460px;
     padding-top: 10px;
     padding-left: 5px;
     padding-right: 5px;
