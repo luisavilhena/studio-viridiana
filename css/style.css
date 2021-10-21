@@ -368,7 +368,7 @@
   margin-right: -50%;
   transform: translate(-50%, 0%);
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   #project-list .project-list .project-list__item {
     flex-direction: column;
     width: 100%;
@@ -475,7 +475,7 @@
     width: 31%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   #project-single .project-single__header .project-single__header__img {
     width: 100%;
   }
@@ -543,7 +543,7 @@
     margin-bottom: 13px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .rich-text ul li {
     margin-bottom: 10px;
   }
@@ -591,7 +591,7 @@
     width: 45%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .image-columns {
     flex-direction: column;
   }
@@ -640,7 +640,7 @@
     margin-bottom: 30px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .one-image .one-image__item {
     margin-left: 5px;
     margin-right: 5px;
@@ -762,7 +762,7 @@
     width: 45%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .text-box {
     width: 100%;
     margin: 0 auto;
@@ -938,6 +938,9 @@
 #part-2 {
   height: 650px;
 }
+#part-2 .about__content__scroll-image {
+  height: auto;
+}
 #part-3 {
   padding-bottom: 40px;
 }
@@ -954,9 +957,6 @@
   #about .about__content .about__content__fixed .about__content__fixed-footer .about__content__fixed-footer__link {
     margin-right: 100px;
   }
-  #about .about__content .about__content__scroll .about__content__scroll-image {
-    height: 670px;
-  }
   #about .about__content .about__content__scroll .about__content__scroll-flex div:first-of-type {
     margin-right: 30px;
     margin-left: 0px;
@@ -965,10 +965,10 @@
     height: 29%;
   }
   #part-1 {
-    height: 825px;
+    height: 735px;
   }
   #part-2 {
-    height: 825px;
+    height: 735px;
   }
   #part-3 {
     padding-bottom: 40px;
@@ -977,7 +977,7 @@
     margin-bottom: 0px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   #about .about__content .about__content__fixed .about__content__fixed-right {
     position: inherit;
     width: 100%;
@@ -999,7 +999,7 @@
   }
   #about .about__content .about__content__scroll .about__content__scroll-image {
     width: 100%;
-    height: 200px;
+    height: 378px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -1067,7 +1067,12 @@
     width: 31%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .social-media {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 700px) {
   .social-media {
     margin-top: 15px;
     width: 100%;
@@ -1296,7 +1301,7 @@ div.datepick-inline .datepick-title-row th {
     width: 47% !important;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .months_num_in_row_2 .datepick-one-month {
     width: 47% !important;
   }
@@ -1486,7 +1491,7 @@ ul#main-menu > li:last-of-type {
     padding-left: 15px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   ul#main-menu {
     display: none;
     flex-direction: column;
@@ -1566,7 +1571,7 @@ ul#main-menu > li:last-of-type {
   width: 100%;
   height: 310px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .wp-block-embed iframe {
     width: 100%;
     height: 220px;
@@ -1617,7 +1622,7 @@ figure figcaption a,
   margin-bottom: 75px;
   text-align: center;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .template-tc {
     padding-top: 70px;
   }
@@ -1681,7 +1686,7 @@ blockquote p:last-of-type,
 q p:last-of-type {
   margin-bottom: 15px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .rich-text ul li {
     margin-bottom: 13px;
   }
@@ -1703,7 +1708,7 @@ q p:last-of-type {
     max-width: 1900px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .structure-container .structure-container__content {
     padding-left: 5px;
     padding-right: 5px;
@@ -1752,7 +1757,7 @@ q p:last-of-type {
     width: 45%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .structure-block .structure-block__center {
     width: 100%;
   }
@@ -1841,7 +1846,7 @@ q p:last-of-type {
   max-width: 680px;
   text-align: right;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .block-title {
     margin-top: -100px;
   }
@@ -1875,7 +1880,7 @@ q p:last-of-type {
   text-decoration: underline;
   text-decoration-color: inherit;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .link-list .link-list__item a {
     font-size: 16px;
   }
@@ -1916,7 +1921,7 @@ header .header__content .header-content__name h1 {
   width: 36px;
   height: 29px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   #logo-anchor {
     top: 9px;
   }
@@ -1929,7 +1934,7 @@ header .header__content .header-content__name h1 {
     margin-left: 5%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   header nav {
     display: none;
   }
@@ -1985,7 +1990,7 @@ header .header__content .header-content__name h1 {
 .gallery .gallery__items img:nth-of-type(6n) {
   margin-right: 0px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .gallery .gallery__items img {
     width: 94px;
     margin-right: 2px;
@@ -2084,13 +2089,13 @@ footer .footer__content .footer__content__icons a svg {
   margin-top: -6px;
   transform: rotate(-45deg);
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .caroussel-popup .caroussel-popup__image {
     width: 350px;
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .carousel .slick-list .item {
     height: 256px;
   }
@@ -2197,7 +2202,13 @@ form.wpcf7-form .submit-arrow:hover .arrow span {
     max-width: 31%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  form.wpcf7-form {
+    margin-bottom: 30px;
+    max-width: 45%;
+  }
+}
+@media screen and (max-width: 700px) {
   form.wpcf7-form {
     margin-bottom: 30px;
     max-width: 100%;
