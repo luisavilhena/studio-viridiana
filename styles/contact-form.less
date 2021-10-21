@@ -17,7 +17,7 @@ form.wpcf7-form  {
 		background-color: @light-pink;
 		color: black;
 		padding: 5px 10px;
-		font-size: 15px;
+		font-size: 9px;
 		font-family: 'CircularStd', sans-serif;
 		box-sizing: border-box;
 		font-weight: 300;
@@ -26,12 +26,17 @@ form.wpcf7-form  {
 		width: 100%;
 		border-radius: 0;
 	}
+	input {
+		height: 29px;
+	}
 	input::placeholder {
 		color: black;
+		font-size: 9px;
 		// padding-left: 10%;
 	}
 	textarea::placeholder {
 		color: black;
+		font-size: 9px;
 		// padding-left: 10%;
 	}
 	textarea {
@@ -42,12 +47,18 @@ form.wpcf7-form  {
 		margin-top: -3px;
     padding: 5px 10px;
     background-color: transparent;
-    font-size: 15px;
+    font-size: 9px;
     width: 100%;
     font-weight: 300;
     text-align: left;
     border: 1px solid @gray;
+    transition: background-color 0.5s;
 	}
+		input[type="submit"]:hover {
+			color: white;
+			background-color: black;
+			transition: background-color 0.5s;
+		}
 	input:-webkit-autofill, 
 	input:-webkit-autofill:hover, 
 	input:-webkit-autofill:focus, 
@@ -59,7 +70,7 @@ form.wpcf7-form  {
 		position: relative;
 		.arrow {
 			position: absolute;
-			top: 7px;
+			top: 8px;
 			right: 10px;
 			display: flex;
 			flex-direction: column;
@@ -69,15 +80,25 @@ form.wpcf7-form  {
 			span {
 				background-color: black;
 				height: 1px;
-				width: 15px;
+				width: 9px;
 				// margin-left: 20px;
 			}
 			.arrow-1 {
 				transform: rotate(45deg);
-				margin-bottom: 10px;
+				margin-bottom: 5px;
 			}
 			.arrow-2 {
 				transform: rotate(-45deg)
+			}
+		}
+		&:hover {
+			background-color: black;
+			color: white;
+			transition: background-color 0.5s;
+			.arrow {
+				span {
+					background-color: white;
+				}
 			}
 		}
 	}

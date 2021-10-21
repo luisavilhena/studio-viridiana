@@ -5,7 +5,7 @@
 .datepick-inline .calendar-links {
 	background-color: @light-pink;
 	border-bottom: none;
-	width: 95% !important;
+	width: 98% !important;
 }
 .control-label {
 	display: none;
@@ -55,7 +55,9 @@
 			box-shadow: none;
 			color: black;
 			font-family: "CircularStd";
-			border: solid 1px black;
+			border: solid 1px @gray;
+			font-size: 10px !important;
+
 		}
 		> div.wpbc_time_selected {
 			background-color: black;
@@ -64,25 +66,27 @@
 			box-shadow: none;
 			color: black;
 			font-family: "CircularStd";
+			font-size: 10px !important;
 		}
 	}
 }
 .booking_form #name1 {
-	border-top: 1px solid black !important;
+	border-top: 1px solid @gray !important;
 }
 .booking_form input[type="text"] {
 	width: 94% !important;
-	border: 1px solid black !important;
+	border: 1px solid @gray !important;
 	border-radius: 0px !important;
 	background-color: @light-pink !important;
 	color: black !important;
 	font-family: "CircularStd";
 	border-top: none !important;
+	font-size: 10px !important;
 }
 
 input::placeholder {
   color: black;
-  font-size: 14px;
+  font-size: 11px;
 }
 .datepick-inline {
 	box-shadow: none !important;
@@ -97,7 +101,7 @@ input::placeholder {
 	display: none;
 }
 .months_num_in_row_2 .datepick-one-month {
-	width: 48% !important;
+	width: 47% !important;
 	margin-right: 8px !important;
 	margin-bottom: 8px !important;
 }
@@ -167,13 +171,56 @@ div.datepick-inline .datepick-title-row th {
 	margin: 0 auto !important;
 }
 .datepick-inline .calendar-links .datepick-prev {
-	left: 2% !important;
+	left: 0.5% !important;
 }
 .datepick-inline .datepick-one-month .datepick .datepick-current-day a {
 	color: white !important;
 }
+.datepick-inline .datepick-header {
+	text-align: left !important;
+	margin-left: 15px !important;
+}
+.datepick-header span {
+	font-size: 10px !important;
+}
+.datepick-inline .datepick-days-cell a, 
+.datepick-inline .datepick-days-cell span,
+.block_hints .block_free a, 
+.block_hints .block_time,
+.datepick-inline .date_available a  {
+	font-size: 10px !important;
+}
+
+.datepick-inline .datepick-header {
+	padding-left: 10px !important;
+}
+.wpdevelop .btn-default {
+	text-shadow: none !important;
+	font-size: 10px !important;
+}
+.datepick-inline .calendar-links .datepick-prev a {
+	font-weight: 100 !important;
+}
+
+.datepick-inline .datepick-days-cell {
+	margin-bottom: 3px;
+  margin-top: 3px;
+}
+.datepick-inline .calendar-links .datepick-next {
+	padding-right: 2.5% !important;
+}
+@media screen and (max-width: @screen-md) {
+	.months_num_in_row_2 .datepick-one-month {
+		width: 47% !important;
+	}
+}
+
 @media screen and (max-width: @screen-sm) {
 	.months_num_in_row_2 .datepick-one-month {
 		width: 47% !important;
 	}
+}
+
+.datepick-inline .calendar-links .datepick-prev a, .datepick-inline .calendar-links .datepick-next a, .datepick-inline .calendar-links .datepick-prev a:hover, .datepick-inline .calendar-links .datepick-next a:hover {
+	font-weight: 100 !important;
 }

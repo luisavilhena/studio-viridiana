@@ -25,6 +25,9 @@ $(document).ready(function(){
 
 //LOADING
 $(document).ready(function(){
+	$('.loading').on("click", function(e){
+		$(this).css('display', "none")
+	})
 	$('.loading').delay(7000).fadeOut('slow')
 })
 

@@ -26,6 +26,7 @@ get_header(); ?>
 					<div class="about__content__fixed-right-box__description rich-text">
 						<?php echo carbon_get_theme_option('fixed_description_2'); ?>
 					</div>
+					<div></div>
 				</div>
 				<div class="about__content__fixed-right-box">
 					<h4 class="about__content__fixed-right-box__subtitle">
@@ -76,7 +77,7 @@ get_header(); ?>
 					<div class="about__content__scroll__description rich-text">
 						<?php echo carbon_get_theme_option('scroll_description_2'); ?>
 					</div>
-					<div class="about__content__scroll__description rich-text">
+					<div class="about__content__scroll__box-description rich-text">
 						<?php echo carbon_get_theme_option('scroll_box_description_2'); ?>
 					</div>
 				</div>

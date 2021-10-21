@@ -12,7 +12,7 @@ add_action( 'after_setup_theme', 'studio_viridiana' );
 function rich_text() {
 	Block::make( 'Bloco de texto' )
 		->add_fields( array(
-			Field::make( 'rich_text', 'text', 'Descrição' ),
+			Field::make( 'rich_text', 'text', 'Description' ),
 
 		) )
 		->set_render_callback( function ( $block ) {
@@ -26,7 +26,6 @@ function rich_text() {
 					</div>
 				</div>
 			<?php endif; ?>
-			</div>
  
 			<?php
  

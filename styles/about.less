@@ -8,7 +8,8 @@
 				background-color:  @light-pink;
 				width: @width-column;
 				position: fixed;
-				right: calc((100vw - 1445px + 2 * 15px) / 2);
+				right: 15px;
+				// right: calc((100vw - 1445px + 2 * 15px) / 2);
 				top: 95px;
 				.about__content__fixed-right-title {
 					text-align: center;
@@ -55,26 +56,28 @@
 				}
 			}
 			.about__content__fixed-footer {
-				width: 100%;
+				// width: 100%;
 				background-color:  @light-pink;
 				position: fixed;
 				bottom: 33px;
 				margin: 0 auto;
 				display: flex;
 				justify-content: space-between;
-				right: calc((100vw - 1460px + 2 * 15px) / 2);
-				left: calc((100vw - 1460px + 2 * 15px) / 2);
-				max-width: 1390px;
+				right: 15px;
+				left: 15px;
+				// right: calc((100vw - 1460px + 2 * 15px) / 2);
+				// left: calc((100vw - 1460px + 2 * 15px) / 2);
+				// max-width: 1390px;
 				padding: 10px 15px 8px 15px;
 				.about__content__fixed-footer__link {
 					text-decoration: none;
-					font-size: 11px;
+					font-size: 10px;
 					// margin-right: 100px;
 					p {
-						font-size: 11px;
+						font-size: 10px;
 					}
 					h4 {
-						font-size: 14px;
+						font-size: 11px;
 						margin-bottom: 4px;
 						text-decoration: underline;
 						text-transform: uppercase;
@@ -116,20 +119,20 @@
 			.about__content__scroll-flex {
 				margin-right: 40px;
 				margin-left: 15px;
-				width: 966px;
+				width: 66%;
 				display: flex;
 				> div:first-of-type {
 					margin-right: 40px;
 					margin-left: 15px;
 				}
 				> div {
-					width: @width-column;
+					width: 50%;
 				}
 			}
 			.about__content__scroll-photo-list {
 				div {
-					width: @width-column;
-					height: 224px;
+					width: 100%;
+					height: 30%;
 					background-repeat: no-repeat;
 					background-size: cover;
 					background-position: center;
@@ -140,6 +143,10 @@
 			.about__content__scroll__description{
 				font-family: "CircularStd";
 				margin-bottom: 30px;
+			}
+			.about__content__scroll__box-description {
+				border: 1px solid @gray;
+				padding: 10px;
 			}
 			.about__content__scroll-box {
 				border: 1px solid @gray;
@@ -191,7 +198,7 @@
 			.about__content__fixed {
 				.about__content__fixed-right {
 					width: @width-column-lg;
-					right: calc((100vw - 1800px + 2 * 15px) / 2);
+					// right: calc((100vw - 1800px + 2 * 15px) / 2);
 					.about__content__fixed-right-box {
 						.about__content__fixed-right-box__description {
 							padding-top: 20px;
@@ -199,9 +206,9 @@
 					}
 				}
 				.about__content__fixed-footer {
-					max-width:  @screen-xl;
-					right: calc((100vw - 1900px + 2 * 15px) / 2);
-					left: calc((100vw - 1900px + 2 * 15px) / 2);
+					// max-width:  @screen-xl;
+					// right: calc((100vw - 1900px + 2 * 15px) / 2);
+					// left: calc((100vw - 1900px + 2 * 15px) / 2);
 					.about__content__fixed-footer__link {
 						margin-right: 100px;
 					}
@@ -209,23 +216,23 @@
 			}
 			.about__content__scroll {
 				.about__content__scroll-image {
-					width: @width-column-lg;
+					// width: @width-column-lg;
 					height: 670px;
 				}
 				.about__content__scroll-flex {
-					width: 1245px;
+					// width: 1245px;
 					div:first-of-type {
 						margin-right: 30px;
 						margin-left: 0px;
 					}
 					> div {
-						width: @width-column-lg;
+						// width: @width-column-lg;
 					}
 				}
 				.about__content__scroll-photo-list {
 					div {
-						height: 215px;
-						width: @width-column-lg;
+						height: 29%;
+						// width: @width-column-lg;
 					}
 				}
 			}
@@ -256,26 +263,44 @@
 					position: inherit;
 					width: @width-column-sm;
 					right: 0;
+					margin: 0 auto;
+				}
+				.about__content__fixed-footer {
+					position: absolute;
+					right: 5px;
+					left: 5px;
+					flex-direction: column;
+					padding: 0px;
+					a {
+						margin-bottom: 20px;
+					}
+					.arrow {
+						display: none;
+					}
 				}
 			}
 			.about__content__scroll {
 				.about__content__scroll-image {
 					width: @width-column-sm;
-					height: 200px
+					height: 200px;
+					margin-right: auto;
+					margin-left: auto;
 				}
 				.about__content__scroll-flex {
 					width: auto;
 					flex-direction: column;
 					margin: 10px auto;
-					div:first-of-type {
+					> div:first-of-type {
 						margin-bottom: 15px;
-						margin-right: 0px;
-						margin-left: 0px;
 						width: @width-column-sm;
+						margin-right: auto;
+						margin-left: auto;
 
 					}
 					> div {
-						width: @width-column-lg;
+						width: @width-column-sm;
+						margin-right: auto;
+						margin-left: auto;
 					}
 				}
 				.about__content__scroll-box {
@@ -286,6 +311,7 @@
 					div {
 						width: @width-column-sm;
 						height: 200px;
+						margin-bottom: 15px;
 					}
 				}
 			}
@@ -294,7 +320,7 @@
 	#part-1  {
 		height: auto;
 		.about__content__scroll-image {
-			margin-left: 0px;
+			// margin-left: 0px;
 			margin-top: 16px;
 		}
 	}

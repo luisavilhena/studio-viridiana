@@ -4,12 +4,13 @@
 @screen-md: 1250px; 
 @screen-xxs: 400px;
 
-@width-column: 436px;
-@width-column-lg: 590px;
-@width-column-sm: 370px;
+@width-column: 30%;
+@width-column-lg: 31%;
+@width-column-sm: 100%;
 
 @screen-xl: 1900px;
 @screen-lg: 1460px;
+@screen-md: 1000px;
 @screen-sm: 600px;
 
 
@@ -30,7 +31,7 @@
 	width: 100%;
 	min-height: 100vh;
 	.structure-container__content {
-		padding-top: 81px;
+		padding-top: 100px;
 		padding-bottom: 80px;
 		padding-right: 15px;
 		padding-left: 15px;
@@ -65,6 +66,14 @@
 }
 .structure-color-green {
 	background-color: @green;
+	color: white;
+	border-color: @gray;
+	a {
+		color: white;
+	}
+}
+.structure-color-black {
+	background-color: black;
 	color: white;
 	border-color: @gray;
 	a {

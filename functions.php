@@ -134,3 +134,26 @@ function mytheme_add_custom_image_sizes() {
     add_image_size( 'home', 260, 160, true );
 }
 add_action('after_setup_theme', 'mytheme_add_custom_image_sizes' );
+
+/**
+* Removes or edits the 'Protected:' part from posts titles
+*/
+function the_title_trim($title) {
+
+    $title = attribute_escape($title);
+
+    $findthese = array(
+        '#Protected:#',
+        '#Private:#',
+        '#Protegido:#'
+    );
+
+    $replacewith = array(
+        '', // What to replace "Protected:" with
+        '' // What to replace "Private:" with
+    );
+
+    $title = preg_replace($findthese, $replacewith, $title);
+    return $title;
+}
+add_filter('the_title', 'the_title_trim');

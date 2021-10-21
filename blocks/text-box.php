@@ -12,9 +12,11 @@ function text_box() {
 				->set_options( array(
 					'structure-color-light-pink' => light,
 					'structure-color-green' => dark,
+					'structure-color-black' => black,
 				) ),
 			Field::make('complex', 'topic', 'Topic')
 			  ->add_fields(array(
+			  	Field::make('rich_text', 'title', 'Title before box'),
 			    Field::make('text', 'text', 'Text'),
 			    Field::make('complex', 'more', 'More')
 			      ->add_fields(array(
@@ -27,10 +29,15 @@ function text_box() {
  
 			// ob_start();
 			?>
- 
-			<div class="text-box <?php echo $block['select']?>">
+ 			
+			<div class="text-box ">
 				<?php foreach ($block['topic'] as $topic) : ?>
-				<div class="text-box__item">
+				<?php if ($topic['title']) : ?>
+					<div class="text-box__item__title rich_text ">
+						<?php echo $topic['title']; ?>
+					</div>
+				<?php  endif; ?>
+				<div class="text-box__item <?php echo $block['select']?>">
 					<h4><?php echo $topic['text']; ?></h4>
 					<?php foreach ($topic['more'] as $more) : ?>
 					<div class="text-box__item__more">

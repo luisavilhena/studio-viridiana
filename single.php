@@ -11,8 +11,7 @@ get_header(); ?>
 					<span class="arrow-2"></span>
 					<Input class="button"type = "button" onclick = "document.location.href = 'projects';">
 				</div>
-				<div class="project-single__header__img">
-					<?php the_post_thumbnail(); ?>
+				<div class="project-single__header__img" style="background-image: url('<?php the_post_thumbnail_url() ?>');">
 				</div>
 				<?php the_content(); ?>
 			</div>
