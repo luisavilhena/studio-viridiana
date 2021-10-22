@@ -2127,7 +2127,7 @@ footer .footer__content .footer__content__icons a svg {
 }
 form.wpcf7-form {
   max-width: 30%;
-  margin: 0 auto;
+  margin: 0 auto 40px auto;
 }
 form.wpcf7-form p {
   margin-bottom: 0px;
