@@ -959,6 +959,7 @@
 }
 @media screen and (min-width: 1460px) {
   #about .about__content .about__content__fixed .about__content__fixed-right {
+    top: 113px;
     width: 31%;
   }
   #about .about__content .about__content__fixed .about__content__fixed-right .about__content__fixed-right-box .about__content__fixed-right-box__description {
@@ -1534,7 +1535,6 @@ ul#main-menu > li:last-of-type {
     border: none;
     z-index: 100;
     transition: right 0.6s;
-    height: 36px;
     cursor: pointer;
   }
   #mobile-menu-trigger span {
@@ -1569,7 +1569,7 @@ ul#main-menu > li:last-of-type {
     margin-top: 4px;
   }
   .menu-open #mobile-menu-trigger div span {
-    margin-bottom: 0px;
+    margin-bottom: -1px;
   }
   .menu-open #mobile-menu-trigger div > span:nth-child(1) {
     transform: rotate(45deg);
@@ -1580,6 +1580,7 @@ ul#main-menu > li:last-of-type {
     transform: visibility 0.6s;
   }
   .menu-open #mobile-menu-trigger div > span:nth-child(2) {
+    margin-bottom: 8px;
     transform: rotate(-45deg);
     transition: transform 0.6s;
   }
