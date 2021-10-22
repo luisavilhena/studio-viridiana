@@ -157,3 +157,33 @@ function the_title_trim($title) {
     return $title;
 }
 add_filter('the_title', 'the_title_trim');
+
+// enable gutenberg for woocommerce
+function activate_gutenberg_product( $can_edit, $post_type ) {
+ if ( $post_type == 'product' ) {
+        $can_edit = true;
+    }
+    return $can_edit;
+}
+add_filter( 'use_block_editor_for_post_type', 'activate_gutenberg_product', 10, 2 );
+
+// enable taxonomy fields for woocommerce with gutenberg on
+function enable_taxonomy_rest( $args ) {
+    $args['show_in_rest'] = true;
+    return $args;
+}
+add_filter( 'woocommerce_taxonomy_args_product_cat', 'enable_taxonomy_rest' );
+add_filter( 'woocommerce_taxonomy_args_product_tag', 'enable_taxonomy_rest' );
+
+/////////// 
+/**
+ * Change number of products that are displayed per page (shop page)
+ */
+add_filter( 'loop_shop_per_page', 'new_loop_shop_per_page', 20 );
+
+function new_loop_shop_per_page( $cols ) {
+  // $cols contains the current number of products per page based on the value stored on Options –> Reading
+  // Return the number of products you wanna show per page.
+  $cols = 3;
+  return $cols;
+}
