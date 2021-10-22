@@ -974,20 +974,14 @@
   #about .about__content .about__content__scroll .about__content__scroll-photo-list div {
     height: 29%;
   }
-  #part-1 {
-    height: 735px;
-  }
-  #part-2.about__content__scroll {
-    height: 735px;
-  }
-  #part-2.about__content__scroll .about__content__scroll-flex .about__content__scroll-image {
+  #about .about__content #part-2.about__content__scroll .about__content__scroll-flex .about__content__scroll-image {
     height: auto;
     background-position: center 23%;
   }
-  #part-3 {
+  #about .about__content #part-3 {
     padding-bottom: 40px;
   }
-  #part-3 h3:first-of-type {
+  #about .about__content #part-3 h3:first-of-type {
     margin-bottom: 0px;
   }
 }
