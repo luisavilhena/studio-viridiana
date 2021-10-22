@@ -977,8 +977,12 @@
   #part-1 {
     height: 735px;
   }
-  #part-2 {
+  #part-2.about__content__scroll {
     height: 735px;
+  }
+  #part-2.about__content__scroll .about__content__scroll-flex .about__content__scroll-image {
+    height: auto;
+    background-position: center 23%;
   }
   #part-3 {
     padding-bottom: 40px;
