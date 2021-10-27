@@ -21,7 +21,7 @@ function columns_image_text_box() {
 				  ->add_fields(array(
 				    Field::make('text', 'text', 'Text'),
 				    Field::make('rich_text', 'more_text', 'Text'),
-				    Field::make('image', 'img_2', 'Image list'),
+				    Field::make('image', 'img', 'Image list'),
 				    Field::make('text', 'link', 'link'),
 				  ))
 			))
@@ -42,7 +42,17 @@ function columns_image_text_box() {
 						<?php foreach ($columns['topic'] as $topic) : ?>
 						<?php if($topic['text']) : ?>
 						<div class="text-box__item">
-							
+							<?php if($topic['link']) : ?>
+							<a href="<?php echo $topic['link']; ?>">
+								<h4><?php echo $topic['text']; ?></h4>
+								<div class="arrow">
+									<span class="arrow-1"></span>
+									<span class="arrow-2"></span>
+								</div>
+							</a>
+							<?php else: ?>
+							<h4><?php echo $topic['text']; ?></h4>
+							<?php endif; ?>
 							<?php if($topic['more_text']) :  ?>
 							<div class="text-box__item__more">
 								<div class="text-box__item__more-button">
@@ -60,7 +70,14 @@ function columns_image_text_box() {
 						<?php endif; ?>
 						<?php endforeach;  ?>
 					</div>
-					
+					<?php foreach ($columns['topic'] as $topic) : ?>
+						<?php if($topic['img']) : ?>
+					<div class="image-columns__item__list">
+						<div data-featherlight="<?php echo wp_get_attachment_image_src($topic['img'],'ap_image_desktop_full_no_crop')[0]; ?>"style="background-image: url('<?php echo wp_get_attachment_image_src($topic['img'],'ap_image_desktop_full_no_crop')[0]; ?>');">
+						</div>
+					</div>
+						<?php endif; ?>
+					<?php endforeach; ?>
 
 
 				</div>

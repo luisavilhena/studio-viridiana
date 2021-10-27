@@ -188,6 +188,11 @@ function new_loop_shop_per_page( $cols ) {
   return $cols;
 }
 
+
+
+
+
+
 /**
  * Remove product data tabs
  */
@@ -203,3 +208,5 @@ function woo_remove_product_tabs( $tabs ) {
 }
 
 add_filter ('yith_wcan_use_wp_the_query_object', '__return_true');
+
+
