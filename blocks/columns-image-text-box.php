@@ -8,11 +8,6 @@ add_action( 'after_setup_theme', 'studio_viridiana' );
 function columns_image_text_box() {
 	Block::make( 'Columns box' )
 		->add_fields( array(
-			Field::make( 'select', 'select', 'Background options')
-				->set_options( array(
-					'structure-color-light-pink' => light,
-					'structure-color-green' => dark,
-				) ),
 			Field::make('complex', "columns", "Columns")
 			->add_fields(array(
 				Field::make('image', 'img', 'Image'),
