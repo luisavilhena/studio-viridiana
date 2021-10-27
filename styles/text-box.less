@@ -26,6 +26,33 @@
 			text-transform: uppercase;
 			font-family: 'CircularStd';
 		}
+		> a {
+			display: flex;
+			justify-content: space-between;
+			h4 {
+				padding-left: 10px;
+				text-transform: uppercase;
+				font-family: 'CircularStd';
+			}
+			> div.arrow {
+				margin-right: 3px;
+				margin-top: 2px;
+				span {
+					background-color: @gray;
+					display: block;
+					width: 10px;
+					height: 1px;
+					margin-left: 20px;
+				}
+				.arrow-1 {
+					transform: rotate(45deg)
+				}
+				.arrow-2 {
+					margin-top: 6px;
+					transform: rotate(-45deg)
+				}
+			}
+		}
 		.text-box__item__more {
 			> .text-box__item__more-button {
 				position: absolute;

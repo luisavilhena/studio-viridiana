@@ -9,6 +9,29 @@
 // function menuButtonOpen() {
 // 	mainHeader.classList.toggle("menu-open")
 // }
+(function() {
+    var pushState = history.pushState;
+    var replaceState = history.replaceState;
+
+    history.pushState = function() {
+        pushState.apply(history, arguments);
+        window.dispatchEvent(new Event('pushstate'));
+        window.dispatchEvent(new Event('locationchange'));
+    };
+
+    history.replaceState = function() {
+        replaceState.apply(history, arguments);
+        window.dispatchEvent(new Event('replacestate'));
+        window.dispatchEvent(new Event('locationchange'));
+    };
+
+    window.addEventListener('popstate', function() {
+        window.dispatchEvent(new Event('locationchange'))
+    });
+})();
+
+
+
 $(document).ready(function(){
 	$('#mobile-menu-trigger').on("click", function(e){
 		$('#main-header').toggleClass('menu-open')
@@ -32,33 +55,63 @@ $(document).ready(function(){
 })
 
 
+
 //TEXT BOX CLICk
 $(document).ready(function(){
+	window.addEventListener('locationchange', function(){
+    console.log('location changed!', $('.text-box__item__more'));
+    setTimeout(function(){
+    	$('.text-box__item__more').on("click", function(e){
+    		$(this).toggleClass("active")
+    		console.log('clicou location')
+    	})
+    	$('.text-box__item h4').on("click", function(e){
+    		$(this).toggleClass("active")
+    	})
+    }, 0)
+	})
 	$('.text-box__item h4').on("click", function(e){
 		$(this).toggleClass("active")
 	})
 })
+
 $(document).ready(function(){
 	$('.text-box__item__more').on("click", function(e){
+		console.log('clicou out location')
 		$(this).toggleClass("active")
 	})
 })
 
 //BACKGROUND-COLOR MENU
 $(document).ready(function(){
-	const backgroundColor = $('main').css('background-color')
-	const color = $('main').css('color')
-	$('header').css('background-color', backgroundColor)
-	$('ul#main-menu').css('background-color', backgroundColor)
-	$('#mobile-menu-trigger div span').css('background-color', color)
-	$('footer').css('background-color', backgroundColor)
-	$('header').css('color', color)
-	$('footer').css('color', color)
-	$('footer svg').css('fill', color)
-	$('header svg').css('fill', color)
-	$('header h1').css('color', color)
+	// if($('body').hasClass('woocommerce-js')){
+		// $('header').css('background-color', '#0b1d1c')
+		// $('main').css('background-color', '#0b1d1c')
+		// $('ul#main-menu').css('background-color', '#0b1d1c')
+		// $('#mobile-menu-trigger div span').css('background-color', '#0b1d1c')
+		// $('footer').css('background-color', '#0b1d1c')
+		// $('header').css('color', '#ffffff')
+		// $('footer').css('color', '#ffffff')
+		// $('footer svg').css('fill', '#ffffff')
+		// $('header svg').css('fill', '#ffffff')
+		// $('header h1').css('color', '#ffffff')
+		// $('#main-menu li a').css('color', '#ffffff')
 
-	$('#main-menu li a').css('color', color)
+	// } else {
+		const backgroundColor = $('main').css('background-color')
+		const color = $('main').css('color')
+		$('header').css('background-color', backgroundColor)
+		$('ul#main-menu').css('background-color', backgroundColor)
+		$('#mobile-menu-trigger div span').css('background-color', color)
+		$('footer').css('background-color', backgroundColor)
+		$('header').css('color', color)
+		$('footer').css('color', color)
+		$('footer svg').css('fill', color)
+		$('header svg').css('fill', color)
+		$('header h1').css('color', color)
+		$('#main-menu li a').css('color', color)
+
+	// }
 })
 
 //ABOUT SCROLL
@@ -81,7 +134,7 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$(window).on('scroll', function(event) {
 			const heightElement2 = window.pageYOffset
-			console.log(heightElement2)
+			// console.log(heightElement2)
 					// console.log(heightElement)
 			// if ($(window).width() > 1600) {
 			// 	if ($(window).height() > 1500) {

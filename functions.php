@@ -187,3 +187,19 @@ function new_loop_shop_per_page( $cols ) {
   $cols = 3;
   return $cols;
 }
+
+/**
+ * Remove product data tabs
+ */
+add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
+
+function woo_remove_product_tabs( $tabs ) {
+
+    unset( $tabs['description'] );          // Remove the description tab
+    unset( $tabs['reviews'] );          // Remove the reviews tab
+    unset( $tabs['additional_information'] );   // Remove the additional information tab
+
+    return $tabs;
+}
+
+add_filter ('yith_wcan_use_wp_the_query_object', '__return_true');
