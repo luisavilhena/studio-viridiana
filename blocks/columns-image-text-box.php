@@ -19,6 +19,7 @@ function columns_image_text_box() {
 				    Field::make('image', 'img', 'Image list'),
 				    Field::make('text', 'link', 'link'),
 				  ))
+				  ->set_layout('tabbed-vertical')
 			))
 			  ->set_layout('tabbed-vertical')
 		) )
