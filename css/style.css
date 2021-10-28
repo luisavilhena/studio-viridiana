@@ -1433,7 +1433,7 @@ div.datepick-inline .datepick-title-row th {
 .woocommerce ul.products li.product .image-columns__item__description {
   margin-right: auto;
   margin-left: auto;
-  width: 78%;
+  width: 55%;
 }
 .woocommerce ul.products li.product .image-columns.image-columns--special-item .text-box > .text-box__item {
   border-color: white;
