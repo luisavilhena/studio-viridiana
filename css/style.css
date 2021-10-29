@@ -706,6 +706,7 @@
   display: flex;
   justify-content: space-between;
   padding-right: 0px;
+  text-decoration: none;
 }
 .text-box > .text-box__item > a h4 {
   font-size: 9px;
@@ -719,7 +720,7 @@
 .text-box > .text-box__item > a > div.arrow:before {
   content: "";
   width: 1px;
-  height: 27px;
+  height: 26px;
   background-color: #615e5e;
   display: block;
   position: absolute;

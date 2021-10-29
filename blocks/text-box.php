@@ -18,6 +18,7 @@ function text_box() {
 			  ->add_fields(array(
 			  	Field::make('rich_text', 'title', 'Title before box'),
 			    Field::make('text', 'text', 'Text'),
+			    Field::make('text', 'link_id', 'Scroll link - if there is columns box with link'),
 			    Field::make('complex', 'more', 'More')
 			      ->add_fields(array(
 			        Field::make('rich_text', 'more_text', 'Text'),
@@ -33,7 +34,7 @@ function text_box() {
 			<div class="text-box ">
 				<?php foreach ($block['topic'] as $topic) : ?>
 				<?php if ($topic['title']) : ?>
-					<div class="text-box__item__title rich_text ">
+					<div id="<?php $columns['link_id'] ?>" class="text-box__item__title rich_text ">
 						<?php echo $topic['title']; ?>
 					</div>
 				<?php  endif; ?>

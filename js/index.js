@@ -1,14 +1,6 @@
 //js functions
+//create location change
 
-//menu
-// const menuButtonClose = document.querySelector('#mobile-menu-trigger')
-// const mainHeader = document.querySelector('#main-header')
-
-// // menuButtonClose.addEventListener('click', menuButtonOpen)
-
-// function menuButtonOpen() {
-// 	mainHeader.classList.toggle("menu-open")
-// }
 (function() {
     var pushState = history.pushState;
     var replaceState = history.replaceState;
@@ -67,7 +59,7 @@ $(document).ready(function(){
     	})
     	$('.text-box__item h4').on("click", function(e){
     		$(this).toggleClass("active")
-    	})
+    	})  	
     }, 0)
 	})
 	$('.text-box__item h4').on("click", function(e){
@@ -80,6 +72,12 @@ $(document).ready(function(){
 		console.log('clicou out location')
 		$(this).toggleClass("active")
 	})
+	if($('.text-box__item__more a')){
+		$('.text-box__item__more').on("click", function(e){x
+			$(this).removeClass("active")
+		})
+	}
+
 })
 
 //BACKGROUND-COLOR MENU
@@ -121,11 +119,7 @@ $(document).ready(function(){
 	$(function() {
 	  $('.arrow').click(function(e) {
 	  	const heightElement = window.pageYOffset
-	  	// const heightWindow = $(window).height()
-	  	// console.log(heightElement)
 	      $('html, body').animate({ scrollTop: $('html').offset().top  + heightElement + 600}, 1000);
-	      // console.log() 
-	      // console.log(heightElement,  $('html').offset().top,  $('html').offset().top + heightElement) 
 	  });
 	});
 })
@@ -134,14 +128,6 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$(window).on('scroll', function(event) {
 			const heightElement2 = window.pageYOffset
-			// console.log(heightElement2)
-					// console.log(heightElement)
-			// if ($(window).width() > 1600) {
-			// 	if ($(window).height() > 1500) {
-			// 		$('.arrow').css('display', "none")
-			// 	}
-			// }
-			// if ($(window).width() < 1600) {
 				if (heightElement2 > 150) {
 					$('header').addClass('header-animation-small')
 					$('header').removeClass('header-animation-bigger')
