@@ -15,13 +15,14 @@
 		border-style: solid;
 		font-family: 'CircularStd';
 		font-weight: 400;
-		padding-top: 5px;
-		padding-bottom: 5px;
+		padding-top: 8px;
+		padding-bottom: 8px;
 		border-bottom-color: transparent;
 		> * {
 			padding-right: 5px;
 		}
 		> h4 {
+			font-size: 9px;
 			padding-left: 10px;
 			text-transform: uppercase;
 			font-family: 'CircularStd';
@@ -32,6 +33,7 @@
 			padding-right: 0px;
 
 			h4 {
+				font-size: 9px;
 				padding-left: 10px;
 				text-transform: uppercase;
 				font-family: 'CircularStd';
@@ -76,14 +78,14 @@
 				border-color: @gray;
 				top:0px;
 		    right: 0;
-		    height: 23px;
+		    height: 26px;
 		    width: 30px;
 		    > div {
 		    	display: flex;
 		    	flex-direction: column;
 		    	align-items: center;
 		    	justify-content: center;
-		    	margin-top: 10px;
+		    	margin-top: 11px;
 			    span {
 			    	background-color: @gray;
 			    	width: 15px;
@@ -108,12 +110,12 @@
 	.text-box__item:last-of-type {
 		border-bottom-color: @gray;
 	}
-	h3.active ~ .text-box__item__more-text {
+	h4.active ~ .text-box__item__more-text {
 		display: block;
 	}
-	h3.active ~ .text-box__item__more {
+	h4.active ~ .text-box__item__more {
 		// width: 100%;
-		height: 5px;
+		height: 8px;
 		display: block;
 		border-bottom: 1px @gray solid;
 		.text-box__item__more-button {
@@ -132,7 +134,7 @@
 }
 .text-box > .text-box__item .active.text-box__item__more {
   // width: 100%;
-  height: 5px;
+  height: 8px;
   display: block;
   border-bottom: 1px #615e5e solid;
 }
