@@ -54,11 +54,11 @@ form.wpcf7-form  {
     border: 1px solid @gray;
     transition: background-color 0.5s;
 	}
-		input[type="submit"]:hover {
-			color: white;
-			background-color: black;
-			transition: background-color 0.5s;
-		}
+	input[type="submit"]:hover {
+		color: white;
+		background-color: black;
+		transition: background-color 0.5s;
+	}
 	input:-webkit-autofill, 
 	input:-webkit-autofill:hover, 
 	input:-webkit-autofill:focus, 
@@ -92,9 +92,6 @@ form.wpcf7-form  {
 			}
 		}
 		&:hover {
-			background-color: black;
-			color: white;
-			transition: background-color 0.5s;
 			.arrow {
 				span {
 					background-color: white;
@@ -122,5 +119,52 @@ form.wpcf7-form  {
 	form.wpcf7-form  {
 		margin-bottom: 30px;
 		max-width: @width-column-sm;
+	}
+}
+
+.woocommerce {
+	.image-columns {
+		.text-box {
+			.text-box__item {
+				br {
+					display: none;
+				}
+				form.wpcf7-form {
+					margin: -30px auto 0px auto;
+					max-width: 100%;
+					input, textarea {
+						background-color: @green;
+						color: white;
+						border: 1px solid white;
+						margin-top: -1px;
+					}
+					textarea::placeholder {
+						color: white;
+					}
+					input::placeholder {
+						color: white;
+					}
+					input:-webkit-autofill, 
+					input:-webkit-autofill:hover, 
+					input:-webkit-autofill:focus, 
+					input:-webkit-autofill:active {
+					  background-color: @green;
+					}
+					input[type="submit"]:hover {
+						background-color: black;
+						transition: background-color 0.5s;
+					}
+					.submit-arrow {
+						margin-top: -33px;
+						.arrow {
+							top: 25px;
+							span {
+								background-color: white;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }

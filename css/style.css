@@ -595,6 +595,9 @@
   .image-columns > .image-columns__item {
     width: 31%;
   }
+  .image-columns.image-columns--special-item > .image-columns__item > .image-columns__item__img {
+    height: 340px;
+  }
 }
 @media screen and (max-width: 1000px) {
   .image-columns > .image-columns__item {
@@ -625,6 +628,9 @@
   }
   .image-columns.image-columns--special-item > .image-columns__item {
     width: 100%;
+  }
+  .image-columns.image-columns--special-item > .image-columns__item:not(:first-of-type) {
+    margin-top: 50px;
   }
 }
 .one-image {
@@ -713,7 +719,7 @@
 .text-box > .text-box__item > a > div.arrow:before {
   content: "";
   width: 1px;
-  height: 22px;
+  height: 27px;
   background-color: #615e5e;
   display: block;
   position: absolute;
@@ -817,7 +823,7 @@
 @media screen and (max-width: 700px) {
   .text-box {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
   }
   .text-box > .text-box__item {
     width: 100%;
@@ -2401,11 +2407,6 @@ form.wpcf7-form .submit-arrow .arrow .arrow-1 {
 form.wpcf7-form .submit-arrow .arrow .arrow-2 {
   transform: rotate(-45deg);
 }
-form.wpcf7-form .submit-arrow:hover {
-  background-color: black;
-  color: white;
-  transition: background-color 0.5s;
-}
 form.wpcf7-form .submit-arrow:hover .arrow span {
   background-color: white;
 }
@@ -2428,6 +2429,45 @@ form.wpcf7-form .submit-arrow:hover .arrow span {
     margin-bottom: 30px;
     max-width: 100%;
   }
+}
+.woocommerce .image-columns .text-box .text-box__item br {
+  display: none;
+}
+.woocommerce .image-columns .text-box .text-box__item form.wpcf7-form {
+  margin: -30px auto 0px auto;
+  max-width: 100%;
+}
+.woocommerce .image-columns .text-box .text-box__item form.wpcf7-form input,
+.woocommerce .image-columns .text-box .text-box__item form.wpcf7-form textarea {
+  background-color: #0b1d1c;
+  color: white;
+  border: 1px solid white;
+  margin-top: -1px;
+}
+.woocommerce .image-columns .text-box .text-box__item form.wpcf7-form textarea::placeholder {
+  color: white;
+}
+.woocommerce .image-columns .text-box .text-box__item form.wpcf7-form input::placeholder {
+  color: white;
+}
+.woocommerce .image-columns .text-box .text-box__item form.wpcf7-form input:-webkit-autofill,
+.woocommerce .image-columns .text-box .text-box__item form.wpcf7-form input:-webkit-autofill:hover,
+.woocommerce .image-columns .text-box .text-box__item form.wpcf7-form input:-webkit-autofill:focus,
+.woocommerce .image-columns .text-box .text-box__item form.wpcf7-form input:-webkit-autofill:active {
+  background-color: #0b1d1c;
+}
+.woocommerce .image-columns .text-box .text-box__item form.wpcf7-form input[type="submit"]:hover {
+  background-color: black;
+  transition: background-color 0.5s;
+}
+.woocommerce .image-columns .text-box .text-box__item form.wpcf7-form .submit-arrow {
+  margin-top: -33px;
+}
+.woocommerce .image-columns .text-box .text-box__item form.wpcf7-form .submit-arrow .arrow {
+  top: 25px;
+}
+.woocommerce .image-columns .text-box .text-box__item form.wpcf7-form .submit-arrow .arrow span {
+  background-color: white;
 }
 @-ms-viewport {
   width: device-width;

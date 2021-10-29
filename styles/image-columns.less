@@ -69,6 +69,13 @@
 			}
 		}
 	}
+	.image-columns.image-columns--special-item {
+		> .image-columns__item {
+			> .image-columns__item__img {
+				height: 340px;
+			}
+		}
+	}
 }
 @media screen and (max-width: @screen-md) {
 	.image-columns {
@@ -103,6 +110,9 @@
 	.image-columns.image-columns--special-item {
 		> .image-columns__item {
 			width: 100%;
+		}
+		> .image-columns__item:not(:first-of-type) {
+			margin-top: 50px;
 		}
 	}
 }
