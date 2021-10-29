@@ -2461,7 +2461,7 @@ form.wpcf7-form .submit-arrow:hover .arrow span {
   transition: background-color 0.5s;
 }
 .woocommerce .image-columns .text-box .text-box__item form.wpcf7-form .submit-arrow {
-  margin-top: -33px;
+  margin-top: -2px;
 }
 .woocommerce .image-columns .text-box .text-box__item form.wpcf7-form .submit-arrow .arrow {
   top: 10px;
