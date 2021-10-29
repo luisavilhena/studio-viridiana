@@ -683,6 +683,7 @@
   width: 30%;
 }
 .text-box > .text-box__item {
+  width: 30%;
   cursor: pointer;
   position: relative;
   box-sizing: border-box;
