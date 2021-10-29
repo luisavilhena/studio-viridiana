@@ -2434,14 +2434,14 @@ form.wpcf7-form .submit-arrow:hover .arrow span {
   display: none;
 }
 .woocommerce .image-columns .text-box .text-box__item form.wpcf7-form {
-  margin: -30px auto 0px auto;
+  margin: 30px auto 0px auto;
   max-width: 100%;
 }
 .woocommerce .image-columns .text-box .text-box__item form.wpcf7-form input,
 .woocommerce .image-columns .text-box .text-box__item form.wpcf7-form textarea {
   background-color: #0b1d1c;
   color: white;
-  border: 1px solid white;
+  border-color: white;
   margin-top: -1px;
 }
 .woocommerce .image-columns .text-box .text-box__item form.wpcf7-form textarea::placeholder {
@@ -2464,7 +2464,7 @@ form.wpcf7-form .submit-arrow:hover .arrow span {
   margin-top: -33px;
 }
 .woocommerce .image-columns .text-box .text-box__item form.wpcf7-form .submit-arrow .arrow {
-  top: 25px;
+  top: 10px;
 }
 .woocommerce .image-columns .text-box .text-box__item form.wpcf7-form .submit-arrow .arrow span {
   background-color: white;
