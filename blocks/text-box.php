@@ -34,11 +34,11 @@ function text_box() {
 			<div class="text-box ">
 				<?php foreach ($block['topic'] as $topic) : ?>
 				<?php if ($topic['title']) : ?>
-					<div id="<?php $columns['link_id'] ?>" class="text-box__item__title rich_text ">
+					<div class="text-box__item__title rich_text ">
 						<?php echo $topic['title']; ?>
 					</div>
 				<?php  endif; ?>
-				<div class="text-box__item <?php echo $block['select']?>">
+				<div id="<?php $columns['link_id'] ?>"  class="text-box__item <?php echo $block['select']?>">
 					<h4><?php echo $topic['text']; ?></h4>
 					<?php foreach ($topic['more'] as $more) : ?>
 					<div class="text-box__item__more">

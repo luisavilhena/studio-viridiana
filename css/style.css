@@ -679,10 +679,12 @@
   margin-top: 15px;
   margin-bottom: 45px;
 }
+.text-box > .text-box__item__title {
+  width: 30%;
+}
 .text-box > .text-box__item {
   cursor: pointer;
   position: relative;
-  width: 30%;
   box-sizing: border-box;
   border-color: #615e5e;
   border-width: 1px;
@@ -815,8 +817,14 @@
   .text-box > .text-box__item {
     width: 31%;
   }
+  .text-box > .text-box__item__title {
+    width: 31%;
+  }
 }
 @media screen and (max-width: 1000px) {
+  .text-box > .text-box__item__title {
+    width: 45%;
+  }
   .text-box > .text-box__item {
     width: 45%;
   }
@@ -825,6 +833,9 @@
   .text-box {
     width: 100%;
     margin: 0 auto 30px auto;
+  }
+  .text-box > .text-box__item__title {
+    width: 100%;
   }
   .text-box > .text-box__item {
     width: 100%;
