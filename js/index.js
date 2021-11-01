@@ -37,6 +37,19 @@ $(document).ready(function(){
 	$('.captachinput').attr("placeholder", "RECAPCTHA")
 	$('input[type="password"]').attr("placeholder", "PASSWORD")
 })
+//CONTACT
+$(document).ready(function(){
+	$('.wpcf7-radio .wpcf7-list-item').on("click", function(e){
+		if ($('.wpcf7-radio .wpcf7-list-item').hasClass("structure-color-black")) {
+			$('.wpcf7-radio .wpcf7-list-item').removeClass("structure-color-black")
+			$(this).toggleClass('structure-color-black')
+		} else {
+			$(this).toggleClass('structure-color-black')
+		}
+  })
+})
+
+
 
 //LOADING
 $(document).ready(function(){

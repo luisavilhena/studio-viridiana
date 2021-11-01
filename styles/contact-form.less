@@ -66,6 +66,55 @@ form.wpcf7-form  {
 	    -webkit-transition-delay: 99999s;
 	    background-color: @light-pink;
 	}
+
+	.wpcf7-radio {
+		display: flex;
+		> .wpcf7-list-item {
+			margin: 0;
+			width: 33.33%;
+			border: 1px solid @gray;
+			padding: 5px 10px;
+			border-right: none;
+			border-bottom: none;
+			cursor: pointer;
+			&:last-of-type {
+				border-right: 1px solid @gray;
+			}
+			&:hover {
+				background-color: black;
+				color: white;
+			}
+
+			.wpcf7-list-item-label {
+				cursor: pointer;
+				font-size: 9px;
+				font-family: 'CircularStd', sans-serif;
+				box-sizing: border-box;
+				font-weight: 300;
+				width: 100%;
+				border-radius: 0;
+			}
+		}
+	}
+	.contact-option {
+		display: flex;
+		div {
+			width: 33.33%;
+			border: 1px solid @gray;
+			border-right: none;
+			border-bottom: none;
+			padding: 5px 10px;
+			h4 {
+				font-size: 9px;
+			}
+			&:last-of-type {
+				border-right: 1px solid @gray;
+			}
+		}
+	}
+	input[type="radio"] {
+		display: none;
+	}
 	.submit-arrow {
 		position: relative;
 		.arrow {
