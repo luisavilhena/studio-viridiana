@@ -1,11 +1,22 @@
 <?php
 
-add_action('after_setup_theme', 'studioviridiana_add_custom_image_sizes' );
+
+function studio_viridiana(){
+	wp_enqueue_style('customstyle', get_template_directory_uri() . '/css/style.css', array(), '1.0.0', 'all');
+	wp_enqueue_script('customjs',  get_template_directory_uri() . '/js/index.js', array(), NULL, false );
+    wp_enqueue_script('slickjs',  get_template_directory_uri() . '/slick/slick.min.js', array(), '1.8.0', true);
+    wp_enqueue_style('slickcss', get_template_directory_uri() . '/slick/slick.css', array(), '1.8.0', 'all');
+    wp_enqueue_style('slicktheme', get_template_directory_uri() . '/slick/slick-theme.css', array(), '1.8.0', 'all');
+}
+
+add_action('wp_enqueue_scripts', 'studio_viridiana');
+
 
 function studioviridiana_add_custom_image_sizes() {
+
      // Add "vertical" image
     add_image_size( 'vertical', 590, 670, true);
-    add_image_size( 'vertical-b', 800, 1000, true);
+    add_image_size( 'vertical-larger', 890, 970, true);
     // Add "horizontal" image
     add_image_size( 'horizontal-a', 2000, 1500, true );
     add_image_size( 'horizontal-b', 220, 152, true );
@@ -20,15 +31,7 @@ function studioviridiana_add_custom_image_sizes() {
     add_image_size('ap_image_desktop_full_crop', 890 , 1070, true);
 }
 
-function studio_viridiana(){
-	wp_enqueue_style('customstyle', get_template_directory_uri() . '/css/style.css', array(), '1.0.0', 'all');
-	wp_enqueue_script('customjs',  get_template_directory_uri() . '/js/index.js', array(), NULL, false );
-    wp_enqueue_script('slickjs',  get_template_directory_uri() . '/slick/slick.min.js', array(), '1.8.0', true);
-    wp_enqueue_style('slickcss', get_template_directory_uri() . '/slick/slick.css', array(), '1.8.0', 'all');
-    wp_enqueue_style('slicktheme', get_template_directory_uri() . '/slick/slick-theme.css', array(), '1.8.0', 'all');
-}
-
-add_action('wp_enqueue_scripts', 'studio_viridiana');
+add_action('after_setup_theme', 'studioviridiana_add_custom_image_sizes' );
 
 use Carbon_Fields\Container;
 use Carbon_Fields\Field;

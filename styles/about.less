@@ -102,12 +102,9 @@
 			}
 		}
 		.about__content__scroll {
+			margin-bottom: 30px;
 			.about__content__scroll-image {
 				width: @width-column;
-				height: 524px;
-				background-repeat: no-repeat;
-				background-size: cover;
-				background-position: center;
 				border: 1px solid @gray;
 			}
 			.about__content__scroll-flex {
@@ -121,7 +118,8 @@
 				}
 				> div,
 				> img {
-					width: 50%;
+					width: 47%;
+					margin-right: 30px;
 				}
 			}
 			.about__content__scroll-photo-list {
@@ -183,7 +181,7 @@
 	}
 }
 #part-1  {
-	height: 650px;
+	min-height: 800px;
 	.about__content__scroll-image {
 		margin-left: 246px;
 		margin-top: 16px;
@@ -192,12 +190,10 @@
 #about {
 	.about__content {
 		#part-2.about__content__scroll  {
-			height: 1000px;
+			min-height: 800px;
 			.about__content__scroll-flex {
 				align-items: flex-start;
-				.about__content__scroll-image--special {
-					height: auto;
-					border: 1px solid @gray;
+				.about__content__scroll-image{
 				}
 			}
 		}
@@ -247,8 +243,7 @@
 			#part-2.about__content__scroll  {
 				.about__content__scroll-flex {
 					.about__content__scroll-image {
-						height: auto;
-						background-position: center 23%;
+
 					}
 				}
 			}
@@ -288,9 +283,9 @@
 			.about__content__scroll {
 				.about__content__scroll-image {
 					width: @width-column-sm;
-					height: 378px;
 					margin-right: auto;
 					margin-left: auto;
+					margin-bottom: 20px;
 				}
 				.about__content__scroll-flex {
 					width: auto;
@@ -301,9 +296,9 @@
 						width: @width-column-sm;
 						margin-right: auto;
 						margin-left: auto;
-
 					}
-					> div {
+					> div,
+						img {
 						width: @width-column-sm;
 						margin-right: auto;
 						margin-left: auto;
@@ -325,7 +320,7 @@
 
 		.about__content {
 			#part-1  {
-				height: auto;
+				min-height: auto;
 				.about__content__scroll-image {
 					margin-top: 16px;
 					background-position: center;
@@ -333,14 +328,12 @@
 				}
 			}
 			#part-2.about__content__scroll  {
-				height: auto;
+				min-height: auto;
 				.about__content__scroll-flex {
 					.about__content__scroll-image {
-						height: 378px;
 					}
 				}
 			}
-
 		}
 	}
 }

@@ -59,18 +59,17 @@ get_header(); ?>
 		<section id="part-1" class="about__content__scroll">
 			<?php 
 			$thumbnail_id = carbon_get_theme_option('photo_1'); 
-			$thumbnail_url = wp_get_attachment_image_url( $thumbnail_id, 'full' );
+			$thumbnail_url = wp_get_attachment_image_url( $thumbnail_id, 'vertical' );
 			?>
-			<div class="about__content__scroll-image"style="background-image: url('<?php echo $thumbnail_url; ?>');">
-			</div>
+			<img class="about__content__scroll-image" src="<?php echo $thumbnail_url; ?>');">
 		</section>
 		<section id="part-2" class="about__content__scroll">
 			<?php 
 			$thumbnail_id_2 = carbon_get_theme_option('photo_2'); 
-			$thumbnail_url_2 = wp_get_attachment_image_url( $thumbnail_id_2, 'full' );
+			$thumbnail_url_2 = wp_get_attachment_image_url( $thumbnail_id_2, 'vertical' );
 			?>
 			<div class="about__content__scroll-flex">
-				<img  class="about__content__scroll-image--special" src="<?php echo $thumbnail_url_2; ?>">
+				<img  class="about__content__scroll-image" src="<?php echo $thumbnail_url_2; ?>">
 
 				<div class="">
 					<div class="about__content__scroll__description rich-text">

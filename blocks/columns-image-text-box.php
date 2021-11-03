@@ -30,8 +30,8 @@ function columns_image_text_box() {
 			<div class="image-columns  image-columns--special-item">
 				<?php foreach ($block['columns'] as $columns) : ?>
 				<div class="image-columns__item">
-					<div class="image-columns__item__img" data-featherlight="<?php echo wp_get_attachment_image_src($columns['img'],'ap_image_desktop_full_no_crop')[0]; ?>"class="image-columns__item__img" style="background-image: url('<?php echo wp_get_attachment_image_src($columns['img'],'ap_image_desktop_full_no_crop')[0]; ?>');">
-					</div>
+					<img class="image-columns__item__img" data-featherlight="<?php echo wp_get_attachment_image_src($columns['img'],'ap_image_desktop_full_no_crop')[0]; ?>" src="<?php echo wp_get_attachment_image_src($columns['img'],'vertical')[0]; ?>
+					">
 					<div class="image-columns__item__description rich-text"><?php echo $columns['rich_text']; ?></div>
 
 					<div class="text-box <?php echo $block['select']?>" style="background-color: <?php echo $block['background']?>">
@@ -69,7 +69,7 @@ function columns_image_text_box() {
 					<?php foreach ($columns['topic'] as $topic) : ?>
 						<?php if($topic['img']) : ?>
 					<div class="image-columns__item__list">
-						<div data-featherlight="<?php echo wp_get_attachment_image_src($topic['img'],'ap_image_desktop_full_no_crop')[0]; ?>"style="background-image: url('<?php echo wp_get_attachment_image_src($topic['img'],'ap_image_desktop_full_no_crop')[0]; ?>');">
+						<img data-featherlight="<?php echo wp_get_attachment_image_src($topic['img'],'ap_image_desktop_full_no_crop')[0]; ?>" src="<?php echo wp_get_attachment_image_src($topic['img'],'vertical')[0]; ?>">
 						</div>
 					</div>
 						<?php endif; ?>

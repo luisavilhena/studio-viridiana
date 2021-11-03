@@ -337,11 +337,14 @@
   margin-bottom: 30px;
   justify-content: center;
   text-align: center;
-  width: 30%;
+  width: 28%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+#project-list .project-list .project-list__item img {
   border: 1px solid black;
+  width: 100%;
 }
 #project-list .project-list .project-list__item .project-list__item__title {
   text-transform: uppercase;
@@ -419,14 +422,11 @@
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-  background-size: cover;
-  background-position: center;
-  width: 30%;
-  height: 524px;
+  width: 28%;
   margin: 0 auto 20px auto;
 }
 #project-single .post-password-form {
-  width: 30%;
+  width: 28%;
   margin: 20px auto;
 }
 #project-single .post-password-form input[type="submit"] {
@@ -559,6 +559,7 @@
   margin-left: 15px;
   margin-right: 15px;
   margin-bottom: 30px;
+  width: 28%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -573,18 +574,21 @@
 .image-columns > .image-columns__item > .image-columns__item__description {
   margin-top: 30px;
 }
-.image-columns > .image-columns__item > .image-columns__item__list div {
+.image-columns > .image-columns__item > .image-columns__item__list img {
   margin-bottom: 30px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 524px;
   border: 1px solid black;
   cursor: pointer;
 }
-.image-columns--special-item > .image-columns__item > .image-columns__item__img {
-  height: 210px;
-  cursor: default;
+.image-columns--special-item > .image-columns__item {
+  width: 28%;
+}
+.image-columns--special-item > .image-columns__item .image-columns__item__img {
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
 }
 .image-columns--special-item > .image-columns__item > .text-box > .text-box__item {
   cursor: pointer;
@@ -592,37 +596,19 @@
   width: 100%;
 }
 @media screen and (min-width: 1460px) {
-  .image-columns > .image-columns__item {
+  .image-columns > .image-columns__item__img {
     width: 31%;
-  }
-  .image-columns.image-columns--special-item > .image-columns__item > .image-columns__item__img {
-    height: 340px;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .image-columns > .image-columns__item {
-    width: 45%;
-  }
-  .image-columns > .image-columns__item > .image-columns__item__list {
-    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 700px) {
   .image-columns {
     flex-direction: column;
   }
-  .image-columns > .image-columns__item {
-    margin-right: 0px;
-    margin-left: 0px;
-    margin-bottom: 10px;
-    width: 100%;
-  }
-  .image-columns > .image-columns__item > .image-columns__item__img {
+  .image-columns > .image-columns__item__img {
     margin: 10px auto 20px auto;
     width: 100%;
-    height: 350px;
   }
-  .image-columns > .image-columns__item > .image-columns__item__description {
+  .image-columns > .image-columns__item__img .image-columns__item__description {
     margin: 0 auto;
     width: 100%;
   }
@@ -639,17 +625,9 @@
   width: 100%;
 }
 .one-image .one-image__item {
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-bottom: 30px;
+  margin: 0 auto;
   width: 64% ;
-}
-.one-image .one-image__item div {
   cursor: pointer;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 700px;
   border: 1px solid black;
 }
 @media screen and (min-width: 1460px) {
@@ -680,10 +658,10 @@
   margin-bottom: 45px;
 }
 .text-box > .text-box__item__title {
-  width: 30%;
+  width: 28%;
 }
 .text-box > .text-box__item {
-  width: 30%;
+  width: 28%;
   cursor: pointer;
   position: relative;
   box-sizing: border-box;
@@ -833,7 +811,7 @@
 @media screen and (max-width: 700px) {
   .text-box {
     width: 100%;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 10px auto;
   }
   .text-box > .text-box__item__title {
     width: 100%;
@@ -849,7 +827,7 @@
 }
 #about .about__content .about__content__fixed .about__content__fixed-right {
   background-color: #fffef7;
-  width: 30%;
+  width: 28%;
   position: fixed;
   right: 15px;
   top: 95px;
@@ -942,12 +920,11 @@
 #about .about__content .about__content__fixed .about__content__fixed-footer .arrow .arrow-2 {
   transform: rotate(45deg);
 }
+#about .about__content .about__content__scroll {
+  margin-bottom: 30px;
+}
 #about .about__content .about__content__scroll .about__content__scroll-image {
-  width: 30%;
-  height: 524px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  width: 28%;
   border: 1px solid #615e5e;
 }
 #about .about__content .about__content__scroll .about__content__scroll-flex {
@@ -962,7 +939,8 @@
 }
 #about .about__content .about__content__scroll .about__content__scroll-flex > div,
 #about .about__content .about__content__scroll .about__content__scroll-flex > img {
-  width: 50%;
+  width: 47%;
+  margin-right: 30px;
 }
 #about .about__content .about__content__scroll .about__content__scroll-photo-list {
   display: flex;
@@ -1016,21 +994,17 @@
   color: #7c4835;
 }
 #part-1 {
-  height: 650px;
+  min-height: 800px;
 }
 #part-1 .about__content__scroll-image {
   margin-left: 246px;
   margin-top: 16px;
 }
 #about .about__content #part-2.about__content__scroll {
-  height: 1000px;
+  min-height: 800px;
 }
 #about .about__content #part-2.about__content__scroll .about__content__scroll-flex {
   align-items: flex-start;
-}
-#about .about__content #part-2.about__content__scroll .about__content__scroll-flex .about__content__scroll-image--special {
-  height: auto;
-  border: 1px solid #615e5e;
 }
 #part-3 {
   padding-bottom: 40px;
@@ -1055,10 +1029,6 @@
   }
   #about .about__content .about__content__scroll .about__content__scroll-photo-list div {
     height: 29%;
-  }
-  #about .about__content #part-2.about__content__scroll .about__content__scroll-flex .about__content__scroll-image {
-    height: auto;
-    background-position: center 23%;
   }
   #about .about__content #part-3 {
     padding-bottom: 40px;
@@ -1089,9 +1059,9 @@
   }
   #about .about__content .about__content__scroll .about__content__scroll-image {
     width: 100%;
-    height: 378px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 20px;
   }
   #about .about__content .about__content__scroll .about__content__scroll-flex {
     width: auto;
@@ -1104,7 +1074,8 @@
     margin-right: auto;
     margin-left: auto;
   }
-  #about .about__content .about__content__scroll .about__content__scroll-flex > div {
+  #about .about__content .about__content__scroll .about__content__scroll-flex > div,
+  #about .about__content .about__content__scroll .about__content__scroll-flex img {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -1118,21 +1089,18 @@
     margin-bottom: 15px;
   }
   #about .about__content #part-1 {
-    height: auto;
+    min-height: auto;
   }
   #about .about__content #part-1 .about__content__scroll-image {
     margin-top: 16px;
     background-position: center;
   }
   #about .about__content #part-2.about__content__scroll {
-    height: auto;
-  }
-  #about .about__content #part-2.about__content__scroll .about__content__scroll-flex .about__content__scroll-image {
-    height: 378px;
+    min-height: auto;
   }
 }
 .social-media {
-  width: 30%;
+  width: 28%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -1440,9 +1408,6 @@ div.datepick-inline .datepick-title-row th {
   width: 100%;
   margin: 0;
 }
-.woocommerce-shop .products .image-columns.image-columns--special-item .image-columns__item .image-columns__item__img {
-  height: 350px;
-}
 .woocommerce-result-count,
 .woocommerce-ordering {
   display: none;
@@ -1459,7 +1424,7 @@ div.datepick-inline .datepick-title-row th {
   margin-left: 15px;
   margin-right: 15px;
   margin-bottom: 30px;
-  width: 30%;
+  width: 28%;
   position: relative;
 }
 .woocommerce ul.products li.product > img {
@@ -1501,7 +1466,7 @@ div.datepick-inline .datepick-title-row th {
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 30px;
-    width: 30%;
+    width: 28%;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1987,7 +1952,7 @@ q p:last-of-type {
 }
 .structure-block .structure-block__center {
   margin: 0px auto 20px auto;
-  width: 30%;
+  width: 28%;
 }
 .structure-block .structure-block__center h4 {
   text-transform: uppercase;
@@ -2339,7 +2304,7 @@ footer .footer__content .footer__content__icons a svg {
   }
 }
 form.wpcf7-form {
-  max-width: 30%;
+  max-width: 28%;
   margin: 0 auto 40px auto;
 }
 form.wpcf7-form p {

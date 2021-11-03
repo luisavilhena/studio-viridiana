@@ -7,9 +7,8 @@ get_header(); ?>
 		<div class="project-list">
 			<?php while (have_posts()) : the_post(); ?>
 			<a href="<?php the_permalink(); ?>" class="blog-list-item">
-				<div class="project-list__item">
-					<?php the_post_thumbnail('ap_carousel_image_desktop_full_no_crop'); ?>
-				</div>
+				<img class="project-list__item"src="<?php the_post_thumbnail('vertical'); ?>
+				">
 			  <h2 class="">
 			    <?php the_title(); ?>
 			  </h2>

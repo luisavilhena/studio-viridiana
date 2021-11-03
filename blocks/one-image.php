@@ -16,10 +16,7 @@ function one_image() {
 			?>
  
 			<div class="one-image">
-				<div class="one-image__item">
-					<div data-featherlight="<?php echo wp_get_attachment_image_src($block['img'],'aap_image_desktop_full_no_crop')[0]; ?>"style="background-image: url('<?php echo wp_get_attachment_image_src($block['img'],'ap_image_desktop_full_no_crop')[0]; ?>');">
-					</div>
-				</div>
+				<img class="one-image__item"data-featherlight="<?php echo wp_get_attachment_image_src($block['img'],'aap_image_desktop_full_no_crop')[0]; ?>" src="<?php echo wp_get_attachment_image_src($block['img'],'vertical-larger')[0]; ?>">
 			</div>
 			<?php
  
