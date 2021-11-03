@@ -17,18 +17,8 @@ function studioviridiana_add_custom_image_sizes() {
      // Add "vertical" image
     add_image_size( 'vertical', 590, 670, true);
     add_image_size( 'vertical-larger', 890, 970, true);
-    // Add "horizontal" image
-    add_image_size( 'horizontal-a', 2000, 1500, true );
-    add_image_size( 'horizontal-b', 220, 152, true );
-    // Add "home" image
-    add_image_size( 'home', 260, 160, true );
     //others
-    add_image_size('ap_carousel_image_desktop_full_no_crop', 800 , 480, false);
-    add_image_size('ap_image_desktop_full_no_crop', 5000 , 3500, false);
-    add_image_size('ap_image_2_desktop_full_no_crop', 1100 , 1100, false);
-    add_image_size('ap_carousel_image_desktop_miniature_no_crop', 36, 32, false);
-    add_image_size('cc__thumbnail_a4_vertical_no_crop', 420, 560, true);
-    add_image_size('ap_image_desktop_full_crop', 890 , 1070, true);
+    add_image_size('ap_image_desktop_full_no_crop', 3000 , 3500, false);
 }
 
 add_action('after_setup_theme', 'studioviridiana_add_custom_image_sizes' );
