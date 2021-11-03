@@ -1,4 +1,5 @@
 <?php
+
  
 use Carbon_Fields\Block;
 use Carbon_Fields\Field;
@@ -21,10 +22,7 @@ function images_columns() {
  
 			<div class="image-columns">
 				<?php foreach ($block['imgs'] as $imgs) : ?>
-				<div class="image-columns__item">
-					<div data-featherlight="<?php echo wp_get_attachment_image_src($imgs['img'],'ap_image_desktop_full_no_crop')[0]; ?>"class="image-columns__item__img"style="background-image: url('<?php echo wp_get_attachment_image_src($imgs['img'],'ap_image_desktop_full_no_crop')[0]; ?>');">
-					</div>
-				</div>
+					<img data-featherlight="<?php echo wp_get_attachment_image_src($imgs['img'],'ap_image_desktop_full_no_crop')[0]; ?>" class="image-columns__item__img" src="<?php echo wp_get_attachment_image_src($imgs['img'], 'vertical')[0]; ?>">
 				<?php endforeach;  ?>
 			</div>
 			<?php

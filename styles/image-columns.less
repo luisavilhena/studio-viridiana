@@ -3,20 +3,35 @@
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
-	width: 100%;
+	align-items: flex-start;
+	// width: 100%;
+ .image-columns__item__img {
+	 	margin-left: 15px;
+	 	margin-right: 15px;
+	 	margin-bottom: 30px;
+		// width: @width-column;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		// height: 524px;
+		border: 1px solid black;
+		cursor: pointer;
+ 	}
+
 	> .image-columns__item {
 		margin-left: 15px;
 		margin-right: 15px;
 		margin-bottom: 30px;
-		width: @width-column;
-		> .image-columns__item__img {
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: center;
-			height: 524px;
-			border: 1px solid black;
-			cursor: pointer;
-		}
+		// width: @width-column;
+		// > .image-columns__item__img {
+		// 	width: @width-column;
+		// 	background-size: cover;
+		// 	background-repeat: no-repeat;
+		// 	background-position: center;
+		// 	// height: 524px;
+		// 	border: 1px solid black;
+		// 	cursor: pointer;
+		// }
 		> .image-columns__item__description {
 			margin-top: 30px;
 			// width: @width-column;

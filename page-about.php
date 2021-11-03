@@ -70,8 +70,7 @@ get_header(); ?>
 			$thumbnail_url_2 = wp_get_attachment_image_url( $thumbnail_id_2, 'full' );
 			?>
 			<div class="about__content__scroll-flex">
-				<div class="about__content__scroll-image"style="background-image: url('<?php echo $thumbnail_url_2; ?>');">
-				</div>
+				<img  class="about__content__scroll-image--special" src="<?php echo $thumbnail_url_2; ?>">
 
 				<div class="">
 					<div class="about__content__scroll__description rich-text">

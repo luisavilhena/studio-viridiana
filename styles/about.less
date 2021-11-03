@@ -119,7 +119,8 @@
 					margin-right: 40px;
 					margin-left: 15px;
 				}
-				> div {
+				> div,
+				> img {
 					width: 50%;
 				}
 			}
@@ -191,11 +192,12 @@
 #about {
 	.about__content {
 		#part-2.about__content__scroll  {
-			height: 650px;
+			height: 1000px;
 			.about__content__scroll-flex {
-				.about__content__scroll-image {
+				align-items: flex-start;
+				.about__content__scroll-image--special {
 					height: auto;
-					background-position: top;
+					border: 1px solid @gray;
 				}
 			}
 		}

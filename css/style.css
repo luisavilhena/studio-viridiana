@@ -331,16 +331,16 @@
 }
 #project-list .project-list .project-list__item {
   position: relative;
+  display: block;
   margin-right: 15px;
   margin-left: 15px;
   margin-bottom: 30px;
-  display: flex;
   justify-content: center;
   text-align: center;
   width: 30%;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
-  height: 524px;
   border: 1px solid black;
 }
 #project-list .project-list .project-list__item .project-list__item__title {
@@ -380,7 +380,6 @@
 @media screen and (max-width: 1000px) {
   #project-list .project-list .project-list__item {
     margin-left: 0px;
-    height: 380px;
   }
 }
 #project-single .project-single__header .project-single__header__btn {
@@ -554,21 +553,22 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
+  align-items: flex-start;
+}
+.image-columns .image-columns__item__img {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid black;
+  cursor: pointer;
 }
 .image-columns > .image-columns__item {
   margin-left: 15px;
   margin-right: 15px;
   margin-bottom: 30px;
-  width: 30%;
-}
-.image-columns > .image-columns__item > .image-columns__item__img {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 524px;
-  border: 1px solid black;
-  cursor: pointer;
 }
 .image-columns > .image-columns__item > .image-columns__item__description {
   margin-top: 30px;
@@ -960,7 +960,8 @@
   margin-right: 40px;
   margin-left: 15px;
 }
-#about .about__content .about__content__scroll .about__content__scroll-flex > div {
+#about .about__content .about__content__scroll .about__content__scroll-flex > div,
+#about .about__content .about__content__scroll .about__content__scroll-flex > img {
   width: 50%;
 }
 #about .about__content .about__content__scroll .about__content__scroll-photo-list {
@@ -1022,11 +1023,14 @@
   margin-top: 16px;
 }
 #about .about__content #part-2.about__content__scroll {
-  height: 650px;
+  height: 1000px;
 }
-#about .about__content #part-2.about__content__scroll .about__content__scroll-flex .about__content__scroll-image {
+#about .about__content #part-2.about__content__scroll .about__content__scroll-flex {
+  align-items: flex-start;
+}
+#about .about__content #part-2.about__content__scroll .about__content__scroll-flex .about__content__scroll-image--special {
   height: auto;
-  background-position: top;
+  border: 1px solid #615e5e;
 }
 #part-3 {
   padding-bottom: 40px;

@@ -1,12 +1,4 @@
 <?php
-add_action('after_setup_theme', function() {
-	add_image_size('ap_carousel_image_desktop_full_no_crop', 800 , 480, false);
-	add_image_size('ap_image_desktop_full_no_crop', 5000 , 3500, false);
-	add_image_size('ap_image_2_desktop_full_no_crop', 1100 , 1100, false);
-	add_image_size('ap_carousel_image_desktop_miniature_no_crop', 36, 32, false);
-	add_image_size('cc__thumbnail_a4_vertical_no_crop', 420, 560, false);
-
-});
  
 use Carbon_Fields\Block;
 use Carbon_Fields\Field;
@@ -31,7 +23,6 @@ function tc_carousel() {
 				<?php foreach ($block['carousel'] as $carousel) : ?>
 					<?php if ($carousel['img']) : ?>
 				<div class="item" style ="background-image: url('<?php echo wp_get_attachment_image_src($carousel['img'],'ap_image_desktop_full_no_crop')[0]; ?>');">
-			
 				</div>
 					<?php endif; ?>
 				<?php endforeach;  ?>
