@@ -18,7 +18,7 @@ function studioviridiana_add_custom_image_sizes() {
     add_image_size( 'vertical', 590, 670, true);
     add_image_size( 'vertical-larger', 890, 970, true);
     //horizontal
-    add_image_size( 'horizontal', 590, 370, true);
+    add_image_size( 'horizontal', 450, 300, true);
     //others
     add_image_size('ap_image_desktop_full_no_crop', 3000 , 3500, false);
 }
