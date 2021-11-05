@@ -5,7 +5,7 @@ use Carbon_Fields\Field;
  
 add_action( 'after_setup_theme', 'studio_viridiana' );
  
-function product() {
+function product_shop() {
 	Block::make( 'Product' )
 		->add_fields( array(
 			Field::make('complex', "columns", "Columns")
@@ -85,4 +85,4 @@ function product() {
 			// return ob_get_flush();
 		} );
 }
-add_action( 'carbon_fields_register_fields', 'product' );
+add_action( 'carbon_fields_register_fields', 'product_shop' );

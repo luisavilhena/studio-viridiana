@@ -16,7 +16,6 @@ function columns_image_text_box() {
 				  ->add_fields(array(
 				    Field::make('text', 'text', 'Text'),
 				    Field::make('rich_text', 'more_text', 'Text'),
-				    Field::make('image', 'img', 'Image list'),
 				    Field::make('text', 'link', 'link'),
 				  ))
 				  ->set_layout('tabbed-vertical')
