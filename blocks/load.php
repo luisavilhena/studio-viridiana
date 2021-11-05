@@ -5,6 +5,6 @@
 	require('text-box.php');
 	require('social-media.php');
 	require('columns-image-text-box.php');
+	require('columns-image-text-box-sm.php');
 	require('image-sizes.php');
-	require('product-shop.php');
 ?>

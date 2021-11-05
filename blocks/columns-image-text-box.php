@@ -16,6 +16,7 @@ function columns_image_text_box() {
 				  ->add_fields(array(
 				    Field::make('text', 'text', 'Text'),
 				    Field::make('rich_text', 'more_text', 'Text'),
+				    Field::make('image', 'img', 'Image list'),
 				    Field::make('text', 'link', 'link'),
 				  ))
 				  ->set_layout('tabbed-vertical')
@@ -29,7 +30,7 @@ function columns_image_text_box() {
 			<div class="image-columns  image-columns--special-item">
 				<?php foreach ($block['columns'] as $columns) : ?>
 				<div class="image-columns__item">
-					<img class="image-columns__item__img" data-featherlight="<?php echo wp_get_attachment_image_src($columns['img'],'ap_image_desktop_full_no_crop')[0]; ?>" src="<?php echo wp_get_attachment_image_src($columns['img'],'horizontal')[0]; ?>
+					<img class="image-columns__item__img" data-featherlight="<?php echo wp_get_attachment_image_src($columns['img'],'ap_image_desktop_full_no_crop')[0]; ?>" src="<?php echo wp_get_attachment_image_src($columns['img'],'vertical')[0]; ?>
 					">
 					<div class="image-columns__item__description rich-text"><?php echo $columns['rich_text']; ?></div>
 
@@ -65,6 +66,16 @@ function columns_image_text_box() {
 						<?php endif; ?>
 						<?php endforeach;  ?>
 					</div>
+					<?php foreach ($columns['topic'] as $topic) : ?>
+						<?php if($topic['img']) : ?>
+					<div class="image-columns__item__list">
+						<img data-featherlight="<?php echo wp_get_attachment_image_src($topic['img'],'ap_image_desktop_full_no_crop')[0]; ?>" src="<?php echo wp_get_attachment_image_src($topic['img'],'vertical')[0]; ?>">
+						</div>
+					</div>
+						<?php endif; ?>
+					<?php endforeach; ?>
+
+
 				</div>
 				<?php endforeach;  ?>
 			</div>

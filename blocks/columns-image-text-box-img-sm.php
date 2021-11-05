@@ -5,8 +5,8 @@ use Carbon_Fields\Field;
  
 add_action( 'after_setup_theme', 'studio_viridiana' );
  
-function product_shop() {
-	Block::make( 'Product' )
+function columns_image_text_box_img_sm() {
+	Block::make( 'Columns box small image' )
 		->add_fields( array(
 			Field::make('complex', "columns", "Columns")
 			->add_fields(array(
@@ -30,7 +30,7 @@ function product_shop() {
 			<div class="image-columns  image-columns--special-item">
 				<?php foreach ($block['columns'] as $columns) : ?>
 				<div class="image-columns__item">
-					<img class="image-columns__item__img" data-featherlight="<?php echo wp_get_attachment_image_src($columns['img'],'ap_image_desktop_full_no_crop')[0]; ?>" src="<?php echo wp_get_attachment_image_src($columns['img'],'vertical')[0]; ?>
+					<img class="image-columns__item__img" data-featherlight="<?php echo wp_get_attachment_image_src($columns['img'],'ap_image_desktop_full_no_crop')[0]; ?>" src="<?php echo wp_get_attachment_image_src($columns['img'],'horizontal')[0]; ?>
 					">
 					<div class="image-columns__item__description rich-text"><?php echo $columns['rich_text']; ?></div>
 
@@ -85,4 +85,4 @@ function product_shop() {
 			// return ob_get_flush();
 		} );
 }
-add_action( 'carbon_fields_register_fields', 'product_shop' );
+add_action( 'carbon_fields_register_fields', 'columns_image_text_box_img_sm' );
