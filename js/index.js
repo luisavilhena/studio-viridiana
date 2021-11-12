@@ -71,7 +71,7 @@ $(document).ready(function(){
 	$('.loading').on("click", function(e){
 		$(this).css('display', "none")
 	})
-	// $('.loading').delay(7000).fadeOut('slow')
+	$('.loading').delay(7000).fadeOut('slow')
 })
 
 
@@ -110,7 +110,6 @@ $(document).ready(function(){
 
 //BACKGROUND-COLOR MENU
 $(document).ready(function(){
-
 		const backgroundColor = $('main').css('background-color')
 		const color = $('main').css('color')
 		$('header').css('background-color', backgroundColor)
@@ -129,8 +128,6 @@ $(document).ready(function(){
 
 //ABOUT SCROLL
 $(document).ready(function(){
-		// 	var sc = $(window).scrollTop();
-		// console.log(sc)
 	$(function() {
 	  $('.arrow').click(function(e) {
 	  	const heightElement = window.pageYOffset
