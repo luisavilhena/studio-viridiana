@@ -67,12 +67,11 @@ function columns_image_text_box() {
 						<?php endforeach;  ?>
 					</div>
 					<?php foreach ($columns['topic'] as $topic) : ?>
-						<?php if($topic['img']) : ?>
 					<div class="image-columns__item__list">
+						<?php if($topic['img']) : ?>
 						<img data-featherlight="<?php echo wp_get_attachment_image_src($topic['img'],'ap_image_desktop_full_no_crop')[0]; ?>" src="<?php echo wp_get_attachment_image_src($topic['img'],'vertical')[0]; ?>">
-						</div>
-					</div>
 						<?php endif; ?>
+					</div>
 					<?php endforeach; ?>
 
 

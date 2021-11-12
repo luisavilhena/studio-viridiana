@@ -1,14 +1,14 @@
 <?php
 
-
 function studio_viridiana(){
-	wp_enqueue_style('customstyle', get_template_directory_uri() . '/css/style.css', array(), '1.0.0', 'all');
-	wp_enqueue_script('customjs',  get_template_directory_uri() . '/js/index.js', array(), NULL, false );
-    wp_enqueue_script('slickjs',  get_template_directory_uri() . '/slick/slick.min.js', array(), '1.8.0', true);
+    wp_enqueue_script('jqueryjs',  get_template_directory_uri() . '/jquery/jquery.min.js', array(), NULL, true);
+    wp_enqueue_style('customstyle', get_template_directory_uri() . '/css/style.css', array(), '1.0.1', 'all');
+
     wp_enqueue_style('slickcss', get_template_directory_uri() . '/slick/slick.css', array(), '1.8.0', 'all');
     wp_enqueue_style('slicktheme', get_template_directory_uri() . '/slick/slick-theme.css', array(), '1.8.0', 'all');
+    wp_enqueue_script('slickjs',  get_template_directory_uri() . '/slick/slick.js', array('jquery'), '', true);
+    wp_enqueue_script('customjs',  get_template_directory_uri() . '/js/index.js', array(), NULL, true );
 }
-
 add_action('wp_enqueue_scripts', 'studio_viridiana');
 
 
@@ -19,6 +19,7 @@ function studioviridiana_add_custom_image_sizes() {
     add_image_size( 'vertical-larger', 890, 970, true);
     //horizontal
     add_image_size( 'horizontal', 450, 300, true);
+    add_image_size( 'horizontal-b', 500, 185, true);
     //others
     add_image_size('ap_image_desktop_full_no_crop', 3000 , 3500, false);
 }
@@ -59,7 +60,6 @@ function crb_attach_about() {
             Field::make( 'text', 'fixed_footer_link_2', 'FOOTER link - second' ),
         ) )
         ->add_fields( array(
-            Field::make( 'image', 'photo_1', 'SECTION 1 - image' ),
             Field::make( 'image', 'photo_2', 'SECTION 2 - image' ),
             Field::make( 'rich_text', 'scroll_description_2', 'SECTION 2 - description' ),
             Field::make( 'rich_text', 'scroll_box_description_2', 'SECTION 2 - box' ),

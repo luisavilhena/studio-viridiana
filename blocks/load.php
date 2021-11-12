@@ -7,4 +7,5 @@
 	require('columns-image-text-box.php');
 	require('columns-image-text-box-img-sm.php');
 	require('image-sizes.php');
+	require('carousel.php');
 ?>

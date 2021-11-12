@@ -30,7 +30,7 @@ function columns_image_text_box_img_sm() {
 			<div class="image-columns  image-columns--special-item">
 				<?php foreach ($block['columns'] as $columns) : ?>
 				<div class="image-columns__item">
-					<img class="image-columns__item__img" data-featherlight="<?php echo wp_get_attachment_image_src($columns['img'],'ap_image_desktop_full_no_crop')[0]; ?>" src="<?php echo wp_get_attachment_image_src($columns['img'],'horizontal')[0]; ?>
+					<img class="image-columns__item__img" data-featherlight="<?php echo wp_get_attachment_image_src($columns['img'],'ap_image_desktop_full_no_crop')[0]; ?>" src="<?php echo wp_get_attachment_image_src($columns['img'],'horizontal-b')[0]; ?>
 					">
 					<div class="image-columns__item__description rich-text"><?php echo $columns['rich_text']; ?></div>
 

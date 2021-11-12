@@ -56,13 +56,6 @@ get_header(); ?>
 				</a>				
 			</div>
 		</div>
-		<section id="part-1" class="about__content__scroll">
-			<?php 
-			$thumbnail_id = carbon_get_theme_option('photo_1'); 
-			$thumbnail_url = wp_get_attachment_image_url( $thumbnail_id, 'vertical' );
-			?>
-			<img class="about__content__scroll-image" src="<?php echo $thumbnail_url; ?>');">
-		</section>
 		<section id="part-2" class="about__content__scroll">
 			<?php 
 			$thumbnail_id_2 = carbon_get_theme_option('photo_2'); 

@@ -4,6 +4,7 @@ get_header(); ?>
 <?php while (have_posts()) : the_post(); ?>
 
 <main class="home-template structure-color-green">
+	<?php the_content(); ?>  		
 </main>
 <div class="loading">
 	<div class="loading_first-line">

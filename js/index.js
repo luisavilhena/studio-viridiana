@@ -37,6 +37,20 @@ $(document).ready(function(){
 	$('.captachinput').attr("placeholder", "RECAPCTHA")
 	$('input[type="password"]').attr("placeholder", "PASSWORD")
 })
+
+//CAROUSEL
+$(document).ready(function(){
+  $('.carousel').slick({
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  autoplay: true,
+	  speed: 2000,
+	  autoplaySpeed: 2000,
+	  dots: true,
+	  adaptiveHeight: true,
+  });
+});
+
 //CONTACT
 $(document).ready(function(){
 	$('.wpcf7-radio .wpcf7-list-item').on("click", function(e){
@@ -51,12 +65,13 @@ $(document).ready(function(){
 
 
 
+
 //LOADING
 $(document).ready(function(){
 	$('.loading').on("click", function(e){
 		$(this).css('display', "none")
 	})
-	$('.loading').delay(7000).fadeOut('slow')
+	// $('.loading').delay(7000).fadeOut('slow')
 })
 
 
@@ -95,20 +110,7 @@ $(document).ready(function(){
 
 //BACKGROUND-COLOR MENU
 $(document).ready(function(){
-	// if($('body').hasClass('woocommerce-js')){
-		// $('header').css('background-color', '#0b1d1c')
-		// $('main').css('background-color', '#0b1d1c')
-		// $('ul#main-menu').css('background-color', '#0b1d1c')
-		// $('#mobile-menu-trigger div span').css('background-color', '#0b1d1c')
-		// $('footer').css('background-color', '#0b1d1c')
-		// $('header').css('color', '#ffffff')
-		// $('footer').css('color', '#ffffff')
-		// $('footer svg').css('fill', '#ffffff')
-		// $('header svg').css('fill', '#ffffff')
-		// $('header h1').css('color', '#ffffff')
-		// $('#main-menu li a').css('color', '#ffffff')
 
-	// } else {
 		const backgroundColor = $('main').css('background-color')
 		const color = $('main').css('color')
 		$('header').css('background-color', backgroundColor)
@@ -157,6 +159,7 @@ $(document).ready(function(){
 	$('#calendar_booking1 .datepick-header span').text('oct');
 	console.log(	$('.datepick-header span').text('oct'))
 });
+
 
 
 
