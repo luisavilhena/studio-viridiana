@@ -62,7 +62,7 @@ get_header(); ?>
 			$thumbnail_url_2 = wp_get_attachment_image_url( $thumbnail_id_2, 'vertical' );
 			?>
 			<div class="about__content__scroll-flex">
-				<img  class="about__content__scroll-image" src="<?php echo $thumbnail_url_2; ?>">
+				<img data-featherlight="<?php echo $thumbnail_url_2; ?>"  class="about__content__scroll-image" src="<?php echo $thumbnail_url_2; ?>">
 
 				<div class="">
 					<div class="about__content__scroll__description rich-text">
@@ -85,11 +85,11 @@ get_header(); ?>
 			?>
 			<div class="about__content__scroll-flex">
 				<div class="about__content__scroll-photo-list">
-					<div class=""style="background-image: url('<?php echo $photo_list_url_1; ?>');">
+					<div data-featherlight="<?php echo $photo_list_url_1; ?>" style="background-image: url('<?php echo $photo_list_url_1; ?>');">
 					</div>
-					<div class=""style="background-image: url('<?php echo $photo_list_url_2; ?>');">
+					<div class="" data-featherlight="<?php echo $photo_list_url_2; ?>" style="background-image: url('<?php echo $photo_list_url_2; ?>');">
 					</div>
-					<div class=""style="background-image: url('<?php echo $photo_list_url_3; ?>');">
+					<div class="" data-featherlight="<?php echo $photo_list_url_3; ?>" style="background-image: url('<?php echo $photo_list_url_3; ?>');">
 					</div>
 				</div>
 				<div class="">

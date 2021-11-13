@@ -13,6 +13,7 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
 	<meta name="viewport" content="initial-scale=1">
@@ -22,7 +23,6 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css" type="text/css" rel="stylesheet" />
 
 
