@@ -13,7 +13,6 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
 	<meta name="viewport" content="initial-scale=1">
