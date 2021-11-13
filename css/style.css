@@ -948,7 +948,7 @@
 #about .about__content .about__content__fixed .about__content__fixed-footer {
   background-color: #fffef7;
   position: fixed;
-  bottom: 33px;
+  bottom: 0px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
