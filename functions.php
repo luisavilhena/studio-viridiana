@@ -6,7 +6,9 @@ function studio_viridiana(){
     wp_enqueue_style('slickcss', get_template_directory_uri() . '/slick/slick.css', array(), '1.8.0', 'all');
     wp_enqueue_style('slicktheme', get_template_directory_uri() . '/slick/slick-theme.css', array(), '1.8.0', 'all');
     wp_enqueue_script('slickjs',  get_template_directory_uri() . '/slick/slick.js', array('jquery'), '', true);
+    wp_enqueue_script('jqueryjs',  get_template_directory_uri() . '/jquery/jquery.min.js', array('jquery'), '3.6.0', true);
     wp_enqueue_script('customjs',  get_template_directory_uri() . '/js/index.js', array(), NULL, true );
+
 }
 add_action('wp_enqueue_scripts', 'studio_viridiana');
 
