@@ -34,6 +34,7 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$('#name1').attr("placeholder", "NAME")
 	$('#email1').attr("placeholder", "E-MAIL")
+	$('#phone1').attr("placeholder", "PHONE")
 	$('.captachinput').attr("placeholder", "RECAPCTHA")
 	$('input[type="password"]').attr("placeholder", "PASSWORD")
 })

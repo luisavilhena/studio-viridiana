@@ -468,6 +468,9 @@
   width: 30%;
   margin: 0 auto 20px auto;
 }
+#project-single .structure-block p {
+  text-align: justify;
+}
 #project-single .post-password-form {
   width: 30%;
   margin: 20px auto;
@@ -1240,6 +1243,9 @@
 }
 .wpbc_structure_form .form-group {
   margin: 35px 0px !important;
+}
+.wpbc_structure_form .form-group .controls {
+  width: 100%;
 }
 .wpbc_structure_form .form-group:not(:first-of-type) {
   margin-bottom: 0px !important;
