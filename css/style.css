@@ -1071,13 +1071,16 @@
   margin-left: 246px;
   margin-top: 16px;
 }
+#about .about__content #part-2.about__content__scroll {
+  margin-top: 39px;
+}
 #about .about__content #part-2.about__content__scroll .about__content__scroll-flex {
   align-items: flex-start;
 }
-#part-3 {
-  padding-bottom: 40px;
+#part-3.about__content__scroll {
+  margin-bottom: 16px !important;
 }
-#part-3 h3:first-of-type {
+#part-3.about__content__scroll h3:first-of-type {
   margin-bottom: 0px;
 }
 @media screen and (min-width: 1460px) {
