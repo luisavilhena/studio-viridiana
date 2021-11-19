@@ -137,6 +137,16 @@ $(document).ready(function(){
 	});
 })
 
+
+//ABOUT TAMANHO DO FIXED
+$(document).ready(function(){
+	$(function() {
+		const w = $(window).height()
+		const h = $('.about__content__fixed-right').height()
+	  const height = w - h - 175
+	  $('#part-3').css('margin-bottom', height)
+	});
+})
 //MENU
 $(document).ready(function(){
 	$(window).on('scroll', function(event) {

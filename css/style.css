@@ -57,10 +57,10 @@
 }
 @keyframes animation1 {
   0% {
-    color: #a25ace;
+    color: #1D3831;
   }
   100% {
-    color: #a25ace;
+    color: #1D3831;
   }
 }
 .loading .loading_viridiana_a2,
@@ -79,11 +79,11 @@
     transition: color 0s;
   }
   51% {
-    color: #a25ace;
+    color: #1D3831;
     transition: color 0s;
   }
   100% {
-    color: #a25ace;
+    color: #1D3831;
     transition: color 0s;
   }
 }
@@ -101,11 +101,11 @@
     transition: color 0s;
   }
   71% {
-    color: #a25ace;
+    color: #1D3831;
     transition: color 0s;
   }
   100% {
-    color: #a25ace;
+    color: #1D3831;
     transition: color 0s;
   }
 }
@@ -123,11 +123,11 @@
     transition: color 0s;
   }
   76% {
-    color: #a25ace;
+    color: #1D3831;
     transition: color 0s;
   }
   100% {
-    color: #a25ace;
+    color: #1D3831;
     transition: color 0s;
   }
 }
@@ -146,11 +146,11 @@
     transition: color 0s;
   }
   87% {
-    color: #a25ace;
+    color: #1D3831;
     transition: color 0s;
   }
   100% {
-    color: #a25ace;
+    color: #1D3831;
     transition: color 0s;
   }
 }
@@ -170,11 +170,11 @@
     transition: color 0s;
   }
   87% {
-    color: #a25ace;
+    color: #1D3831;
     transition: color 0s;
   }
   100% {
-    color: #a25ace;
+    color: #1D3831;
     transition: color 0s;
   }
 }
@@ -194,11 +194,11 @@
     transition: color 0s;
   }
   87% {
-    color: #a25ace;
+    color: #1D3831;
     transition: color 0s;
   }
   100% {
-    color: #a25ace;
+    color: #1D3831;
     transition: color 0s;
   }
 }
@@ -218,11 +218,11 @@
     transition: color 0s;
   }
   89% {
-    color: #a25ace;
+    color: #1D3831;
     transition: color 0s;
   }
   100% {
-    color: #a25ace;
+    color: #1D3831;
     transition: color 0s;
   }
 }
@@ -241,11 +241,11 @@
     transition: color 0s;
   }
   95% {
-    color: #a25ace;
+    color: #1D3831;
     transition: color 0s;
   }
   100% {
-    color: #a25ace;
+    color: #1D3831;
     transition: color 0s;
   }
 }
@@ -265,11 +265,11 @@
     transition: color 0s;
   }
   87% {
-    color: #a25ace;
+    color: #1D3831;
     transition: color 0s;
   }
   100% {
-    color: #a25ace;
+    color: #1D3831;
     transition: color 0s;
   }
 }
@@ -287,11 +287,11 @@
     transition: color 0s;
   }
   87% {
-    color: #a25ace;
+    color: #1D3831;
     transition: color 0s;
   }
   100% {
-    color: #a25ace;
+    color: #1D3831;
     transition: color 0s;
   }
 }
@@ -308,11 +308,11 @@
     transition: color 0s;
   }
   87% {
-    color: #a25ace;
+    color: #1D3831;
     transition: color 0s;
   }
   100% {
-    color: #a25ace;
+    color: #1D3831;
     transition: color 0s;
   }
 }
@@ -372,6 +372,7 @@
 #project-list .project-list .project-list__item img {
   border: 1px solid black;
   width: 100%;
+  min-height: 250px;
 }
 #project-list .project-list .project-list__item:nth-of-type(3n) {
   margin-right: 0;
@@ -457,7 +458,7 @@
   transform: rotate(-45deg);
 }
 #project-single .project-single__header .project-single__header__btn:hover span {
-  background-color: #a25ace;
+  background-color: #1D3831;
   width: 2px;
 }
 #project-single .project-single__header .project-single__header__img {
@@ -566,6 +567,7 @@
 .rich-text i {
   font-style: italic;
   display: block;
+  font-family: sans-serif;
 }
 .rich-text a {
   color: black;
@@ -699,7 +701,7 @@
   width: 100%;
 }
 .one-image .one-image__item {
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
   width: 64% ;
   cursor: pointer;
   border: 1px solid black;
@@ -930,6 +932,9 @@
   padding-bottom: 5px;
   padding-left: 10px;
 }
+#about .about__content .about__content__fixed .about__content__fixed-right .about__content__fixed-right-box:last-child {
+  margin-bottom: 0px;
+}
 #about .about__content .about__content__fixed .about__content__fixed-right .about__content__fixed-right-box:first-of-type:hover {
   color: #2D0A14;
   background-color: #c9bfbc;
@@ -994,27 +999,21 @@
 #about .about__content .about__content__fixed .about__content__fixed-footer .arrow .arrow-2 {
   transform: rotate(45deg);
 }
-#about .about__content .about__content__scroll {
-  margin-bottom: 160px;
-}
 #about .about__content .about__content__scroll .about__content__scroll-image {
   width: 30%;
   border: 1px solid #615e5e;
 }
 #about .about__content .about__content__scroll .about__content__scroll-flex {
-  margin-right: 40px;
-  margin-left: 15px;
-  width: 66%;
+  width: 69.7%;
   display: flex;
 }
-#about .about__content .about__content__scroll .about__content__scroll-flex > div:first-of-type {
-  margin-right: 40px;
-  margin-left: 15px;
+#about .about__content .about__content__scroll .about__content__scroll-flex > .about__content__scroll__column2 {
+  margin-right: 30px;
+  margin-left: 30px;
 }
 #about .about__content .about__content__scroll .about__content__scroll-flex > div,
 #about .about__content .about__content__scroll .about__content__scroll-flex > img {
-  width: 47%;
-  margin-right: 30px;
+  width: 49%;
 }
 #about .about__content .about__content__scroll .about__content__scroll-photo-list {
   display: flex;
@@ -1032,6 +1031,9 @@
 }
 #about .about__content .about__content__scroll .about__content__scroll-photo-list div:last-child {
   margin-bottom: 0px;
+}
+#about .about__content .about__content__scroll .rich-text {
+  margin-right: 0px;
 }
 #about .about__content .about__content__scroll .about__content__scroll__description {
   font-family: "CircularStd";
@@ -1072,13 +1074,14 @@
   margin-top: 16px;
 }
 #about .about__content #part-2.about__content__scroll {
-  margin-top: 39px;
+  margin-bottom: 160px;
+  margin-top: 40px;
+}
+#about .about__content #part-2.about__content__scroll .about__content__scroll__description {
+  margin-top: 3px;
 }
 #about .about__content #part-2.about__content__scroll .about__content__scroll-flex {
   align-items: flex-start;
-}
-#part-3.about__content__scroll {
-  margin-bottom: 16px !important;
 }
 #part-3.about__content__scroll h3:first-of-type {
   margin-bottom: 0px;
@@ -1094,15 +1097,8 @@
   #about .about__content .about__content__fixed .about__content__fixed-footer .about__content__fixed-footer__link {
     margin-right: 100px;
   }
-  #about .about__content .about__content__scroll .about__content__scroll-flex div:first-of-type {
-    margin-right: 30px;
-    margin-left: 0px;
-  }
   #about .about__content .about__content__scroll .about__content__scroll-photo-list div {
     height: 29%;
-  }
-  #about .about__content #part-3 {
-    padding-bottom: 40px;
   }
   #about .about__content #part-3 h3:first-of-type {
     margin-bottom: 0px;

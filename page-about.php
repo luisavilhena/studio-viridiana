@@ -64,7 +64,7 @@ get_header(); ?>
 			<div class="about__content__scroll-flex">
 				<img data-featherlight="<?php echo $thumbnail_url_2; ?>"  class="about__content__scroll-image" src="<?php echo $thumbnail_url_2; ?>">
 
-				<div class="">
+				<div class="about__content__scroll__column2">
 					<div class="about__content__scroll__description rich-text">
 						<?php echo carbon_get_theme_option('scroll_description_2'); ?>
 					</div>
@@ -92,7 +92,7 @@ get_header(); ?>
 					<div class="" data-featherlight="<?php echo $photo_list_url_3; ?>" style="background-image: url('<?php echo $photo_list_url_3; ?>');">
 					</div>
 				</div>
-				<div class="">
+				<div class="about__content__scroll__column2">
 					<div class="about__content__scroll__description rich-text">
 						<?php echo carbon_get_theme_option('scroll_description_3'); ?>
 					</div>
