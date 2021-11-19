@@ -1088,7 +1088,6 @@
 }
 @media screen and (min-width: 1460px) {
   #about .about__content .about__content__fixed .about__content__fixed-right {
-    top: 113px;
     width: 31%;
   }
   #about .about__content .about__content__fixed .about__content__fixed-right .about__content__fixed-right-box .about__content__fixed-right-box__description {
