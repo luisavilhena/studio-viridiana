@@ -170,6 +170,7 @@
 				> * {
 					padding-top: 5px;
 					padding-left: 10px;
+					padding-right: 3px;
 				}
 				&:hover {
 					transition: background-color 0.3s;
@@ -291,6 +292,10 @@
 					width: auto;
 					flex-direction: column;
 					margin: 10px auto;
+					.about__content__scroll__column2 {
+						margin-right: 0px;
+						margin-left: 0px;
+					}
 					> div:first-of-type {
 						margin-bottom: 15px;
 						width: @width-column-sm;
@@ -329,10 +334,14 @@
 			}
 			#part-2.about__content__scroll  {
 				min-height: auto;
+				margin-bottom: 20px;
 				.about__content__scroll-flex {
 					.about__content__scroll-image {
 					}
 				}
+			}
+			#part-3 {
+				margin-bottom: 50px !important;
 			}
 		}
 	}
