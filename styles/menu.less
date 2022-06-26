@@ -1,75 +1,133 @@
 ul#main-menu {
-	// padding: 30px 10% 0px 10%;
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
 	flex-direction: row;
 	font-style: normal;
-	margin-left: 13%;
-	width: 100%;
+	li {
+		a {
+			font-size: 16px;
+			color: @black;
+		}
+	}
 
 	> li {
+		position: relative;
 		display: flex;
-		padding: 10px 0px 0px 45px;
-		a {
+		padding-right: 5px;
+		margin-right: 40px;
+		padding-bottom: 20px;
+		margin-top: 20px;
+		> a {
 			position: relative;
 			text-decoration: none;
-			font-family: 'CircularStd', sans-serif;
-			text-transform: uppercase;
-			font-size: 10px;
+			font-family: 'Roboto', sans-serif;
+			text-transform: lowercase;
+			font-size: 20px;
+			white-space: nowrap;
 		}
 		&:hover {
 			a {
-				&:after {
-					content: " ";
-					width: 100%;
-					height: 2px;
-					display: block;
-					position: absolute;
-					top: 17px;
-					background-color: @gray;
+				color: @orange;
+			}
+			ul.sub-menu {
+				background-color: white;
+				top: 30px;
+				transition: background-color 1s;
+				border: @orange 1px solid;
+				display: block;
+				> li {
+					a {
+					}
 				}
+				> li:hover {
+					background-color: @light-pink;
+					transition: background-color 1s;
+				}
+			}
+		}
+		> ul.sub-menu {
+			background-color: transparent;
+			border-radius: 5px;
+			position: absolute;
+			top: -300px;
+			width: 200px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			z-index: 0;
+			> li {
+				box-sizing: border-box;
+				padding: 10px 30px 10px 10px;
+				width: 100%;
+				a {
+					text-decoration: none;
+					position: relative;
+					display: block;
+					text-transform: lowercase;
+				}
+			}
+			> li:last-of-type {
+				margin-bottom: 5px;
+			}
+			> li:first-of-type {
+				margin-top: 5px;
 			}
 		}
 	}
 	>li:first-of-type {
 		padding-left: 0px;
+		
 	}
 	>li:last-of-type {
+		margin-right: 0px;
 		padding-right: 0px;
+	}
+	> li:first-of-type,
+	> li:nth-of-type(2) {
+		font-family: 'Material Icons';
+		&:after {
+			content: '\e5c5';
+			font-size: 27px;
+			font-family: 'Material Icons';
+			color: @black;
+			display: block;
+			position: absolute;
+			right: -20px;
+			top: -5px;
+			transform: rotate(0deg);
+			transition: transform 0.5s;
+		}
+		&:hover {
+			&:after {
+				transform: rotate(180deg);
+				transition: transform 0.5s;
+				color: @orange;
+			}
+		}
 	}
 }
 #mobile-menu-trigger {
 	display: none;
 }
 
-// @media screen and (min-width: @screen-lg) {
+// @media screen and (max-width: @screen-lg) {
 // 	ul#main-menu {
-// 		margin-left: 0;
 // 		> li {
-// 			padding: 10px 0px 10px 60px;
+// 			padding-right: 30px;
 // 		}
-// 		li {
-// 			a {
-// 				font-size: 10px;
-// 				&:after {
-// 					top: 24px;
-// 				}
+// 		> li:nth-of-type(2) {
+// 			&:after {
+// 				right: 7px;
 // 			}
 // 		}
 // 	}
 // }
 
-@media screen and (max-width: @screen-md) {
+@media screen and (max-width: @screen-sm) {
 	ul#main-menu {
-		// margin-left: -100px;
-		li {
-			padding-left: 15px;
-		}
-	}
-}
-@media screen and (max-width: 750px) {
-	ul#main-menu {
+		background-color: white;
 		display: none;
 		flex-direction: column;
 		min-height: 100vh;
@@ -79,22 +137,56 @@ ul#main-menu {
 			a {
 				font-size: 14px;
 			}
+			>ul.sub-menu {
+				display: none;
+				position: relative;
+			}
+		}
+		> li:first-of-type,
+		> li:nth-of-type(2) {
+			&:after {
+				transition: none
+			}
+			&:hover {
+				&:after {
+					transition: none;
+				}
+			}
+		}
+		li:hover {
+			>ul.sub-menu {
+				display: block;
+				position: relative;
+				left: 0;
+				border: none;
+
+				li {
+					padding: 20px 0;
+				}
+			}
+			&:after {
+				right: auto;
+				left: 115px;
+			}
+		}
+		> li{
+			&:after {
+				right: auto;
+				left: 115px;
+			}
 		}
 	}
 	#mobile-menu-trigger {
+		position: fixed;
+		left: 15px;
 	  display: flex;
 
 	  background-color: transparent;
 	  border: none;
 
-	  // position: absolute;
 	  z-index: 100;
 
-	  // top: 13px;
-	  // right: 42.7%;
 	  transition: right 0.6s;
-	  // height: 36px;
-
 	  cursor: pointer;
 
 		span {
@@ -104,6 +196,7 @@ ul#main-menu {
 	    width: 26px;
 	    opacity: 1;
 	    transform: rotate(0deg);
+	    background-color: @orange;
 	  }
 	  > div {
 	  	display: flex;

@@ -8,6 +8,8 @@ add_action( 'after_setup_theme', 'studio_viridiana' );
 function carousel() {
 	Block::make( 'Carousel' )
 		->add_fields( array(
+			Field::make('text', 'text', 'Título'),
+			Field::make('text', 'subtitle', 'Subtítulo'),
 			Field::make('complex', 'carousel', 'Carousel')
 			  ->add_fields(array(
 			    Field::make('image', 'img', 'Image'),
@@ -20,13 +22,24 @@ function carousel() {
 			?>
  
 			<div class="carousel">
-				<?php foreach ($block['carousel'] as $carousel) : ?>
-					<?php if ($carousel['img']) : ?>
-				<div class="item" style ="background-image: url('<?php echo wp_get_attachment_image_src($carousel['img'],'image_desktop_full_no_crop')[0]; ?>');">
+				<div id="carousel-img">
+					<?php foreach ($block['carousel'] as $carousel) : ?>
+						<?php if ($carousel['img']) : ?>
+					<div class="item" style ="background-image: url('<?php echo wp_get_attachment_image_src($carousel['img'],'image_desktop_full_no_crop')[0]; ?>');">
+					</div>
+						<?php endif; ?>
+					<?php endforeach;  ?>					
 				</div>
-					<?php endif; ?>
-				<?php endforeach;  ?>
+				<div class="carousel-text">
+					<h1>
+						<?php echo $block['text']; ?>
+					</h1>
+					<p>
+						<?php echo $block['subtitle']; ?>
+					</p>
+				</div>
 			</div>
+
 			<?php
  
 			// return ob_get_flush();

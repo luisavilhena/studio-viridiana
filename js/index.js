@@ -41,16 +41,51 @@ $(document).ready(function(){
 
 //CAROUSEL
 $(document).ready(function(){
-  $('.carousel').slick({
-	  slidesToShow: 1,
+	var myCarousel = $("#carousel-img");
+	console.log(myCarousel);
+
+  myCarousel.each(function() {
+  	$(this).slick({
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  autoplay: true,
+		  speed: 2000,
+		  autoplaySpeed: 2000,
+		  dots: false,
+		  adaptiveHeight: true,
+  	});
+  });
+  	var myCarouselDescriptionItem = $(".carousel-description__item");
+  	console.log(myCarousel);
+
+    myCarouselDescriptionItem.each(function() {
+    	$(this).slick({
+  		  slidesToShow: 1,
+  		  slidesToScroll: 1,
+  		  autoplay: false,
+  		  speed: 1000,
+  		  autoplaySpeed: 1000,
+  		  dots: true,
+  		  adaptiveHeight: false,
+    	});
+    });
+
+
+});
+
+$(document).ready(function(){
+  $('.logo-carousel-img').slick({
+	  slidesToShow: 6,
+	  infinite: true,
 	  slidesToScroll: 1,
 	  autoplay: true,
 	  speed: 2000,
-	  autoplaySpeed: 2000,
+	  autoplaySpeed: 0,
 	  dots: true,
-	  adaptiveHeight: true,
   });
 });
+
+
 
 //CONTACT
 $(document).ready(function(){
@@ -110,22 +145,22 @@ $(document).ready(function(){
 })
 
 //BACKGROUND-COLOR MENU
-$(document).ready(function(){
-		const backgroundColor = $('main').css('background-color')
-		const color = $('main').css('color')
-		$('header').css('background-color', backgroundColor)
-		$('ul#main-menu').css('background-color', backgroundColor)
-		$('#mobile-menu-trigger div span').css('background-color', color)
-		$('footer').css('background-color', backgroundColor)
-		$('header').css('color', color)
-		$('footer').css('color', color)
-		$('footer svg').css('fill', color)
-		$('header svg').css('fill', color)
-		$('header h1').css('color', color)
-		$('#main-menu li a').css('color', color)
+// $(document).ready(function(){
+// 		const backgroundColor = $('main').css('background-color')
+// 		const color = $('main').css('color')
+// 		$('header').css('background-color', backgroundColor)
+// 		$('ul#main-menu').css('background-color', backgroundColor)
+// 		$('#mobile-menu-trigger div span').css('background-color', color)
+// 		$('footer').css('background-color', backgroundColor)
+// 		$('header').css('color', color)
+// 		$('footer').css('color', color)
+// 		$('footer svg').css('fill', color)
+// 		$('header svg').css('fill', color)
+// 		$('header h1').css('color', color)
+// 		$('#main-menu li a').css('color', color)
 
-	// }
-})
+// 	// }
+// })
 
 //ABOUT SCROLL
 $(document).ready(function(){

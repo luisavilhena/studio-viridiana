@@ -2,7 +2,7 @@
 
 get_header(); ?>
 
-<main id="project-list" class="structure-container structure-color-light-pink">
+<main id="project-list" class="structure-container">
 	<div class="structure-container__content">
 		<div class="project-list">
 			<?php while (have_posts()) : the_post(); ?>

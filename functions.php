@@ -1,29 +1,29 @@
 <?php
-
-function studio_viridiana(){
+add_action('wp_enqueue_scripts', 'cocrianca');
+function cocrianca(){
     wp_enqueue_style('customstyle', get_template_directory_uri() . '/css/style.css', array(), '1.0.1', 'all');
 
     wp_enqueue_style('slickcss', get_template_directory_uri() . '/slick/slick.css', array(), '1.8.0', 'all');
     wp_enqueue_style('slicktheme', get_template_directory_uri() . '/slick/slick-theme.css', array(), '1.8.0', 'all');
-    wp_enqueue_script('slickjs',  get_template_directory_uri() . '/slick/slick.js', array('jquery'), '', true);
-    wp_enqueue_script('customjs',  get_template_directory_uri() . '/js/index.js', array(), NULL, true );
+    wp_enqueue_script('slickjs',  get_template_directory_uri() . '/slick/slick.js', array('jquery'), '', false);
+    wp_enqueue_script('customjs',  get_template_directory_uri() . '/js/index.js', array(), NULL, false );
 }
-add_action('wp_enqueue_scripts', 'studio_viridiana');
 
 
-function studioviridiana_add_custom_image_sizes() {
+function cocrianca_add_custom_image_sizes() {
 
      // Add "vertical" image
     add_image_size( 'vertical', 590, 670, true);
     add_image_size( 'vertical-larger', 890, 970, true);
     //horizontal
     add_image_size( 'horizontal', 450, 300, true);
-    add_image_size( 'horizontal-b', 500, 225, true);
+    add_image_size( 'horizontal-b', 740, 540, true);
+    add_image_size( 'quarter', 300, 300, true);
     //others
     add_image_size('image_desktop_full_no_crop', 3000 , 3500, false);
 }
 
-add_action('after_setup_theme', 'studioviridiana_add_custom_image_sizes' );
+add_action('after_setup_theme', 'cocrianca_add_custom_image_sizes' );
 
 use Carbon_Fields\Container;
 use Carbon_Fields\Field;
@@ -33,10 +33,13 @@ function crb_attach_theme_options() {
     Container::make( 'theme_options', __( 'Theme Options', 'crb' ) )
         ->add_fields( array(
             Field::make( 'text', 'email', 'E-mail' ),
-            Field::make( 'text', 'instagram', 'Instagram' ),
             Field::make( 'text', 'phone', 'Phone' ),
             Field::make( 'text', 'description', 'Descrição' ),
-            Field::make( 'text', 'link', 'Link de Shop' ),
+            Field::make( 'text', 'instagram', 'Instagram' ),
+            Field::make( 'text', 'youtube', 'Youtube' ),
+            Field::make( 'text', 'facebook', 'Facebook' ),
+            Field::make( 'text', 'linkedin', 'Linkedin' ),
+
         ) );
 }
 
@@ -100,6 +103,7 @@ function register_carbon_fields() {
  */
 register_nav_menus(array(
   'main-menu' => 'Menu principal',
+  'footer' => 'Footer',
 ));
 
 add_action( 'wp_head', 'add_viewport_meta_tag' , '1' );
@@ -211,5 +215,86 @@ function woo_remove_product_tabs( $tabs ) {
 }
 
 add_filter ('yith_wcan_use_wp_the_query_object', '__return_true');
+
+/**
+* Create taxonomy portfolio
+*/
+
+////////////////
+////taxonomia///
+////////////////
+
+/* -- Post Type - Projetos -- */
+function custom_post_type_projetos() {
+    $labels = [
+        "name" => __( "Projetos"),
+        "singular_name" => __( "Projetos"),
+    ];
+
+    $args = [
+        "label" => __( "Projetos"),
+        "labels" => $labels,
+        "description" => "",
+        "public" => true,
+        "publicly_queryable" => true,
+        "show_ui" => true,
+        "delete_with_user" => false,
+        "show_in_rest" => true,
+        "rest_base" => "",
+        "rest_controller_class" => "WP_REST_Posts_Controller",
+        "has_archive" => true,
+        "show_in_menu" => true,
+        "show_in_nav_menus" => true,
+        "delete_with_user" => false,
+        "exclude_from_search" => false,
+        "capability_type" => "post",
+        "map_meta_cap" => true,
+        "hierarchical" => false,
+        "rewrite" => [ "slug" => "projetos", "with_front" => false, 'hierarchical' => true ],
+        "query_var" => true,
+        "menu_position" => 5,
+        "menu_icon" => "dashicons-book-alt",
+        "supports" => [ "title", "editor", "thumbnail", "excerpt", "trackbacks", "custom-fields", "comments", "revisions", "author", "page-attributes", "post-formats" ],
+        "taxonomies" => [ "genero" ],
+    ];
+
+    register_post_type( "projetos", $args );
+}
+
+add_action( 'init', 'custom_post_type_projetos' );
+
+/* ------------------------------ Taxonomias - Genero -----------------------------*/
+function custom_taxonomy_projeto() {
+
+    /**
+     * Taxonomy: Projeto.
+     */
+
+    $labels = [
+        "name" => __( "Tipos de projeto"),
+        "singular_name" => __( "Tipo de projeto"),
+    ];
+
+    $args = [
+        "label" => __( "Tipo de projeto"),
+        "labels" => $labels,
+        "public" => true,
+        "publicly_queryable" => true,
+        "hierarchical" => true,
+        "show_ui" => true,
+        "show_in_menu" => true,
+        "show_in_nav_menus" => true,
+        "query_var" => true,
+        "rewrite" => [ "slug" => "projeto", "with_front" => false, 'hierarchical' => true ],
+        "show_admin_column" => true,
+        "show_in_rest" => true,
+        "rest_base" => "projeto",
+        "rest_controller_class" => "WP_REST_Terms_Controller",
+        "show_in_quick_edit" => true,
+    ];
+
+    register_taxonomy( "projeto", [ "projetos" ], $args );
+}
+add_action( 'init', 'custom_taxonomy_projeto' );
 
 

@@ -13,13 +13,13 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
 	<meta name="viewport" content="initial-scale=1">
 	<meta name="viewport" content="maximum-scale=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
@@ -38,15 +38,16 @@
   data-component="class-toggle"
   data-class-toggle-target-class="menu-open">
 	<!-- <div id="mobile-menu-overlay"></div> -->
-	<header
+ <header
     id="main-header"
-    class="active"
+    class="active structure-block"
     data-component="collapsible-header">
-    <div class="header__content">
+    <div class="header__content structure-block__center">
       <a
         id="logo-anchor"
         href="<?php echo get_home_url(); ?>">
-        <?php require('resources/imgs/V1.svg'); ?>
+        <img src="<?php echo get_template_directory_uri() ?>/resources/icons/logo-cocrianca.png">
+        
       </a>
 
       <button
@@ -76,11 +77,33 @@
           href="<?php echo get_home_url(); ?>?s=">
         </a>
       </nav>
+      <ul class="social-media">
+        <li>
+          <a href="<?php echo carbon_get_theme_option('instagram'); ?>">
+            <img src="<?php echo get_template_directory_uri() ?>/resources/icons/icon-instagram.png"">
+          </a>
+        </li>
+        <li>
+          <a href="<?php echo carbon_get_theme_option('youtube'); ?>">
+            <img src="<?php echo get_template_directory_uri() ?>/resources/icons/icon-youtube.png"">
+          </a>
+        </li>
+        <li>
+          <a href="<?php echo carbon_get_theme_option('facebook'); ?>">
+            <img src="<?php echo get_template_directory_uri() ?>/resources/icons/icon-facebook.png"">
+          </a>
+        </li>
+        <li>
+          <a href="<?php echo carbon_get_theme_option('linkedin'); ?>">
+            <img src="<?php echo get_template_directory_uri() ?>/resources/icons/icon-linkedin.png"">
+          </a>
+        </li>
+      </ul>
       <a
-        class="header-content__name"
+        class="header-content__button button-bg"
         href="<?php echo get_home_url(); ?>">
-        <h1>STUDIO VIRIDIANA</h1>
+        <h3>apoie o projeto</h3>
       </a>
-    </div>
+    </div> 
 	  
 	</header>
